@@ -1,0 +1,208 @@
+# This is a full example of system initializers and initializer trees
+# A system initializer is used to initialize each solar system in the game by creating planets, setting names and values on everything.
+# The system also has a tree structure that allows one initializer decide how neighboring systems should be initialized ( see the 'neighbor_system' part further down ).
+#
+# All numeric values can be scripted as 'x = 10' or 'x = { min = 5 max = 15 }', except within the triggers and effects
+#
+# Useful console commands:
+# 'Draw.Clusters' will toggle clusters on/off. Some clusters are created in the beginning and will be used for placing empires. Clusters can(will) also be created from effects and events
+# 'Draw.SystemInit' will print the initializer used for each system, as well as lines to show which initializer triggered another
+
+##Later notes
+#investigation shows that the order in the script is not at all related to the actual execution order in the end. It all boils down to a big function in code called InitializeSystem where we during galaxy generation generate all #systems in the galaxy. It will set up everything based on the scripted info, e.g names/asteroid belts/scripted planets (which will run their post init effects) and so on, and LAST of all - it will run its own post init effect. #There are probably dependencies here and I guess it makes sense to always run this when everything else exists
+
+
+imas_caravaneer_init = {
+	name = random					#Name of the system. Use localization tags rather than strings for translation purposes.
+	class = "rl_standard_stars"								#system's star class. ["name_of_class"] picks a specific class. ["name_of_random_list"] picks a random class from the specified random_list ( random_list are found in the same files as the star classes )
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 60
+	}	#asteroid field distance from center
+	flags = { imas_home }					#flags that can be used in triggers and effects
+
+	#Initializers can specify how the game can use them.
+	#valid values are:
+	usage = misc_system_init
+	#usage = empire_init		#game can pick this initializer randomly to initialize systems for regular empires ( i.e the player(s) or regular AI empires ) that do not specify a specific initializer
+	#usage = misc_system_init	#game can pick this initializer randomly when initializing misc systems. i.e systems that have not been initialized by empires or fallen empires
+	#you can specify multiple usages for an initializer.
+	#By not specifiying any usage the game won't use this initializer except when explicitly told to from another script ( if a prescripted species or an effect specify an initializer by name )
+					#if a 'usage = x' is specified the usage_odds is used to control the odds of this initializer being picked over another.
+	usage_odds = { base=100 }
+	max_instances = 1			#This initializer can at most be used 10 times. leave blank or negative for infinite. Note that this limit is also applied when spawning systems from effects, i.e if the galaxy starts with 9 instances you can only create 1 system with this initializer from effects.
+	spawn_chance = 100
+	#when all planets have been created and the system is initialized the init_effect will be executed
+	#you can use this to spawn mining drones etc
+	#the scope will be a galactic_object scope, with prev being set to the previous system that was initialized by this tree ( if any ). Root will point to the first system in the tree.
+	init_effect = {
+		set_name = "Name set from an effect"
+	}
+
+	#create the sun first. This is the minimum script required for a sun
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	#create a planet
+	planet = {
+		class = pc_gaia
+		orbit_distance = 0
+
+		init_effect = {
+
+			create_ambient_object = {
+				type = caravaneer_billboard_1
+				scale = 4
+				location = this
+				entity_offset_height = { min = -9 max = -11 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 45
+				}
+			}
+
+			create_ambient_object = {
+				type = caravaneer_billboard_2
+				scale = 4
+				location = this
+				entity_offset_height = { min = -9 max = -11 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 135
+				}
+			}
+
+			create_ambient_object = {
+				type = caravaneer_billboard_1
+				scale = 4
+				location = this
+				entity_offset_height = { min = -9 max = -11 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 225
+				}
+			}
+
+			create_ambient_object = {
+				type = caravaneer_billboard_3
+				scale = 4
+				location = this
+				entity_offset_height = { min = -9 max = -11 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 315
+				}
+			}
+
+			save_global_event_target_as = imas_home_star
+			create_species = {
+				name = "283 Pro"
+				class = random_non_machine
+				portrait = random
+				traits = random
+				effect = {
+					modify_species = {
+						ideal_planet_class = pc_habitat
+					}
+				}
+			}
+
+			create_country = {
+				name = "NAME_283p_Home"
+				type = enclave
+
+				authority = auth_corporate
+				civics = {
+					civic = civic_artist_collective
+				}
+				origin = "origin_default"
+				species = last_created_species
+				flag = {
+					icon = {
+						category = "imas"
+						file = "283p.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "triangle_split.dds"
+					}
+					colors={
+						"pink"
+						"pink"
+						"null"
+						"null"
+					}
+				}
+				ethos = {
+					ethic = ethic_egalitarian
+					ethic = ethic_pacifist
+					ethic = ethic_xenophile
+				}
+				ignore_initial_colony_error = yes
+
+				effect = {
+					set_country_flag = 283p_home_country
+					set_graphical_culture = caravaneer_01
+					save_global_event_target_as = 283p_home_country
+					create_fleet = {
+						name = "NAME_Caravaneer_Coalition_Base"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Tradestation_Tungle"
+								graphical_culture = prev
+								effect = {
+									set_ship_flag = cara_home_tradestation
+								}
+							}
+							set_location = {
+								target = prevprev
+								angle = random
+								distance = 40
+							}
+							save_global_event_target_as = CaravaneerCustomCapital
+							prev = {
+								set_custom_capital_location = event_target:CaravaneerCustomCapital
+							}
+						}
+					}
+					create_leader = {
+						class = ruler
+						species = this
+						name = "NAME_283p_Leader"
+						skill = 5
+						immortal = yes
+					}
+					set_leader = last_created_leader
+					create_ship_design = { design = "NAME_Caravaneer_Starbase" }
+					add_ship_design = last_created_design
+				}
+			}
+		}
+	}
+
+	#change_orbit = X is a shortcut and equivalent to 'planet = { class = none orbit_distance = X }'
+	#useful when spawning a random amount of planets
+	change_orbit = 31
+
+
+	#this is where the tree part comes in in 'Initializer Tree'
+	#Each initializer can have any number of child initializers scripted with in a "neighbor_system" body
+
+}

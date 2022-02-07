@@ -1,0 +1,22 @@
+namespace = imas_diplo_screen
+
+
+# 0000 pre diplo contact
+# 1xxx normal main menu
+
+country_event = {
+	id = imas_diplo_screen.0000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_country_type = enclave
+			has_country_flag = 283p_home_country
+		}
+	}
+	immediate = {
+
+
+	}
+
+}
