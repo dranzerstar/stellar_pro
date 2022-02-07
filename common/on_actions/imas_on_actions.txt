@@ -11,7 +11,7 @@
 # From = source country
 on_custom_diplomacy = {
 	events = {
-		
+		imas_diplo_screen.0000
 
 	}
 }
