@@ -1,0 +1,15 @@
+
+# IM@S Enclave
+gov_curator_enclave = {
+	ruler_title = RT_imas_iCEO
+
+	should_force_rename = yes
+
+	possible = {
+		has_valid_civic = civic_imas
+	}
+
+	weight = {
+		base = 100000
+	}
+}
