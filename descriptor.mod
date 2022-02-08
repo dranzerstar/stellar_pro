@@ -1,4 +1,4 @@
-name="Stellar IdolM@sters"
+name="InterStellar IdolM@sters"
 version="0.0.1"
 tags={
 	"Galaxy Generation"

@@ -1,0 +1,7 @@
+namespace = imas_world_events
+
+# 10xx idol potential spawner
+#
+#
+#
+#

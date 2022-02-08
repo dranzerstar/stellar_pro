@@ -1,0 +1,46 @@
+building_headhunt = {
+	base_buildtime = 360	# 基础建造时间
+	category = amenity
+    icon = 
+    prerequisites = {
+		
+	}
+	potential = {
+		exists = owner
+		OR = {
+			owner = {
+			is_ai = no
+			}
+			free_building_slots > 0
+		}
+		owner = {
+			is_regular_empire = yes
+		    has_country_flag = 283p_contract_signed
+		}
+			
+		
+		
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			# 花费
+			minerals = 540
+		}
+		upkeep = {
+			energy = 10
+		}
+        produces = {
+            unity=2
+        }
+	}
+	planet_modifier = {
+		#
+		pop_happiness  = 0.1
+        
+
+	}
+	destroy_trigger = {
+
+	}
+}

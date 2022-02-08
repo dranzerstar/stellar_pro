@@ -1,8 +1,11 @@
 namespace = imas_diplo_screen
 
 
-# 0000 pre diplo contact
+# 0000 pre diplo contact event trigger
 # 1xxx normal main menu
+
+# 9xxx diplo screen related events
+# 91xx first contact greets
 
 country_event = {
 	id = imas_diplo_screen.0000

@@ -30,5 +30,6 @@ imas_home = {
 		}
 		standard_event_module = {
 		}
+		
 	}
 }

@@ -1,0 +1,14 @@
+trait_potential_idol = {
+	icon = "gfx/interface/icons/traits/TEN_traits/trait_infested_dc.dds" #changthis
+	cost = 0
+	initial = no
+	modification = no
+	randomized = no
+	modifier = {
+
+	}
+	declining_modifier = {
+	
+	}
+	sorting_priority = 0
+}
