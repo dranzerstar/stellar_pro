@@ -1,10 +1,8 @@
-building_headhunt = {
+building_imas_agency = {
 	base_buildtime = 360	# 基础建造时间
 	category = amenity
-    icon = 
-    prerequisites = {
-		
-	}
+
+
 	potential = {
 		exists = owner
 		OR = {

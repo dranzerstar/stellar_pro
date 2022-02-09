@@ -1,5 +1,5 @@
 trait_potential_idol = {
-	icon = "gfx/interface/icons/traits/TEN_traits/trait_infested_dc.dds" #changthis
+	icon = "gfx/interface/icons/traits/trait_potential_idol.dds" 
 	cost = 0
 	initial = no
 	modification = no
