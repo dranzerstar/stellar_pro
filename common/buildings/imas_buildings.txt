@@ -14,10 +14,7 @@ building_imas_agency = {
 		owner = {
 			is_regular_empire = yes
 		    has_country_flag = 283p_contract_signed
-		}
-			
-		
-		
+		}	
 	}
 	resources = {
 		category = planet_buildings
@@ -35,7 +32,8 @@ building_imas_agency = {
 	planet_modifier = {
 		#
 		pop_happiness  = 0.1
-        
+		job_imas_talent_scout_add = 2
+       
 
 	}
 	destroy_trigger = {

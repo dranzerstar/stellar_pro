@@ -7,8 +7,6 @@ trait_potential_idol = {
 	modifier = {
 
 	}
-	declining_modifier = {
-	
-	}
+
 	sorting_priority = 0
 }

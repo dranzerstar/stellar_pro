@@ -2,4 +2,12 @@
  RT_imas_iCEO:0 "社长"
  civic_imas:0 "偶像事务所"
  civic_imas_desc:0 "在繁星下寻找着完美的少女，并决心让她们红片全宇宙的偶像事务所集团"
+ building_imas_agency:0 "REPLACE_ME"
+ building_imas_agency_desc:0 "REPLACE_ME"
+ job_imas_talent_scout:0 "REPLACE_ME"
+ job_imas_talent_scout_plural:0 "REPLACE_ME"
+ job_imas_talent_scout_desc:0 "REPLACE_ME"
+ mod_job_imas_talent_scout_add:0 "REPLACE_ME"
+ trait_potential_idol:0 "REPLACE_ME"
+ trait_potential_idol_desc:0 "REPLACE_ME"
 
