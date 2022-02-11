@@ -4,4 +4,45 @@ namespace = imas_world_events
 #
 #
 #
-#
+#9xxxx value updates
+
+
+
+#monthly handler
+# updated country with contract only
+country_event={
+	id = imas_world_events.9000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+	
+			has_country_flag = 283p_home_country
+		
+	}
+	immediate = {
+		every_owned_planet = {
+			limit={ has_active_building = building_imas_agency }
+			planet_event = {
+				id = imas_world_events.9001
+			}
+		}
+
+	}
+}
+
+# 9001
+# talent seek progress update
+planet_event={
+	id = imas_world_events.9001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner={
+			has_country_flag = 283p_home_country
+		}
+	}
+	immediate = {
+
+
+	}
+}
