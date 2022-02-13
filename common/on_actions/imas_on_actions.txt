@@ -24,7 +24,7 @@ on_post_communications_established = {
 }
 
 #update idol progress
-on_monthly_pulse  = {
+on_yearly_pulse   = {
 	events={
 		imas_world_events.9000
 

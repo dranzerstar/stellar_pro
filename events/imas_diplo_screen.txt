@@ -3,10 +3,12 @@ namespace = imas_diplo_screen
 
 # 0000 pre diplo contact event trigger
 # 1xxx normal main menu
+# 2xxx Catalouge Menu
+# 3xxx Live Menu
 # 5xxx effect events
 
 # 9xxx diplo screen related events
-# 91xx first contact greets
+# 9000 first contact greets
 
 country_event = {
 	id = imas_diplo_screen.0000
@@ -19,14 +21,299 @@ country_event = {
 		}
 	}
 	immediate = {
+		country_event={
+			id= imas_diplo_screen.1000
+		}
+	}
 
+}
+
+#Main Screen
+# 
+# options
+# 1010 descriptions 1010
+# 1011 Sign idol agency contract (ava. when not signed)               1011
+# 1012 Sign Galaxy Live Tour contract (ava when >1 idol grp formed)  1012
+# Idol Catalogue  (need agency contract )
+# Tour screen  (need Galaxy Live Tour contract )
+# other.
+# other.
+# Goodbye
+
+country_event = {
+	id = imas_diplo_screen.1000
+	title = imas_diplo_screen.1000
+	desc = imas_diplo_screen.1000.desc
+
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_trader_window"
+	force_open = yes
+
+	picture_event_data = {
+		portrait = AMAI  #TODO change this
+		room = "283_room"
+	}
+
+	trigger = {
+
+		NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+	}
+
+	immediate = {
+		set_country_flag = trader_enclave_diplomacy_engaged	
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = trader_enclave_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = imas_diplo_screen.o.description
+		custom_gui = "enclave_trader_option"
+		hidden_effect={
+			country_event={
+				id = imas_diplo_screen.1010
+			}
+		}
+	}
+
+	option = {
+		name = imas_diplo_screen.o.contract_agency
+		custom_gui = "enclave_trader_option"
+		allow = {
+			custom_tooltip = {
+				fail_text= imas_diplo_screen.o.contract.agency.ct
+				NOT= { has_country_flag = 283p_contract_signed }
+			}
+		}
+		hidden_effect={
+			country_event={
+				id = imas_diplo_screen.1011
+			}
+		}
+	}
+
+	option = {
+		name = imas_diplo_screen.o.contract_live
+		custom_gui = "enclave_trader_option"
+		allow = {
+			custom_tooltip = {
+				fail_text= imas_diplo_screen.o.contract.live.ct
+				NOT= { has_country_flag = 283p_contract_signed_live }
+			}
+		}
+		hidden_effect={
+			country_event={
+				id = imas_diplo_screen.1012
+			}
+		}
 
 	}
+
+	option = {
+		name = imas_diplo_screen.o.catalogue
+		custom_gui = "enclave_trader_option"
+		allow = {
+			custom_tooltip = {
+				fail_text= imas_diplo_screen.o.catalogue.ct
+				 has_country_flag = 283p_contract_signed 
+			}
+		}
+		hidden_effect={
+			country_event={
+				id = imas_diplo_screen.2000
+			}
+		}
+	}
+
+
+	option = {
+		name = imas_diplo_screen.o.live
+		custom_gui = "enclave_trader_option"
+		allow = {
+			custom_tooltip = {
+				fail_text= imas_diplo_screen.o.live.ct
+				has_country_flag = 283p_contract_signed_live 
+			}
+		}
+		hidden_effect={
+			country_event={
+				id = imas_diplo_screen.3000
+			}
+		}
+	}
+
+	option = {
+		name = GOODBYE
+		custom_gui = "enclave_trader_option"
+	}
+}
+
+
+
+
+country_event = {
+	id = imas_diplo_screen.1010
+	title = imas_diplo_screen.1000
+	desc = imas_diplo_screen.1010.desc
+
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_trader_window"
+	force_open = yes
+
+	picture_event_data = {
+		portrait = AMAI  #TODO change this
+		room = "283_room"
+	}
+
+
+	immediate = {
+		set_country_flag = trader_enclave_diplomacy_engaged	
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = trader_enclave_diplomacy_engaged
+		}
+	}
+
+
+
+
+
+	
+	option = {
+		name = OK
+		custom_gui = "enclave_trader_option"
+		hidden_effect = {
+			country_event={
+				id= imas_diplo_screen.1000
+			}
+		}
+	}
+
+
+}
+
+country_event = {
+	id = imas_diplo_screen.1011
+	title = imas_diplo_screen.1000
+	desc = imas_diplo_screen.1011.desc
+
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_trader_window"
+	force_open = yes
+
+	picture_event_data = {
+		portrait = AMAI  #TODO change this
+		room = "283_room"
+	}
+
+
+	immediate = {
+		set_country_flag = trader_enclave_diplomacy_engaged	
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = trader_enclave_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = OK
+		custom_gui = "enclave_trader_option"
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 5000 }
+			custom_tooltip = {
+				fail_text = not_enough_energy
+			}
+		}
+		hidden_effect={
+			set_country_flag = 283p_contract_signed
+			add_modifier = {
+				modifier = mod_283p_contract_signed
+			}
+		}
+	}
+	
+	option = {
+		name = reconsider
+		custom_gui = "enclave_trader_option"
+		hidden_effect = {
+			country_event={
+				id= imas_diplo_screen.1000
+			}
+		}
+	}
+
+
+}
+
+country_event = {
+	id = imas_diplo_screen.1012
+	title = imas_diplo_screen.1000
+	desc = imas_diplo_screen.1012.desc
+
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_trader_window"
+	force_open = yes
+
+	picture_event_data = {
+		portrait = AMAI  #TODO change this
+		room = "283_room"
+	}
+
+
+	immediate = {
+		set_country_flag = trader_enclave_diplomacy_engaged	
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = trader_enclave_diplomacy_engaged
+		}
+	}
+
+
+	
+	option = {
+		name = OK
+		custom_gui = "enclave_trader_option"
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 5000 }
+			custom_tooltip = {
+				fail_text = not_enough_energy
+			}
+		}
+		hidden_effect={
+			set_country_flag = 283p_contract_signed_live
+			add_modifier = {
+				modifier = mod_283p_contract_signed_live
+			}
+		}
+	}
+	
+	option = {
+		name = reconsider
+		custom_gui = "enclave_trader_option"
+		hidden_effect = {
+			country_event={
+				id= imas_diplo_screen.1000
+			}
+		}
+	}
+
+
 
 }
 
 
 
+# 5000
 country_event = {
 	id = imas_diplo_screen.5000
 	hide_window = yes
@@ -40,21 +327,77 @@ country_event = {
 }
 
 
+#first Contact Done.
 country_event = {
 	id = imas_diplo_screen.9000
-	hide_window = yes
+	title = imas_diplo_screen.9000
+	desc = imas_diplo_screen.9000.desc
+
 	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_trader_window"
+	force_open = yes
+
+	picture_event_data = {
+		portrait = AMAI  #TODO change this
+		room = "283_room"
+	}
 	trigger = {
 		from = {
 			is_country_type = enclave
 			has_country_flag = 283p_home_country
 		}
+		NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
 	}
-	immediate = {
 
+
+	option = {
+		name = ENGAGE
+		custom_gui = "enclave_trader_option"
+		country_event = {
+			id = imas_diplo_screen.1000
+		}
+	}
+
+	option = {
+		name = LATER
+		custom_gui = "enclave_trader_option"
+	}
+
+}
+
+
+
+# 2xxx catalogue
+# debut 
+# check status
+#
+
+
+country_event = {
+	id = imas_diplo_screen.2000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		
 
 	}
 
 }
 
 
+
+
+# 3xxx catalogue
+# form fes LIVE 
+# start galaxy tour live
+#
+
+country_event = {
+	id = imas_diplo_screen.3000
+	hide_window = yes
+	is_triggered_only = yes
+
+
+}

@@ -2,6 +2,8 @@
  RT_imas_iCEO:0 "president"
  civic_imas:0 "Idol Production Agency"
  civic_imas_desc:0 "An Agency that seeks Young Potentials that could be produced into the most influencial Idols in the Galaxy!"
+ gov_imas_enclave:0 "Idol Production Agency"
+ gov_imas_enclave_desc:0 "An Agency that seeks Young Potentials that could be produced into the most influencial Idols in the Galaxy!"
  building_imas_agency:0 "283Productions talent scout branch"
  building_imas_agency_desc:0 "Signing a Talent Contract allows you to set up a talent scout branch in your Country, The building provide scout jobs that increase Talent discovery on the planet, with a slight upkeep in energy, also provides a small amount of unity."
  job_imas_talent_scout:0 "Talent Scout"
@@ -10,3 +12,14 @@
  mod_job_imas_talent_scout_add:0 "add Talent Scout Job"
  trait_potential_idol:0 "Potential Talent"
  trait_potential_idol_desc:0 "The Next Super Idol could be anyone"
+ building_imas_production:0 "283Pro Production House"
+ building_imas_production_desc:0 "The 283Pro Production House, allows potential idols on the planet to be trained in the facility to become full fledged idols.、\n Each idol in apprentice will increase the rate of idol debut, debuts could be seen on the 283p enclace communication screen."
+ job_imas_idol_trainee:0 "Idol apprentice"
+ job_imas_idol_trainee_plural:0 "Idol apprentices"
+ job_imas_idol_trainee_desc:0 "An Idol apprentice, trained in Singing, Dancing and Appeal to be ready for a Debut. Requires a pop to have the §EPotential Talent§! Trait, Increase the chance of potential idols via §ETalent Scouts§! from Agencies"
+ mod_job_imas_idol_trainee_add:0 "Add an Idol apprentice occupation"
+ IDOL_TRAINING_JOB_TRIGGER:0 "Requires a pop to have the §EPotential Talent§! Trait"
+
+
+ mod_283p_contract_signed:0 "Sponsoring 283Pro Agency"
+ mod_283p_contract_signed_live:0 "Sponsoring 283Pro live events"

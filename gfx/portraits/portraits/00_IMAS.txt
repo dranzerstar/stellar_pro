@@ -1,0 +1,17 @@
+portraits = {
+	AMAI = {
+		clothes_selector = "no_texture"
+		hair_selector = "no_texture"
+		
+		texturefile = "gfx/models/portraits/IMASSC/AMAI.png"
+	}
+
+	HAZUKI = {
+		clothes_selector = "no_texture"
+		hair_selector = "no_texture"
+		
+		texturefile = "gfx/models/portraits/IMASSC/HAZUKI.png"
+	}
+
+
+}

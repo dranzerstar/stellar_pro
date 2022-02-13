@@ -1,2 +1,24 @@
 ﻿l_simp_chinese:
- 
+ imas_diplo_screen.1000:0 "REPLACE_ME"
+ imas_diplo_screen.1000.desc:0 "REPLACE_ME"
+ imas_diplo_screen.o.description:0 "REPLACE_ME"
+ imas_diplo_screen.o.contract_agency:0 "REPLACE_ME"
+ imas_diplo_screen.o.contract.agency.ct:0 "REPLACE_ME"
+ imas_diplo_screen.o.contract_live:0 "REPLACE_ME"
+ imas_diplo_screen.o.contract.live.ct:0 "REPLACE_ME"
+ imas_diplo_screen.o.catalogue:0 "REPLACE_ME"
+ imas_diplo_screen.o.catalogue.ct:0 "REPLACE_ME"
+ imas_diplo_screen.o.live:0 "REPLACE_ME"
+ imas_diplo_screen.o.live.ct:0 "REPLACE_ME"
+ imas_diplo_screen.1010:0 "REPLACE_ME"
+ imas_diplo_screen.1010.desc:0 "REPLACE_ME"
+ imas_diplo_screen.1011.desc:0 "REPLACE_ME"
+ imas_diplo_screen.1012.desc:0 "REPLACE_ME"
+ imas_diplo_screen.9000:0 "REPLACE_ME"
+ imas_diplo_screen.9000.desc:0 "REPLACE_ME"
+
+ not_enough_energy:0 "我們現在的財政狀況不適合贊助283P的星探活動"
+ reconsider:0 "再考慮一下"
+
+ ENGAGE:0 "REPLACE_ME"
+ LATER:0 "REPLACE_ME"

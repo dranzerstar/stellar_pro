@@ -13,7 +13,7 @@
 
 
 imas_caravaneer_init = {
-	name = random					#Name of the system. Use localization tags rather than strings for translation purposes.
+	name = NAME_283p_system					#Name of the system. Use localization tags rather than strings for translation purposes.
 	class = "rl_standard_stars"								#system's star class. ["name_of_class"] picks a specific class. ["name_of_random_list"] picks a random class from the specified random_list ( random_list are found in the same files as the star classes )
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -35,9 +35,9 @@ imas_caravaneer_init = {
 	#when all planets have been created and the system is initialized the init_effect will be executed
 	#you can use this to spawn mining drones etc
 	#the scope will be a galactic_object scope, with prev being set to the previous system that was initialized by this tree ( if any ). Root will point to the first system in the tree.
-	init_effect = {
-		set_name = "Name set from an effect"
-	}
+#	init_effect = {
+#		set_name = random
+#	}
 
 	#create the sun first. This is the minimum script required for a sun
 	planet = {
@@ -112,7 +112,7 @@ imas_caravaneer_init = {
 			create_species = {
 				name = "283 Pro"
 				class = random_non_machine
-				portrait = random
+				portrait = AMAI
 				traits = random
 				effect = {
 					modify_species = {
@@ -127,7 +127,7 @@ imas_caravaneer_init = {
 
 				authority = auth_corporate
 				civics = {
-					civic = civic_artist_collective
+					civic = civic_imas
 				}
 				origin = "origin_default"
 				species = last_created_species

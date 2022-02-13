@@ -1,0 +1,17 @@
+
+
+
+mod_283p_contract_signed={
+	icon = "gfx/interface/icons/modifiers/mod_contract.dds"
+	country_energy_produces_add = -5
+
+
+}
+
+
+
+mod_283p_contract_signed_live={
+	icon = "gfx/interface/icons/modifiers/mod_contract.dds"
+	country_energy_produces_add = -5
+	country_consumer_goods_produces_add = -5
+}

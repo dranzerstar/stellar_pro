@@ -19,3 +19,4 @@ idol_trainee_job_check_trigger = {
 
 	}
 }
+

@@ -1,0 +1,67 @@
+yearly_cal_spawn_potential_talent={
+	export_trigger_value_to_variable={
+		trigger = num_assigned_jobs  
+		parameters={
+			job  = imas_talent_scout
+		}
+		variable = $VARIABLE$
+	}
+	change_variable = {
+		which = job_talent_seeker_total
+		value = $VARIABLE$
+	}
+	clear_variable = $VARIABLE$
+
+}
+
+
+yearly_cal_talent_train_progress={
+	export_trigger_value_to_variable={
+		trigger = num_assigned_jobs  
+		parameters={
+			job  = imas_idol_trainee
+		}
+		variable = $VARIABLE$
+	}
+	change_variable = {
+		which = job_idol_trainee_total
+		value = $VARIABLE$
+	}
+	clear_variable = $VARIABLE$
+
+}
+
+#example
+# flags
+#  idol_id_xx  idol id
+#  idol_grp_id_xx  higher spawn rate if have idol from grp
+# 01 illuminationstars   01 02 03
+# 02 LAntica   04 05 06 07 08
+# 03 hokagoclimaxgirls  09 10 11 12 13
+# 04 alstroemeria  14 15 16
+# 05 straylight  17 18 19
+# 06 noctchill  20 21 22 23
+# 07 shhis 24 25
+#
+spawn_full_idol={
+	random_list = {
+
+
+	1 = {
+		modifier = { factor = 0 owner={ has_global_flag = idol_id_01 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_01 } }
+		owner = { set_global_flag = idol_id_01 }
+		owner = { set_global_flag = idol_grp_id_01 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_01 }
+	}
+
+
+
+
+	}
+
+}
+
+
+

@@ -1,48 +1,262 @@
 namespace = imas_world_events
 
+
+
+@potential_idol_spawn_chance_base = 100  # chance = 1/500 pops roll per month
+@potential_idol_spawn_chance = 1 # chance= potential_idol_spawn_chance/potential_idol_spawn_chance_base  
+@idol_obtain_threshold = 80 
+@idol_obtain_threshold_step = 10
+
+
+# 0000 setup game event
 # 10xx idol potential spawner
 #
 #
-#
-#9xxxx value updates
+# 8xxxx debug events
+# 9xxxx value updates
 
 
 
-#monthly handler
+# 0000
+# set on game start
+event={
+	id = imas_world_events.0000
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_variable = { which=idol_total value = 0 }
+		set_variable = { which=live_total value = 0 }
+		set_variable = { which=job_talent_seeker_total value = 0 }
+		set_variable = { which=job_idol_trainee_total value = 0 }
+		set_variable = { which=potential_idol_spawn_chance_base value =  @potential_idol_spawn_chance_base }
+		set_variable = { which=potential_idol_spawn_chance value =  @potential_idol_spawn_chance }
+		set_variable = { which=idol_obtain_progress  value =  0 }
+		set_variable = { which=idol_obtain_threshold  value =  @idol_obtain_threshold  }
+
+	}
+
+
+
+
+
+
+
+
+
+
+	
+}
+
+
+
+# yearly handler
 # updated country with contract only
-country_event={
+event={
 	id = imas_world_events.9000
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-	
-			has_country_flag = 283p_home_country
-		
+	trigger = {		
 	}
 	immediate = {
-		every_owned_planet = {
-			limit={ has_active_building = building_imas_agency }
-			planet_event = {
+		set_variable = {
+			which = job_talent_seeker_total
+			value = 0
+		}
+		set_variable = {
+			which = job_idol_trainee_total
+			value = 0
+		}
+	}
+
+	after={
+		every_country = {
+			limit = {
+				has_country_flag = 283p_contract_signed
+			}
+			country_event = {
 				id = imas_world_events.9001
 			}
 		}
-
+	
 	}
 }
 
-# 9001
-# talent seek progress update
-planet_event={
+country_event={
 	id = imas_world_events.9001
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		owner={
-			has_country_flag = 283p_home_country
+		has_country_flag = 283p_contract_signed
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit={ has_active_building = building_imas_agency }
+			planet_event = {
+				id = imas_world_events.9011
+			}
+
+		}
+		every_owned_planet = {
+			limit={ has_active_building = building_imas_production }
+			planet_event = {
+				id = imas_world_events.9012
+			}
 		}
 	}
-	immediate = {
+
+	after={
+		every_owned_planet = {
+			limit={ has_active_building = building_imas_production }
+			planet_event = {
+				id = imas_world_events.9020
+			}
+		}
+
+
 
 
 	}
 }
+
+# 9011
+# update talent seek chance
+planet_event={
+	id = imas_world_events.9011
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner={
+			has_country_flag = 283p_contract_signed
+		}
+		has_active_building = building_imas_agency
+	}
+	immediate = {
+		
+		yearly_cal_spawn_potential_talent =  yes
+		set_variable = {
+			which = potential_idol_spawn_chance 
+			value = @potential_idol_spawn_chance 
+		}
+		change_variable = {
+			which = potential_idol_spawn_chance 
+			value = job_talent_seeker_total
+		}	
+
+
+	}
+}
+# 9012
+# training progress update
+planet_event={
+	id = imas_world_events.9012
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner={
+			has_country_flag = 283p_contract_signed
+		}
+		has_active_building = building_imas_production
+	}
+	immediate = {
+		yearly_cal_talent_train_progress  =  yes
+
+	}
+}
+
+# 9020
+# spawn a potential idol on 
+# potential idol spawner
+planet_event = {
+	id = imas_world_events.9020
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner={ has_country_flag = 283p_contract_signed }
+		has_active_building = building_imas_agency
+	}
+	immediate = {
+		random_list = {
+			1={ modifier={ factor = potential_idol_spawn_chance }      
+				random_owned_pop = {
+					modify_species = {
+						species = this
+						add_trait = trait_potential_idol
+					}
+				}
+
+			#spawn
+			}
+			1={ modifier={ factor = potential_idol_spawn_chance_base } 
+		
+			#no spawn
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = imas_world_events.9021
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner={ has_country_flag = 283p_contract_signed }	
+	}
+	immediate = {
+			change_variable = {
+				which = idol_obtain_progress
+				value = job_idol_trainee_total
+			}
+
+	}
+
+	after = {
+		if = {
+			limit = { 
+						check_variable = {
+						which = idol_obtain_progress
+						value > idol_obtain_threshold
+						} 
+		
+			}
+				#spawn idol
+				spawn_full_idol = yes
+
+				set_variable={
+					which = idol_obtain_progress
+					value = 0
+				}
+				change_variable={
+					which = idol_obtain_threshold
+					value = @idol_obtain_threshold_step
+				}
+
+
+		}
+		
+		
+	}
+
+
+
+}
+
+
+
+#8xxx
+#spawn a random idol
+country_event = {
+	id = imas_world_events.8000
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		spawn_full_idol = yes
+	}
+
+}
+
+
+

@@ -1,0 +1,22 @@
+room_selector = {
+	#default = "d_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	default = "default_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	#will run with a limited country scope. species and government is set but the country does not actually exist
+	game_setup = {	
+		"SM_personality_slaving_despots_room" 			= { has_ai_personality = slaving_despots }
+		"CM_01_room" 				= { has_ai_personality = charm_flowers }
+		"CM_02_room" 				= { has_ai_personality = charm_flowers }
+		"CM_03_room" 				= { has_ai_personality = charm_flowers }
+		"CM_04_room" 				= { has_ai_personality = CM_PAR_erudite_explorers }
+		"CM_05_room" 				= { has_ai_personality = CM_PAR_erudite_explorers }
+		"YM_01_room" 				= { has_ai_personality = CM_PAR_erudite_explorers }
+		"YM_02_room" 				= { has_ai_personality = lust_service_provider }
+		"YM_03_room" 				= { has_ai_personality = lust_service_provider }
+		"YM_04_room" 				= { has_ai_personality = lust_service_provider }
+		"YM_05_room" 				= { has_ai_personality = lust_service_provider }
+		"YM_06_room" 				= { has_ai_personality = charm_flowers }
+
+	}
+}

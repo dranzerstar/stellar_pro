@@ -1,6 +1,6 @@
 
 # IM@S Enclave
-gov_curator_enclave = {
+gov_imas_enclave = {
 	ruler_title = RT_imas_iCEO
 
 	should_force_rename = yes
