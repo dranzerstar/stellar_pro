@@ -281,7 +281,7 @@ country_event = {
 
 	
 	option = {
-		name = OK
+		name = OK   #CHANGE
 		custom_gui = "enclave_trader_option"
 		allow = {
 			resource_stockpile_compare = { resource = energy value >= 5000 }

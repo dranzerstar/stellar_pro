@@ -1,6 +1,6 @@
 ﻿l_english:
- imas_diplo_screen.1000:0 "Galatic 283Procution "
- imas_diplo_screen.1000.desc:0 "REPLACE_ME"
+ imas_diplo_screen.1000:0 "Interstellar 283Procution "
+ imas_diplo_screen.1000.desc.b:0 "Welcome to the Intersllar 283Productions, [Root.GetRulerName]。Would you like to check on the talents we have?"
  imas_diplo_screen.o.description:0 "What does 283Procution have to offer? "
  imas_diplo_screen.o.contract_agency:0 "Lets look at the terms for the agency contract"
  imas_diplo_screen.o.contract.agency.ct:0 "Contract Already signed"
@@ -10,12 +10,16 @@
  imas_diplo_screen.o.catalogue.ct:0 "Requires the 283Pro agency contract "
  imas_diplo_screen.o.live:0 "Check Performance planner"
  imas_diplo_screen.o.live.ct:0 "Requires the 283Pro performance sponsors contract"
- imas_diplo_screen.9000:0 "Galatic 283Procution"
- imas_diplo_screen.9000.desc:0 "REPLACE_ME"
- imas_diplo_screen.1010:0 "Galatic 283Procution"
+ imas_diplo_screen.1010:0 "Interstellar 283Procution"
+
  imas_diplo_screen.1010.desc:0 "REPLACE_ME"
  imas_diplo_screen.1011.desc:0 "REPLACE_ME"
  imas_diplo_screen.1012.desc:0 "REPLACE_ME"
+
+
+ imas_diplo_screen.9000:0 "Galatic 283Procution"
+ imas_diplo_screen.9000.desc:0 "Greetings, [Root.GetRulerName]. I am the president of Interstellar 283 Productions.\n\nInterstellar 283 Productions aims to realize the dreams of many in this Universe, to let the young spirits perform on stage to bring love and hope the very edge of the system. \n\nPerhapes you would be intereseted in our agency right now? May I invite you to our space station for further discussion?"
+
  ENGAGE:0 "Lets see what this is about"
  LATER:0 "Check back later"
  not_enough_energy:0 "Doesnt seem like you are financially capable."
