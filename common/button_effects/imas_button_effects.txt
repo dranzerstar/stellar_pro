@@ -1,0 +1,85 @@
+
+
+imas_gui_idols_grp_1 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  1 }
+		}
+		custom_tooltip = "page.illumination_stars"
+	}
+}
+
+imas_gui_idols_grp_2 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  2 }
+		}
+		custom_tooltip = "page.lantica"
+	}
+}
+
+imas_gui_idols_grp_3 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  3 }
+		}
+		custom_tooltip = "page.climax"
+	}
+}
+
+imas_gui_idols_grp_4 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  4 }
+		}
+		custom_tooltip = "page.alstroemeria"
+	}
+}
+
+imas_gui_idols_grp_5 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  5 }
+		}
+		custom_tooltip = "page.straylight"
+	}
+}
+
+imas_gui_idols_grp_6 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  6 }
+		}
+		custom_tooltip = "page.notchil"
+	}
+}
+
+imas_gui_idols_grp_7 = {
+	potential = {always = yes } 
+	allow = { always = yes }
+	effect = {
+		hidden_effect = {
+			country_event = { id = imas_idols_menu.0000	}
+			set_variable={ which= idols_page value =  7 }
+		}
+		custom_tooltip = "page.shiis"
+	}
+}

@@ -1,0 +1,63 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_imas_combined_bg"
+		texturefile = "gfx/interface/imas_ui/pop_combined_bg.dds"
+		alwaysTransparent = yes
+	}
+	spriteType = {
+		name = "GFX_imas_left_bg"
+		texturefile = "gfx/interface/imas_ui/pop_large_bg.dds"
+		alwaysTransparent = yes
+	}
+	spriteType = {
+		name = "GFX_imas_right_bg"
+		texturefile = "gfx/interface/imas_ui/pop_side_bg.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_imas_box_bg"
+		texturefile = "gfx/interface/imas_ui/box_bg.dds"
+		alwaysTransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_grp_icon_01"
+		texturefile = "gfx/interface/imas_ui/gp1.dds"
+	}
+	spriteType = {
+		name = "GFX_grp_icon_02"
+		texturefile = "gfx/interface/imas_ui/gp2.dds"
+	}
+	spriteType = {
+		name = "GFX_grp_icon_03"
+		texturefile = "gfx/interface/imas_ui/gp3.dds"
+	}
+	spriteType = {
+		name = "GFX_grp_icon_04"
+		texturefile = "gfx/interface/imas_ui/gp4.dds"
+	}
+	spriteType = {
+		name = "GFX_grp_icon_05"
+		texturefile = "gfx/interface/imas_ui/gp5.dds"
+	}
+	spriteType = {
+		name = "GFX_grp_icon_06"
+		texturefile = "gfx/interface/imas_ui/gp6.dds"
+	}
+	spriteType = {
+		name = "GFX_grp_icon_07"
+		texturefile = "gfx/interface/imas_ui/gp7.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+}

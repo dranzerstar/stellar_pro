@@ -1,0 +1,239 @@
+guiTypes = {
+	containerWindowType = {
+		name = "imas_gui_idols"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 1920 height = 1080 }
+
+		background = { name = "background" quadTextureSprite ="GFX_imas_combined_bg" position = { x = 150 y = 200 } }
+
+		iconType = { name = "hex_bg" spriteType = "GFX_hex_bg" position = { x = -1000 y = -1400 } alwaysTransparent = yes }
+		iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes }
+
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_close"
+			position = { x= 100 y = 100 }
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+		}
+
+		# Custom header
+
+#--------------------------------------------------------------------------
+# layout elements
+iconType = { name = "box1" quadTextureSprite = "GFX_imas_box_bg" position = { x = 270 y = 300 } alwaysTransparent = yes }
+iconType = { name = "box2" quadTextureSprite = "GFX_imas_box_bg" position = { x = 540 y = 300 } alwaysTransparent = yes }
+iconType = { name = "box3" quadTextureSprite = "GFX_imas_box_bg" position = { x = 800 y = 300 } alwaysTransparent = yes }
+iconType = { name = "box4" quadTextureSprite = "GFX_imas_box_bg" position = { x = 270 y = 540 } alwaysTransparent = yes }
+iconType = { name = "box5" quadTextureSprite = "GFX_imas_box_bg" position = { x = 540 y = 540 } alwaysTransparent = yes }
+#--------------------------------------------------------------------------
+#grp icons
+		@grp_icon_x_c1 = 1133
+		@grp_icon_x_c2 = 1343
+		@grp_icon_y_r1 = 225
+		@grp_icon_y_r2 = 355
+		@grp_icon_y_r3 = 485
+		@grp_icon_y_r4 = 615
+
+
+		effectButtonType = {
+			name = "grp_icon_01"
+			quadTextureSprite = "GFX_grp_icon_01"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+			effect = "imas_gui_idols_grp_1"
+		}
+		effectButtonType = {
+			name = "grp_icon_02"
+			quadTextureSprite = "GFX_grp_icon_02"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c1 y = @grp_icon_y_r2  }
+			effect = "imas_gui_idols_grp_2"
+		}
+		effectButtonType = {
+			name = "grp_icon_03"
+			quadTextureSprite = "GFX_grp_icon_03"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c1 y = @grp_icon_y_r3  }
+			effect = "imas_gui_idols_grp_3"
+		}
+		effectButtonType = {
+			name = "grp_icon_04"
+			quadTextureSprite = "GFX_grp_icon_04"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c1 y = @grp_icon_y_r4  }
+			effect = "imas_gui_idols_grp_4"
+		}
+		effectButtonType = {
+			name = "grp_icon_05"
+			quadTextureSprite = "GFX_grp_icon_05"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+			effect = "imas_gui_idols_grp_5"
+		}
+		effectButtonType = {
+			name = "grp_icon_06"
+			quadTextureSprite = "GFX_grp_icon_06"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c2 y = @grp_icon_y_r2  }
+			effect = "imas_gui_idols_grp_6"
+		}
+		effectButtonType = {
+			name = "grp_icon_07"
+			quadTextureSprite = "GFX_grp_icon_07"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x_c2 y = @grp_icon_y_r3  }
+			effect = "imas_gui_idols_grp_7"
+		}
+
+#--------------------------------------------------------------------------
+#idol 1 to
+
+
+#--------------------------------------------------------------------------
+#idol section
+@p_x = 162
+@p_y = 52
+
+		effectButtonType = {
+			name = "GFX_panty_01_l_be"
+			quadTextureSprite = "GFX_panty_01_l"
+			Orientation = "UPPER_LEFT"
+			position = { x = @p_x y = @p_y }
+			effect = "cg_plus_thief_large_0001"
+		}
+		effectButtonType = {
+			name = "GFX_panty_02_l_be"
+			quadTextureSprite = "GFX_panty_02_l"
+			Orientation = "UPPER_LEFT"
+			position = { x = @p_x y = @p_y }
+			effect = "cg_plus_thief_large_0002"
+		}
+
+	
+#pantysection end
+		
+		# Description Section
+		iconType={
+			name = "alien_message_bg"
+			position = { x = 1032 y = 705 }
+			maxWidth = 400
+			maxHeight = 500
+			format = left
+			quadTextureSprite= "GFX_alien_buttons_bg"
+
+		}
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			text_color_code = "S"
+			position = { x = 1067 y = 155 }
+			maxWidth = 360
+			maxHeight = 500
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+
+
+
+
+				### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+				### EVENT DIPLO ###
+	
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 0 y = 0 }
+			#size = { width=563 height=220 }
+			moveable = no
+
+			instantTextBoxType={
+			 name = "action_title"
+			 font = "malgun_goth_24"
+			 position = { x = 0 y = 0 }
+			 maxWidth = 200
+			 alwaysTransparent = yes
+			}
+			instantTextBoxType={
+			 name = "action_desc"
+			 font = "malgun_goth_24"
+			 position = { x =0 y = 0 }
+			 maxWidth = 500
+			 maxHeight = 180
+			 Orientation = "UPPER_LEFT"
+			 format = center
+			 alwaysTransparent = yes
+			 text_color_code = "H"
+			}
+			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
+			listboxType = {
+				name = "option_list"
+				position = { x = 800 y = 690 }
+				
+				size = { x = 300 y = 400 }
+				scrollbartype = "standardlistbox_slider"
+				spacing = 20
+				borderSize = { x = 0 y = 0 }
+				Orientation = "CENTERED_UP"
+			}
+			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
+		}
+				instantTextBoxType = {
+					name = "irm_some_header"
+					font = "malgun_goth_24"
+					text = "ui_faction_header" 	# header text
+					position = { x = -20000 y = 5 }
+					maxWidth = 543
+					maxHeight = 22
+					fixedSize = yes
+					alwaysTransparent = yes
+				}
+		
+				buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+				instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+				buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+				buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+				containerWindowType = {
+					name = "portrait_background"
+					position = { x = -1117 y = -1145 }
+					size = { width = 0 height = 0 } 	# hide portrait window
+					iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+					iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+				}
+				containerWindowType = {
+					name = "portrait"
+					position = { x = -1117 y = -1145 }
+					size = { width = 0 height = 0 } # hide portrait window
+					iconType = { name = "portrait" spriteType = "GFX_portrait_gamesetup_mask" } # hidden
+					iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" } # hidden
+					iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2" } # hidden
+					iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+				}
+				iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+				instantTextBoxType={ name = "empire_name" font = "malgun_goth_24" } # hidden
+				instantTextBoxType={ name = "empire_government_type" font = "cg_16b" } # hidden
+				instantTextBoxType={ name = "empire_personality_type" font = "cg_16b" } # hidden
+				OverlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+				iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+				containerWindowType = {
+					name = "leader_details"
+					position = { x = -1125 y = -1175 }
+					containerWindowType = { name = "empire_traits_box" } # hidden
+					instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+					overlappingElementsBoxType = { name = "leader_traits" } # hidden
+					instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+					instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+				}
+				containerWindowType = {
+					name = "opinion_window"
+					position = { x = -1127 y = -11110 }
+					size = { width = 94 height = 30 }
+					iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+					instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+				}
+
+
+	}
+}

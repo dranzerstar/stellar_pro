@@ -1,0 +1,33 @@
+namespace = imas_idols_menu
+
+
+
+
+
+
+country_event={
+	id=imas_idols_menu.0000
+	hide_window=no
+	diplomatic = yes
+	is_triggered_only = yes
+	fire_only_once = no
+
+	custom_gui = imas_gui_idols
+
+
+
+	title= Idols_menu
+
+	immediate = {
+		set_variable = { which = idols_page value = 1 }
+	}
+
+
+	option={
+		name=close
+	}
+
+
+
+
+}
