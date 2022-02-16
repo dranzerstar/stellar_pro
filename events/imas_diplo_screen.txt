@@ -215,19 +215,14 @@ country_event = {
 
 
 	immediate = {
-		set_country_flag = trader_enclave_diplomacy_engaged	
-	}
-	after = {
-		hidden_effect = {
-			remove_country_flag = trader_enclave_diplomacy_engaged
-		}
+
 	}
 
 	option = {
-		name = OK
+		name =  imas_diplo_screen.1011.desc.o 
 		custom_gui = "enclave_trader_option"
 		allow = {
-			resource_stockpile_compare = { resource = energy value >= 5000 }
+			resource_stockpile_compare = { resource = energy value >= 1000 }
 			custom_tooltip = {
 				fail_text = not_enough_energy
 			}
@@ -281,10 +276,10 @@ country_event = {
 
 	
 	option = {
-		name = OK   #CHANGE
+		name =  imas_diplo_screen.1012.desc.o
 		custom_gui = "enclave_trader_option"
 		allow = {
-			resource_stockpile_compare = { resource = energy value >= 5000 }
+			resource_stockpile_compare = { resource = energy value >= 1000 }
 			custom_tooltip = {
 				fail_text = not_enough_energy
 			}

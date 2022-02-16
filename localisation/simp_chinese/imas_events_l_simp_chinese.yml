@@ -13,8 +13,14 @@
  imas_diplo_screen.1010:0 "星海283偶像事务所"
 
  imas_diplo_screen.1010.desc:0 "REPLACE_ME"
- imas_diplo_screen.1011.desc:0 "和我们签订星探所贊助协议后，贵国可以资源贊助的方式在国内开设星探中心，"
- imas_diplo_screen.1012.desc:0 "REPLACE_ME"
+
+
+ imas_diplo_screen.1011.desc:0 "和我们签订星探所贊助协议后，贵国可以资源贊助的方式在国内开设星探中心和偶像培训事务所。\n\n星探中心： 提供星探岗位，每一个运作中的星探会提高该星球的£pops£获得§E星梦人§!特质的机率。同时也会生产少量凝聚力£unity£\n\n偶像培训事务所：可让有§E星梦人§!的£pops£提供培训，每个培训岗位会提供偶像出道的速度，出道的偶像可以在和283P通讯中查询。培训会消耗£energy£和£consumer_goods£并产生少量凝聚力£unity£"
+ imas_diplo_screen.1011.desc.o:0 "确认赞助【每月支付10£energy£】" 
+
+
+ imas_diplo_screen.1012.desc:0 "和我们星际巡回演出贊助协议后,贵国可以以资源贊助的方式参与星际巡回的策划，您可以在此通讯窗口查询及指定未来参与星际巡回的出演艺人，本社每5年会进行一次巡回演出，错过参与策划窗口本社将会自行制定方案。不同的演出内容会对宇宙带来不同的影响，请在窗口中详细查阅。"
+ imas_diplo_screen.1012.desc.o:0 "确认赞助【每月支付10£energy£和£consumer_goods£】" 
 
 
  imas_diplo_screen.9000:0 "星海283偶像事务所"
