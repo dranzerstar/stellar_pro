@@ -13,8 +13,14 @@
  imas_diplo_screen.1010:0 "Interstellar 283Procution"
 
  imas_diplo_screen.1010.desc:0 "REPLACE_ME"
- imas_diplo_screen.1011.desc:0 "REPLACE_ME"
- imas_diplo_screen.1012.desc:0 "REPLACE_ME"
+
+
+ imas_diplo_screen.1011.desc:0 "Signing the Patronage contract with us means you will be sponsoring our Talent searching and training activities within your country. Which includes the establishment of the followings:\n\n283Productions talent scout branch:Each Scout increase the chance that you can find £pops£ with the §EPotential Talent§! trait on the respective Planet and also produce a small ammount of £unity£.\n\n283Pro Production House: allows §EPotential Talent§! on the planet to be trained in the facility to become full fledged idols.、\n Each idol in apprentice will increase the rate of idol debut, debuts could be seen on the 283p enclace communication screen. training costs £energy£ and £consumer_goods£ and produces additional £unity£."
+ imas_diplo_screen.1011.desc.o:0 "confirm patronage【10£energy£ per month】" 
+
+
+ imas_diplo_screen.1012.desc:0 "Signing the performance Sponsor contract means you will be sponsoring 283Pro's Interstellar live tours. You may also participate in our planning of Grand live tours held every 5 years, choosing the theme and talent participants. Different themes will bring different effects to the Galaxy during the tour. You may check the details in the Performance planner screen in this Channel."
+ imas_diplo_screen.1012.desc.o:0 "confirm sponsorship【10£energy£ and £consumer_goods£ per month】" 
 
 
  imas_diplo_screen.9000:0 "Galatic 283Procution"
