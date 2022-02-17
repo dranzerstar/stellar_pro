@@ -223,13 +223,9 @@ spawn_full_idol={
 		owner ={ save_global_event_target_as = idol_country_25 } }
 			   #
 	
-	
+	1= { modifier = {factor=500 check_variable = { which = idol_total value = 25 }}}
 
-
-
-
-	}
-
+}
 }
 
 

@@ -14,13 +14,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/imas_ui/pop_side_bg.dds"
 		alwaysTransparent = yes
 	}
-
 	spriteType = {
 		name = "GFX_imas_box_bg"
 		texturefile = "gfx/interface/imas_ui/box_bg.dds"
 		alwaysTransparent = yes
 	}
 
+	spriteType = {
+		name = "GFX_idol_icon_locked"
+		texturefile = "gfx/interface/imas_ui/idol_locked.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_grp_icon_01"
+		texturefile = "gfx/interface/imas_ui/gp1.dds"
+		alwaysTransparent = yes
+	}
 
 	spriteType = {
 		name = "GFX_grp_icon_01"

@@ -10,7 +10,7 @@ namespace = imas_world_events
 
 # 0000 setup game event
 # 10xx idol potential spawner
-#
+# 2xxx notifier events
 #
 # 8xxxx debug events
 # 9xxxx value updates
@@ -258,7 +258,7 @@ country_event = {
 
 }
 
-#clear all idols
+#getr all idols
 country_event = {
 	id = imas_world_events.8001
 	hide_window = yes
@@ -289,15 +289,60 @@ country_event = {
 		set_global_flag = idol_debut_23
 		set_global_flag = idol_debut_24
 		set_global_flag = idol_debut_25
-		set_global_flag = idol_grp
+		set_global_flag = idol_grp_id_01
+		set_global_flag = idol_grp_id_02
+		set_global_flag = idol_grp_id_03
+		set_global_flag = idol_grp_id_04
+		set_global_flag = idol_grp_id_05
+		set_global_flag = idol_grp_id_06
+		set_global_flag = idol_grp_id_07
 		set_variable={
-			which=idol_total value=0
+			which=idol_total value=25
 		}
 	}
 
 }
 
 country_event = {
-
+	id = imas_world_events.8002
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_global_flag =  idol_debut_01
+		remove_global_flag = idol_debut_02
+		remove_global_flag = idol_debut_03
+		remove_global_flag = idol_debut_04
+		remove_global_flag = idol_debut_05
+		remove_global_flag = idol_debut_06
+		remove_global_flag = idol_debut_07
+		remove_global_flag = idol_debut_08
+		remove_global_flag = idol_debut_09
+		remove_global_flag = idol_debut_10
+		remove_global_flag = idol_debut_11
+		remove_global_flag = idol_debut_12
+		remove_global_flag = idol_debut_13
+		remove_global_flag = idol_debut_14
+		remove_global_flag = idol_debut_15
+		remove_global_flag = idol_debut_16
+		remove_global_flag = idol_debut_17
+		remove_global_flag = idol_debut_18
+		remove_global_flag = idol_debut_19
+		remove_global_flag = idol_debut_20
+		remove_global_flag = idol_debut_21
+		remove_global_flag = idol_debut_22
+		remove_global_flag = idol_debut_23
+		remove_global_flag = idol_debut_24
+		remove_global_flag = idol_debut_25
+		remove_global_flag = idol_grp_id_01
+		remove_global_flag = idol_grp_id_02
+		remove_global_flag = idol_grp_id_03
+		remove_global_flag = idol_grp_id_04
+		remove_global_flag = idol_grp_id_05
+		remove_global_flag = idol_grp_id_06
+		remove_global_flag = idol_grp_id_07
+		set_variable={
+			which=idol_total value=0
+		}
+	}
 
 }

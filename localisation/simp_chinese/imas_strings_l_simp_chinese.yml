@@ -8,7 +8,7 @@
  building_imas_agency_desc:0 "和283Pro签订人材发掘计划合约后可以在星球上建立星探事务所，星探事务所提供星探岗位，每一个运作中的星探会提高该星球的人口获得§E星梦人§!特质的机率。"
  job_imas_talent_scout:0 "星探"
  job_imas_talent_scout_plural:0 "星探"
- job_imas_talent_scout_desc:0 "星探"
+ job_imas_talent_scout_desc:0 "283P的星探人员，每一个运作中的星探会提高该星球的£pops£获得§E星梦人§!特质的机率。"
  mod_job_imas_talent_scout_add:0 "增加星探岗位"
  trait_potential_idol:0 "星梦人"
  trait_potential_idol_desc:0 "下一位超人气偶像，可能就是你！"

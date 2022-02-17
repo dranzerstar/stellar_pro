@@ -5,7 +5,7 @@ imas_gui_idols_grp_1 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  1 }
 		}
 		custom_tooltip = "page.illumination_stars"
@@ -17,7 +17,7 @@ imas_gui_idols_grp_2 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  2 }
 		}
 		custom_tooltip = "page.lantica"
@@ -29,7 +29,7 @@ imas_gui_idols_grp_3 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  3 }
 		}
 		custom_tooltip = "page.climax"
@@ -41,7 +41,7 @@ imas_gui_idols_grp_4 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  4 }
 		}
 		custom_tooltip = "page.alstroemeria"
@@ -53,7 +53,7 @@ imas_gui_idols_grp_5 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  5 }
 		}
 		custom_tooltip = "page.straylight"
@@ -65,7 +65,7 @@ imas_gui_idols_grp_6 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  6 }
 		}
 		custom_tooltip = "page.notchil"
@@ -77,7 +77,7 @@ imas_gui_idols_grp_7 = {
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {
-			country_event = { id = imas_idols_menu.0000	}
+			#country_event = { id = imas_idols_menu.0000	}
 			set_variable={ which= idols_page value =  7 }
 		}
 		custom_tooltip = "page.shiis"
@@ -86,151 +86,151 @@ imas_gui_idols_grp_7 = {
 
 
 	imas_gui_idols_icon_01 = {
-	potential = { has_global_flag = idol_debut_01 } 
+	potential = { has_global_flag = idol_debut_01 check_variable={which= idols_page value = 1 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 01 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_02 = {
-	potential = { has_global_flag = idol_debut_02 } 
+	potential = { has_global_flag = idol_debut_02 check_variable={which= idols_page value = 1 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 02 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_03 = {
-	potential = { has_global_flag = idol_debut_03 } 
+	potential = { has_global_flag = idol_debut_03 check_variable={which= idols_page value = 1 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 03 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_04 = {
-	potential = { has_global_flag = idol_debut_04 } 
+	potential = { has_global_flag = idol_debut_04 check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 04 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_05 = {
-	potential = { has_global_flag = idol_debut_05 } 
+	potential = { has_global_flag = idol_debut_05 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 05 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_06 = {
-	potential = { has_global_flag = idol_debut_06 } 
+	potential = { has_global_flag = idol_debut_06 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 06 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_07 = {
-	potential = { has_global_flag = idol_debut_07 } 
+	potential = { has_global_flag = idol_debut_07 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 07 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_08 = {
-	potential = { has_global_flag = idol_debut_08 } 
+	potential = { has_global_flag = idol_debut_08 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 08 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_09 = {
-	potential = { has_global_flag = idol_debut_09 } 
+	potential = { has_global_flag = idol_debut_09 check_variable={which= idols_page value = 3 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 09 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_10 = {
-	potential = { has_global_flag = idol_debut_10 } 
+	potential = { has_global_flag = idol_debut_10 check_variable={which= idols_page value = 3 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 10 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_11 = {
-	potential = { has_global_flag = idol_debut_11 } 
+	potential = { has_global_flag = idol_debut_11 check_variable={which= idols_page value = 3 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 11 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_12 = {
-	potential = { has_global_flag = idol_debut_12 } 
+	potential = { has_global_flag = idol_debut_12 check_variable={which= idols_page value = 3 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 12 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_13 = {
-	potential = { has_global_flag = idol_debut_13 } 
+	potential = { has_global_flag = idol_debut_13 check_variable={which= idols_page value = 3 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 13 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_14 = {
-	potential = { has_global_flag = idol_debut_14 } 
+	potential = { has_global_flag = idol_debut_14 check_variable={which= idols_page value = 4 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 14 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_15 = {
-	potential = { has_global_flag = idol_debut_15 } 
+	potential = { has_global_flag = idol_debut_15 check_variable={which= idols_page value = 4 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 15 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_16 = {
-	potential = { has_global_flag = idol_debut_16 } 
+	potential = { has_global_flag = idol_debut_16 check_variable={which= idols_page value = 4 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 16 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_17 = {
-	potential = { has_global_flag = idol_debut_17 } 
+	potential = { has_global_flag = idol_debut_17 check_variable={which= idols_page value = 5 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 17 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_18 = {
-	potential = { has_global_flag = idol_debut_18 } 
+	potential = { has_global_flag = idol_debut_18 check_variable={which= idols_page value = 5 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 18 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_19 = {
-	potential = { has_global_flag = idol_debut_19 } 
+	potential = { has_global_flag = idol_debut_19 check_variable={which= idols_page value = 5 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 19 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_20 = {
-	potential = { has_global_flag = idol_debut_20 } 
+	potential = { has_global_flag = idol_debut_20 check_variable={which= idols_page value = 6 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 20 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_21 = {
-	potential = { has_global_flag = idol_debut_21 } 
+	potential = { has_global_flag = idol_debut_21 check_variable={which= idols_page value = 6 }} 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 21 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_22 = {
-	potential = { has_global_flag = idol_debut_22 } 
+	potential = { has_global_flag = idol_debut_22 check_variable={which= idols_page value = 6 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 22 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_23 = {
-	potential = { has_global_flag = idol_debut_23 } 
+	potential = { has_global_flag = idol_debut_23 check_variable={which= idols_page value = 6 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 23 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_24 = {
-	potential = { has_global_flag = idol_debut_24 } 
+	potential = { has_global_flag = idol_debut_24 check_variable={which= idols_page value = 7 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 24 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_25 = {
-	potential = { has_global_flag = idol_debut_25 } 
+	potential = { has_global_flag = idol_debut_25 check_variable={which= idols_page value = 7 } } 
 	allow = { always = yes }
 	effect = {
 		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 25 } }
@@ -241,103 +241,103 @@ imas_gui_idols_grp_7 = {
 
 
 	imas_gui_idols_icon_locked_01 = {
-	potential = { NOT= {has_global_flag = idol_debut_01 }} 
+	potential = { NOT= {has_global_flag = idol_debut_01 } check_variable={which= idols_page value = 1 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_02 = {
-	potential = { NOT= {has_global_flag = idol_debut_02 }} 
+	potential = { NOT= {has_global_flag = idol_debut_02 }check_variable={which= idols_page value = 1 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_03 = {
-	potential = { NOT= {has_global_flag = idol_debut_03 }} 
+	potential = { NOT= {has_global_flag = idol_debut_03 }check_variable={which= idols_page value = 1 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_04 = {
-	potential = { NOT= {has_global_flag = idol_debut_04 }} 
+	potential = { NOT= {has_global_flag = idol_debut_04 }check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_05 = {
-	potential = { NOT= {has_global_flag = idol_debut_05 }} 
+	potential = { NOT= {has_global_flag = idol_debut_05 }check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_06 = {
-	potential = { NOT= {has_global_flag = idol_debut_06 }} 
+	potential = { NOT= {has_global_flag = idol_debut_06 }check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_07 = {
-	potential = { NOT= {has_global_flag = idol_debut_07 }} 
+	potential = { NOT= {has_global_flag = idol_debut_07 }check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_08 = {
-	potential = { NOT= {has_global_flag = idol_debut_08 }} 
+	potential = { NOT= {has_global_flag = idol_debut_08 }check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_09 = {
-	potential = { NOT= {has_global_flag = idol_debut_09 }} 
+	potential = { NOT= {has_global_flag = idol_debut_09 }check_variable={which= idols_page value = 3 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_10 = {
-	potential = { NOT= {has_global_flag = idol_debut_10 }} 
+	potential = { NOT= {has_global_flag = idol_debut_10 }check_variable={which= idols_page value = 3 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_11 = {
-	potential = { NOT= {has_global_flag = idol_debut_11 }} 
+	potential = { NOT= {has_global_flag = idol_debut_11 }check_variable={which= idols_page value = 3 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_12 = {
-	potential = { NOT= {has_global_flag = idol_debut_12 }} 
+	potential = { NOT= {has_global_flag = idol_debut_12 }check_variable={which= idols_page value = 3 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_13 = {
-	potential = { NOT= {has_global_flag = idol_debut_13 }} 
+	potential = { NOT= {has_global_flag = idol_debut_13 }check_variable={which= idols_page value = 3 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_14 = {
-	potential = { NOT= {has_global_flag = idol_debut_14 }} 
+	potential = { NOT= {has_global_flag = idol_debut_14 }check_variable={which= idols_page value = 4 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_15 = {
-	potential = { NOT= {has_global_flag = idol_debut_15 }} 
+	potential = { NOT= {has_global_flag = idol_debut_15 }check_variable={which= idols_page value = 4 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_16 = {
-	potential = { NOT= {has_global_flag = idol_debut_16 }} 
+	potential = { NOT= {has_global_flag = idol_debut_16 }check_variable={which= idols_page value = 4 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_17 = {
-	potential = { NOT= {has_global_flag = idol_debut_17 }} 
+	potential = { NOT= {has_global_flag = idol_debut_17 }check_variable={which= idols_page value = 5 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_18 = {
-	potential = { NOT= {has_global_flag = idol_debut_18 }} 
+	potential = { NOT= {has_global_flag = idol_debut_18 }check_variable={which= idols_page value = 5 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_19 = {
-	potential = { NOT= {has_global_flag = idol_debut_19 }} 
+	potential = { NOT= {has_global_flag = idol_debut_19 }check_variable={which= idols_page value = 5 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_20 = {
-	potential = { NOT= {has_global_flag = idol_debut_20 }} 
+	potential = { NOT= {has_global_flag = idol_debut_20 }check_variable={which= idols_page value = 6 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_21 = {
-	potential = { NOT= {has_global_flag = idol_debut_21 }} 
+	potential = { NOT= {has_global_flag = idol_debut_21 }check_variable={which= idols_page value = 6 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_22 = {
-	potential = { NOT= {has_global_flag = idol_debut_22 }} 
+	potential = { NOT= {has_global_flag = idol_debut_22 }check_variable={which= idols_page value = 6 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_23 = {
-	potential = { NOT= {has_global_flag = idol_debut_23 }} 
+	potential = { NOT= {has_global_flag = idol_debut_23 }check_variable={which= idols_page value = 6 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_24 = {
-	potential = { NOT= {has_global_flag = idol_debut_24 }} 
+	potential = { NOT= {has_global_flag = idol_debut_24 }check_variable={which= idols_page value = 7 }} 
 	allow = { always = yes }
 	effect = {} }
 	imas_gui_idols_icon_locked_25 = {
-	potential = { NOT= {has_global_flag = idol_debut_25 }} 
+	potential = { NOT= {has_global_flag = idol_debut_25 }check_variable={which= idols_page value = 7 }} 
 	allow = { always = yes }
 	effect = {} }
 	
