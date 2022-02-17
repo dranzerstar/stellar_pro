@@ -24,11 +24,17 @@ guiTypes = {
 
 #--------------------------------------------------------------------------
 # layout elements
-iconType = { name = "box1" quadTextureSprite = "GFX_imas_box_bg" position = { x = 270 y = 300 } alwaysTransparent = yes }
-iconType = { name = "box2" quadTextureSprite = "GFX_imas_box_bg" position = { x = 540 y = 300 } alwaysTransparent = yes }
-iconType = { name = "box3" quadTextureSprite = "GFX_imas_box_bg" position = { x = 800 y = 300 } alwaysTransparent = yes }
-iconType = { name = "box4" quadTextureSprite = "GFX_imas_box_bg" position = { x = 270 y = 540 } alwaysTransparent = yes }
-iconType = { name = "box5" quadTextureSprite = "GFX_imas_box_bg" position = { x = 540 y = 540 } alwaysTransparent = yes }
+		@idol_icon_x_c1 = 270
+		@idol_icon_x_c2 = 540
+		@idol_icon_x_c3 = 800
+		@idol_icon_y_r1 = 300
+		@idol_icon_y_r2 = 540
+
+iconType = { name = "box1" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idol_icon_x_c1 y = @idol_icon_y_r1 } alwaysTransparent = yes }
+iconType = { name = "box2" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idol_icon_x_c2 y = @idol_icon_y_r1 } alwaysTransparent = yes }
+iconType = { name = "box3" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idol_icon_x_c3 y = @idol_icon_y_r1 } alwaysTransparent = yes }
+iconType = { name = "box4" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idol_icon_x_c1 y = @idol_icon_y_r2 } alwaysTransparent = yes }
+iconType = { name = "box5" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idol_icon_x_c2 y = @idol_icon_y_r2 } alwaysTransparent = yes }
 #--------------------------------------------------------------------------
 #grp icons
 		@grp_icon_x_c1 = 1133
@@ -90,7 +96,115 @@ iconType = { name = "box5" quadTextureSprite = "GFX_imas_box_bg" position = { x 
 		}
 
 #--------------------------------------------------------------------------
-#idol 1 to
+# shiloette TODO
+
+
+#----------------------------------------------------------------------------
+#example
+# flags
+#  idol_id_xx  idol id
+#  idol_grp_id_xx  higher spawn rate if have idol from grp
+# 01 illuminationstars   01 02 03
+# 02 LAntica   04 05 06 07 08
+# 03 hokagoclimaxgirls  09 10 11 12 13
+# 04 alstroemeria  14 15 16
+# 05 straylight  17 18 19
+# 06 noctchill  20 21 22 23
+# 07 shhis 24 25
+#
+
+#idol 01 to 25
+# grp1
+effectButtonType = { name = "idol_icon_01" quadTextureSprite = "GFX_idol_icon_01" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_01" }
+effectButtonType = { name = "idol_icon_02" quadTextureSprite = "GFX_idol_icon_02" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_02" }
+effectButtonType = { name = "idol_icon_03" quadTextureSprite = "GFX_idol_icon_03" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c3 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_03" }
+
+#grp2
+effectButtonType = { name = "idol_icon_04" quadTextureSprite = "GFX_idol_icon_04" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_04" }
+effectButtonType = { name = "idol_icon_05" quadTextureSprite = "GFX_idol_icon_05" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_05" }
+effectButtonType = { name = "idol_icon_06" quadTextureSprite = "GFX_idol_icon_06" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c3 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_06" }
+effectButtonType = { name = "idol_icon_07" quadTextureSprite = "GFX_idol_icon_07" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r2  }
+		effect = "imas_gui_idols_icon_07" }
+effectButtonType = { name = "idol_icon_08" quadTextureSprite = "GFX_idol_icon_08" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r2  }
+		effect = "imas_gui_idols_icon_08" }
+
+#grp3		
+effectButtonType = { name = "idol_icon_09" quadTextureSprite = "GFX_idol_icon_09" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_09" }
+effectButtonType = { name = "idol_icon_10" quadTextureSprite = "GFX_idol_icon_10" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_10" }
+effectButtonType = { name = "idol_icon_11" quadTextureSprite = "GFX_idol_icon_11" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c3 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_11" }
+effectButtonType = { name = "idol_icon_12" quadTextureSprite = "GFX_idol_icon_12" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r2  }
+		effect = "imas_gui_idols_icon_12" }
+effectButtonType = { name = "idol_icon_13" quadTextureSprite = "GFX_idol_icon_13" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r2  }
+		effect = "imas_gui_idols_icon_13" }
+
+#grp4		
+effectButtonType = { name = "idol_icon_14" quadTextureSprite = "GFX_idol_icon_14" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_14" }
+		
+effectButtonType = { name = "idol_icon_15" quadTextureSprite = "GFX_idol_icon_15" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_15" }
+effectButtonType = { name = "idol_icon_16" quadTextureSprite = "GFX_idol_icon_16" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_16" }
+
+#grp5
+effectButtonType = { name = "idol_icon_17" quadTextureSprite = "GFX_idol_icon_17" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_17" }
+effectButtonType = { name = "idol_icon_18" quadTextureSprite = "GFX_idol_icon_18" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_18" }
+effectButtonType = { name = "idol_icon_19" quadTextureSprite = "GFX_idol_icon_19" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c3 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_19" }
+#grp6	
+effectButtonType = { name = "idol_icon_20" quadTextureSprite = "GFX_idol_icon_20" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_20" }
+effectButtonType = { name = "idol_icon_21" quadTextureSprite = "GFX_idol_icon_21" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_21" }
+effectButtonType = { name = "idol_icon_22" quadTextureSprite = "GFX_idol_icon_22" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c3 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_22" }		
+effectButtonType = { name = "idol_icon_23" quadTextureSprite = "GFX_idol_icon_23" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r2  }
+		effect = "imas_gui_idols_icon_23" }
+
+#grp7	
+effectButtonType = { name = "idol_icon_24" quadTextureSprite = "GFX_idol_icon_24" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c1 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_24" }
+effectButtonType = { name = "idol_icon_25" quadTextureSprite = "GFX_idol_icon_25" Orientation = "UPPER_LEFT"
+	position = { x = @grp_icon_x_c2 y = @grp_icon_y_r1  }
+		effect = "imas_gui_idols_icon_25" }
+
+
+
 
 
 #--------------------------------------------------------------------------
@@ -98,23 +212,10 @@ iconType = { name = "box5" quadTextureSprite = "GFX_imas_box_bg" position = { x 
 @p_x = 162
 @p_y = 52
 
-		effectButtonType = {
-			name = "GFX_panty_01_l_be"
-			quadTextureSprite = "GFX_panty_01_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0001"
-		}
-		effectButtonType = {
-			name = "GFX_panty_02_l_be"
-			quadTextureSprite = "GFX_panty_02_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0002"
-		}
+
 
 	
-#pantysection end
+#image element end
 		
 		# Description Section
 		iconType={

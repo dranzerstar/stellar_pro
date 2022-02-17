@@ -258,5 +258,46 @@ country_event = {
 
 }
 
+#clear all idols
+country_event = {
+	id = imas_world_events.8001
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = idol_debut_01
+		set_global_flag = idol_debut_02
+		set_global_flag = idol_debut_03
+		set_global_flag = idol_debut_04
+		set_global_flag = idol_debut_05
+		set_global_flag = idol_debut_06
+		set_global_flag = idol_debut_07
+		set_global_flag = idol_debut_08
+		set_global_flag = idol_debut_09
+		set_global_flag = idol_debut_10
+		set_global_flag = idol_debut_11
+		set_global_flag = idol_debut_12
+		set_global_flag = idol_debut_13
+		set_global_flag = idol_debut_14
+		set_global_flag = idol_debut_15
+		set_global_flag = idol_debut_16
+		set_global_flag = idol_debut_17
+		set_global_flag = idol_debut_18
+		set_global_flag = idol_debut_19
+		set_global_flag = idol_debut_20
+		set_global_flag = idol_debut_21
+		set_global_flag = idol_debut_22
+		set_global_flag = idol_debut_23
+		set_global_flag = idol_debut_24
+		set_global_flag = idol_debut_25
+		set_global_flag = idol_grp
+		set_variable={
+			which=idol_total value=0
+		}
+	}
+
+}
+
+country_event = {
 
 
+}

@@ -6,7 +6,7 @@ guiTypes = {
 		moveable = yes
 		size = { width = 1920 height = 1080 }
 
-		background = { name = "background" quadTextureSprite ="GFX_thief_window_large_bg" }
+		background = { name = "background" quadTextureSprite ="GFX_imas_combined_bg" position = { x = 150 y = 200 } }
 
 		iconType = { name = "hex_bg" spriteType = "GFX_hex_bg" position = { x = -1000 y = -1400 } alwaysTransparent = yes }
 		iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes }
@@ -14,7 +14,7 @@ guiTypes = {
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_close"
-			position = { x= -400 y = 100 }
+			position = { x= 100 y = 100 }
 			Orientation = "UPPER_RIGHT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
@@ -36,165 +36,7 @@ guiTypes = {
 			position = { x = @p_x y = @p_y }
 			effect = "cg_plus_thief_large_0001"
 		}
-		effectButtonType = {
-			name = "GFX_panty_02_l_be"
-			quadTextureSprite = "GFX_panty_02_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0002"
-		}
-		effectButtonType = {
-			name = "GFX_panty_03_l_be"
-			quadTextureSprite = "GFX_panty_03_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0003"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_04_l_be"
-			quadTextureSprite = "GFX_panty_04_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0004"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_05_l_be"
-			quadTextureSprite = "GFX_panty_05_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0005"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_06_l_be"
-			quadTextureSprite = "GFX_panty_06_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0006"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_07_l_be"
-			quadTextureSprite = "GFX_panty_07_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0007"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_08_l_be"
-			quadTextureSprite = "GFX_panty_08_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0008"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_09_l_be"
-			quadTextureSprite = "GFX_panty_09_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0009"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_10_l_be"
-			quadTextureSprite = "GFX_panty_10_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0010"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_11_l_be"
-			quadTextureSprite = "GFX_panty_11_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0011"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_12_l_be"
-			quadTextureSprite = "GFX_panty_12_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0012"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_13_l_be"
-			quadTextureSprite = "GFX_panty_13_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0013"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_14_l_be"
-			quadTextureSprite = "GFX_panty_14_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0014"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_15_l_be"
-			quadTextureSprite = "GFX_panty_15_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0015"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_16_l_be"
-			quadTextureSprite = "GFX_panty_16_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0016"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_17_l_be"
-			quadTextureSprite = "GFX_panty_17_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0017"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_18_l_be"
-			quadTextureSprite = "GFX_panty_18_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0018"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_19_l_be"
-			quadTextureSprite = "GFX_panty_19_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0019"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_20_l_be"
-			quadTextureSprite = "GFX_panty_20_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0020"
-		}
-	
-		effectButtonType = {
-			name = "GFX_panty_21_l_be"
-			quadTextureSprite = "GFX_panty_21_l"
-			Orientation = "UPPER_LEFT"
-			position = { x = @p_x y = @p_y }
-			effect = "cg_plus_thief_large_0021"
-		}
-	
+
 	
 #pantysection end
 		

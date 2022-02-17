@@ -47,14 +47,183 @@ spawn_full_idol={
 	random_list = {
 
 
-	1 = {
-		modifier = { factor = 0 owner={ has_global_flag = idol_id_01 } }
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_01 } }
 		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_01 } }
-		owner = { set_global_flag = idol_id_01 }
+		owner = { set_global_flag = idol_debut_01 }
 		owner = { set_global_flag = idol_grp_id_01 }
 		change_variable = { which = idol_total value = 1 }
-		owner ={ save_global_event_target_as = idol_country_01 }
-	}
+		owner ={ save_global_event_target_as = idol_country_01 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_02 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_01 } }
+		owner = { set_global_flag = idol_debut_02 }
+		owner = { set_global_flag = idol_grp_id_01 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_02 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_03 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_01 } }
+		owner = { set_global_flag = idol_debut_03 }
+		owner = { set_global_flag = idol_grp_id_01 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_03 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_04 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_02 } }
+		owner = { set_global_flag = idol_debut_04 }
+		owner = { set_global_flag = idol_grp_id_02 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_04 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_05 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_02 } }
+		owner = { set_global_flag = idol_debut_05 }
+		owner = { set_global_flag = idol_grp_id_02 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_05 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_06 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_02 } }
+		owner = { set_global_flag = idol_debut_06 }
+		owner = { set_global_flag = idol_grp_id_02 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_06 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_07 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_02 } }
+		owner = { set_global_flag = idol_debut_07 }
+		owner = { set_global_flag = idol_grp_id_02 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_07 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_08 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_02 } }
+		owner = { set_global_flag = idol_debut_08 }
+		owner = { set_global_flag = idol_grp_id_02 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_08 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_09 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_03 } }
+		owner = { set_global_flag = idol_debut_09 }
+		owner = { set_global_flag = idol_grp_id_03 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_09 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_10 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_03 } }
+		owner = { set_global_flag = idol_debut_10 }
+		owner = { set_global_flag = idol_grp_id_03 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_10 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_11 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_03 } }
+		owner = { set_global_flag = idol_debut_11 }
+		owner = { set_global_flag = idol_grp_id_03 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_11 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_12 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_03 } }
+		owner = { set_global_flag = idol_debut_12 }
+		owner = { set_global_flag = idol_grp_id_03 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_12 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_13 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_03 } }
+		owner = { set_global_flag = idol_debut_13 }
+		owner = { set_global_flag = idol_grp_id_03 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_13 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_14 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_04 } }
+		owner = { set_global_flag = idol_debut_14 }
+		owner = { set_global_flag = idol_grp_id_04 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_14 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_15 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_04 } }
+		owner = { set_global_flag = idol_debut_15 }
+		owner = { set_global_flag = idol_grp_id_04 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_15 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_16 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_04 } }
+		owner = { set_global_flag = idol_debut_16 }
+		owner = { set_global_flag = idol_grp_id_04 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_16 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_17 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_05 } }
+		owner = { set_global_flag = idol_debut_17 }
+		owner = { set_global_flag = idol_grp_id_05 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_17 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_18 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_05 } }
+		owner = { set_global_flag = idol_debut_18 }
+		owner = { set_global_flag = idol_grp_id_05 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_18 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_19 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_05 } }
+		owner = { set_global_flag = idol_debut_19 }
+		owner = { set_global_flag = idol_grp_id_05 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_19 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_20 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_06 } }
+		owner = { set_global_flag = idol_debut_20 }
+		owner = { set_global_flag = idol_grp_id_06 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_20 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_21 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_06 } }
+		owner = { set_global_flag = idol_debut_21 }
+		owner = { set_global_flag = idol_grp_id_06 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_21 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_22 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_06 } }
+		owner = { set_global_flag = idol_debut_22 }
+		owner = { set_global_flag = idol_grp_id_06 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_22 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_23 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_06 } }
+		owner = { set_global_flag = idol_debut_23 }
+		owner = { set_global_flag = idol_grp_id_06 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_23 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_24 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_07 } }
+		owner = { set_global_flag = idol_debut_24 }
+		owner = { set_global_flag = idol_grp_id_07 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_24 } }
+			   #
+	1 = {	modifier = { factor = 0 owner={ has_global_flag = idol_debut_25 } }
+		modifier = { factor = 2 owner={ has_global_flag = idol_grp_id_07 } }
+		owner = { set_global_flag = idol_debut_25 }
+		owner = { set_global_flag = idol_grp_id_07 }
+		change_variable = { which = idol_total value = 1 }
+		owner ={ save_global_event_target_as = idol_country_25 } }
+			   #
+	
+	
 
 
 
