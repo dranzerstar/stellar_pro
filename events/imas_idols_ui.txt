@@ -46,6 +46,6 @@ country_event={
 	title= Idols_menu
 	option={
 		name=close
-		country_event={ id= imas_idols_menu.0000 }
+		#country_event={ id= imas_idols_menu.0000 }
 	}
 }

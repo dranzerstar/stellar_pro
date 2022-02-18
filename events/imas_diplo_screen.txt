@@ -375,8 +375,13 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
-
+		set_variable = {
+			which = idols_page
+			value = 1
+		}
+		country_event = {
+			id = imas_idols_menu.0000
+		}
 	}
 
 }

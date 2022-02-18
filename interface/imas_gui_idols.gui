@@ -23,18 +23,24 @@ guiTypes = {
 		# Custom header
 
 #--------------------------------------------------------------------------
-# layout elements
+# layout elements###### box with offset
 		@idolb_icon_x_c1 = 250
 		@idolb_icon_x_c2 = 520
 		@idolb_icon_x_c3 = 780
 		@idolb_icon_y_r1 = 303
 		@idolb_icon_y_r2 = 543
-
+####################  icons
 		@idol_icon_x_c1 = 270
 		@idol_icon_x_c2 = 540
 		@idol_icon_x_c3 = 800
 		@idol_icon_y_r1 = 300
 		@idol_icon_y_r2 = 540
+####################  textlabel under icons
+		@idol_label_x_c1 = 270
+		@idol_label_x_c2 = 540
+		@idol_label_x_c3 = 800
+		@idol_label_y_r1 = 300
+		@idol_label_y_r2 = 540
 
 iconType = { name = "box1" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idolb_icon_x_c1 y = @idolb_icon_y_r1 } alwaysTransparent = yes }
 iconType = { name = "box2" quadTextureSprite = "GFX_imas_box_bg" position = { x = @idolb_icon_x_c2 y = @idolb_icon_y_r1 } alwaysTransparent = yes }
@@ -194,6 +200,7 @@ effectButtonType = { name = "idol_icon_locked_25" quadTextureSprite = "GFX_idol_
 
 
 #----------------------------------------------------------------------------
+#IDOL ICONS
 #example
 # flags
 #  idol_id_xx  idol id
@@ -298,13 +305,117 @@ effectButtonType = { name = "idol_icon_25" quadTextureSprite = "GFX_idol_icon_25
 		effect = "imas_gui_idols_icon_25" }
 
 
+#---------------------------
+#IDOL NAME LABELS
+
+
+effectButtonType = { name = "idol_label_01"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_01" text = text_idol_label_01 }
+
+	#                                                                                                      
+effectButtonType = { name = "idol_label_02"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_02" text = text_idol_label_02 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_03"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_03" text = text_idol_label_03 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_04"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_04" text = text_idol_label_04 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_05"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_05" text = text_idol_label_05 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_06"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_06" text = text_idol_label_06 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_07"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_07" text = text_idol_label_07 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_08"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_08" text = text_idol_label_08 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_09"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_09" text = text_idol_label_09 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_10"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_10" text = text_idol_label_10 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_11"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_11" text = text_idol_label_11 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_12"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_12" text = text_idol_label_12 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_13"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_13" text = text_idol_label_13 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_14"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_14" text = text_idol_label_14 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_15"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_15" text = text_idol_label_15 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_16"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_16" text = text_idol_label_16 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_17"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_17" text = text_idol_label_17 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_18"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_18" text = text_idol_label_18 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_19"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_19" text = text_idol_label_19 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_20"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_20" text = text_idol_label_20 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_21"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_21" text = text_idol_label_21 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_22"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_22" text = text_idol_label_22 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_23"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_23" text = text_idol_label_23 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_24"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_24" text = text_idol_label_24 }
+	#                                                                                                      
+effectButtonType = { name = "idol_label_25"  Orientation = "UPPER_LEFT"  alwaysTransparent=yes
+position = { x = idol_label_x_c1 y = idol_label_y_r1  }  font = "cg_16b" text_color_code = "S"
+effect = "imas_gui_idols_label_25" text = text_idol_label_25 }
+	#                                                                                                      
+
 
 
 
 #--------------------------------------------------------------------------
-#idol section
-@p_x = 162
-@p_y = 52
+#idol section END
 
 
 

@@ -8,7 +8,6 @@ rem     echo !num!
 
 
 	
-echo	set_global_flag = idol_debut_!num!
+echo	 text_idol_label_!num!:0 ""
 
-                                                                                                      
 )
