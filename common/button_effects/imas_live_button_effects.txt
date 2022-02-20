@@ -1,0 +1,102 @@
+
+# clickable buttons
+
+live_change_button_01={
+	potential = { always = yes } 
+	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+live_change_button_02={
+	potential = { always = yes } 
+	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+live_change_button_03={
+	potential = { always = yes } 
+	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+live_change_button_04={
+	potential = { always = yes } 
+	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+live_change_button_05={
+	potential = { always = yes } 
+	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+
+button_confirm_live_set={
+	potential = { always = yes } 
+	allow = { 
+		OR={
+			AND= {	check_variable = {  which = live_member_1 value = 01 }
+					check_variable = {  which = live_member_2 value = 02 }
+					check_variable = {  which = live_member_3 value = 03 } }
+
+
+
+
+
+
+		}
+	 } effect = { } } #TODO POPUP TO CHANGE MEMBER
+
+
+
+
+
+
+# all the crap starts here
+
+#pos1
+eff_live_idol_card_pos1_01={
+	potential = { check_variable = {  which = live_member_1 value = 01 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos1_02={
+	potential = { check_variable = {  which = live_member_1 value = 02 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos1_03={
+	potential = { check_variable = {  which = live_member_1 value = 03 } } 
+	allow = { always = yes } effect = {} }
+
+	
+
+#pos2
+eff_live_idol_card_pos2_01={
+	potential = { check_variable = {  which = live_member_2 value = 01 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos2_02={
+	potential = { check_variable = {  which = live_member_2 value = 02 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos2_03={
+	potential = { check_variable = {  which = live_member_2 value = 03 } } 
+	allow = { always = yes } effect = {} }
+#pos3
+eff_live_idol_card_pos3_01={
+	potential = { check_variable = {  which = live_member_3 value = 01 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos3_02={
+	potential = { check_variable = {  which = live_member_3 value = 02 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos3_03={
+	potential = { check_variable = {  which = live_member_3 value = 03 } } 
+	allow = { always = yes } effect = {} }
+
+
+#pos4
+eff_live_idol_card_pos4_01={
+	potential = { check_variable = {  which = live_member_4 value = 01 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos4_02={
+	potential = { check_variable = {  which = live_member_4 value = 02 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos4_03={
+	potential = { check_variable = {  which = live_member_4 value = 03 } } 
+	allow = { always = yes } effect = {} }
+
+
+
+
+#pos5
+
+eff_live_idol_card_pos5_01={
+	potential = { check_variable = {  which = live_member_5 value = 01 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos5_02={
+	potential = { check_variable = {  which = live_member_5 value = 02 } } 
+	allow = { always = yes } effect = {} }
+eff_live_idol_card_pos5_03={
+	potential = { check_variable = {  which = live_member_5 value = 03 } } 
+	allow = { always = yes } effect = {} }

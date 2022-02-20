@@ -7,8 +7,9 @@ guiTypes = {
 		size = { width = 1920 height = 1080 }
 
 		background = { name = "background" quadTextureSprite ="GFX_imas_combined_bg" position = { x = 150 y = 200 } }
+		iconType = { name = "background" quadTextureSprite ="GFX_imas_combined_bg" position = { x = 150 y = 200 } alwaysTransparent = yes}
 
-		iconType = { name = "hex_bg" spriteType = "GFX_imas_combined_bg" position = { x = 150 y = -150 } alwaysTransparent = yes }
+		iconType = { name = "hex_bg" spriteType = "GFX_imas_combined_bg" position = { x = 150 y = 200 } alwaysTransparent = yes }
 		iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
 
 		buttonType = {
@@ -32,9 +33,9 @@ guiTypes = {
 #--------------------------------------------------------------------------------
 #  
 #  main image
-
-		@main_image_x = 162
-		@main_image_y = 52
+ #516x292 card size
+		@main_image_x = 480
+		@main_image_y = 290
 
 	effectButtonType = { name = "idol_card_01" quadTextureSprite = "GFX_idol_card_01" Orientation = "UPPER_LEFT"
 		position = { x = @main_image_x y = @main_image_y } effect = "imas_idol_card_01" }
@@ -120,43 +121,109 @@ guiTypes = {
 		iconType={
 			name = "card_frame"
 			quadTextureSprite = "GFX_idol_card_frame" Orientation = "UPPER_LEFT"
-			position = { x = 1032 y = 705 }
+			position = { x = 476 y = 290 }
 		}
 
-	
+#--------------------------------------------------------------------------------------
+#info section
+		@tags_pos_x = 170
+		buttonType = { name = "info_name_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 268 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_name }
+
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "malgun_goth_24"
+			#font = "malgun_goth_24"
+			text_color_code = "S"
+			position = { x = 290 y = 272 }
+			maxWidth = 750
+			maxHeight = 800
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = { name = "info_name_birthday_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 326 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_birthday }
+
+		buttonType = { name = "info_name_height_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 384 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_height }
+
+		buttonType = { name = "info_name_weight_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 442 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_weight }
+
+		buttonType = { name = "info_name_para_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 500 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_paran }
+
+		buttonType = { name = "info_name_place_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 558 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_place }	
+
+		buttonType = { name = "info_name_hobby_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 616 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_hobby }	
+
+		buttonType = { name = "info_name_speciality_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 674 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_speciality }	
+
+		buttonType = { name = "info_name_introduce_tag" quadTextureSprite = "GFX_ui_button_box" Orientation = "UPPER_LEFT"
+		position = { x = @tags_pos_x y = 732 } font = "cg_16b"  alwaysTransparent=yes
+		buttonText = imas_ui_button_introduce }	
+
 #--------------------------------------------------------------------------------
 		#TITLE
 		instantTextBoxType={
 				name = "action_title"
-				font = "malgun_goth_24"
-				position = { x = 560 y = 60 }
+				font = "large_title_font"
+				position = { x = 220 y = 222 }
 				maxWidth = 330
 				maxHeight = 50
 				format = CENTER
 				fixedSize = yes
 				alwaysTransparent = yes
 			}
-			
+			instantTextBoxType={
+				name = "effects_details"
+				font = "large_title_font"
+				position = { x = 1120 y = 218 }
+				maxWidth = 200
+				alwaysTransparent = yes
+				text= "Idols_effect"
+				text_color_code = "H"
+			}
 		# Description Section
 		iconType={
 			name = "alien_message_bg"
-			position = { x = 1032 y = 705 }
+			position = { x = -1032 y = 705 }
 			maxWidth = 400
 			maxHeight = 500
 			format = left
-			quadTextureSprite= "GFX_alien_buttons_bg"
+			#quadTextureSprite= "GFX_alien_buttons_bg"
+		}
 
-		}
-		instantTextBoxType = {
-			name = "alien_message"
-			font = "cg_16b"
-			text_color_code = "S"
-			position = { x = 1067 y = 155 }
-			maxWidth = 360
-			maxHeight = 500
+
+		iconType={
+			name = "buff_indv_text_bg"
+			position = { x = 1072 y = 280 }
 			format = left
-			scrollbartype = "standardtext_slider"
+			quadTextureSprite= "GFX_ui_text_box"
 		}
+		iconType={
+			name = "buff_grp_text_bg"
+			position = { x = 1072 y = 520 }
+			format = left
+			quadTextureSprite= "GFX_ui_text_box"
+		}
+
+
+
+
+
 #-----------------------------------------------------------------
 
 
@@ -172,9 +239,10 @@ guiTypes = {
 
 			instantTextBoxType={
 			 name = "action_title"
-			 font = "malgun_goth_24"
-			 position = { x = 0 y = 0 }
+			 font = "large_title_font"
+			 position = { x = 215 y = 218 }
 			 maxWidth = 200
+			 text_color_code = "H"
 			 alwaysTransparent = yes
 			}
 			instantTextBoxType={
@@ -191,7 +259,7 @@ guiTypes = {
 			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
 			listboxType = {
 				name = "option_list"
-				position = { x = 800 y = 690 }
+				position = { x = -800 y = 690 }
 				
 				size = { x = 300 y = 400 }
 				scrollbartype = "standardlistbox_slider"

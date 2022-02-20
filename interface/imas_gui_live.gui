@@ -1,0 +1,418 @@
+guiTypes = {
+	containerWindowType = {
+		name = "imas_gui_live"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 1920 height = 1080 }
+		position = { x= 40 y = 0 }
+		background = { name = "background" quadTextureSprite ="GFX_idol_live_bg" position = { x = 100 y = 200 } }
+		iconType = { name = "background" quadTextureSprite ="GFX_idol_live_bg" position = { x = 100 y = 200 } alwaysTransparent = yes}
+
+
+
+
+	
+		#iconType = { name = "hex_bg" spriteType = "GFX_idol_live_frame_bg" position = { x = 150 y = 200 } alwaysTransparent = yes }
+		
+		containerWindowType = { 
+			position = { x = 70 y =0 }
+			name= "side_panel"
+				iconType = { name = "sidepanel" quadTextureSprite ="GFX_imas_right_bg" position = { x = 1150 y = 220 } alwaysTransparent = yes}
+				iconType = { name = "sidepanel_bg" quadTextureSprite ="GFX_idol_ele_text_long_bg" position = { x = 1170 y = 300 } alwaysTransparent = yes}
+				iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
+
+		
+			}
+
+		buttonType = {
+				name = "close"
+				quadTextureSprite = "GFX_close"
+				position = { x= 1640 y = 240 }
+				
+				shortcut = "ESCAPE"
+				clicksound = "back_click"
+			}
+		# Custom header
+
+
+
+#--------------------------------------------------------------------------
+# fames
+		@frame01_x  = 130 @frame_y  = 337 
+		@frame02_x  = 345
+		@frame03_x  = 560
+		@frame04_x  = 775
+		@frame05_x  = 990
+
+
+
+# frame 01
+	containerWindowType = {
+		name = "live_frame_01"
+		
+		
+		moveable = no
+		position = { x = @frame01_x y = @frame_y }
+	
+		iconType={
+			name = "live_frame_background_01"
+			quadTextureSprite = "GFX_idol_live_frame_bg" 
+			position = { x = 0 y = 0 }
+		}
+
+		effectButtonType = { name = "live_idol_card_pos1_01" quadTextureSprite = "GFX_live_idol_card_01"
+		position = { x = @frame01_x y = @frame_y }  effect = "eff_live_idol_card_pos1_01" }
+		effectButtonType = { name = "live_idol_card_pos1_02" quadTextureSprite = "GFX_live_idol_card_02"
+		position = { x = @frame01_x y = @frame_y } effect = "eff_live_idol_card_pos1_02" }
+		effectButtonType = { name = "live_idol_card_pos1_03" quadTextureSprite = "GFX_live_idol_card_03" 
+		position = { x = @frame01_x y = @frame_y } effect = "eff_live_idol_card_pos1_03" }
+
+
+		iconType={
+			name = "live_frame_01"
+			quadTextureSprite = "GFX_idol_live_frame" 
+			position = { x = 0 y = 0 }
+		}
+
+		effectButtonType = {
+			name = "live_change_01"
+			quadTextureSprite = "GFX_idol_change_button"
+			
+			position = { x = 140 y =293 }
+			effect = "live_change_button_01"
+			clicksound = "confirm_click"
+		}
+	}
+# frame 02
+containerWindowType = {
+	name = "live_frame_02"
+	
+	
+	moveable = no
+	position = { x = @frame02_x y = @frame_y }
+
+	iconType={
+		name = "live_frame_background_02"
+		quadTextureSprite = "GFX_idol_live_frame_bg" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = { name = "live_idol_card_pos2_01" quadTextureSprite = "GFX_live_idol_card_01" 
+	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos2_01" }
+	effectButtonType = { name = "live_idol_card_pos2_02" quadTextureSprite = "GFX_live_idol_card_02" 
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos2_02" }
+	effectButtonType = { name = "live_idol_card_pos2_03" quadTextureSprite = "GFX_live_idol_card_03" 
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos2_03" }
+
+
+	iconType={
+		name = "live_frame_02"
+		quadTextureSprite = "GFX_idol_live_frame" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = {
+		name = "live_change_02"
+		quadTextureSprite = "GFX_idol_change_button"
+		Orientation = "CENTER"
+		position = { x = 140 y =293 }
+		effect = "live_change_button_02"
+		clicksound = "confirm_click"
+	}
+}
+# frame 03
+containerWindowType = {
+	name = "live_frame_03"
+
+	moveable = no
+	position = { x = @frame03_x y = @frame_y }
+
+	iconType={
+		name = "live_frame_background_03"
+		quadTextureSprite = "GFX_idol_live_frame_bg" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = { name = "live_idol_card_pos3_01" quadTextureSprite = "GFX_live_idol_card_01" 
+	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos3_01" }
+	effectButtonType = { name = "live_idol_card_pos3_02" quadTextureSprite = "GFX_live_idol_card_02" 
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos3_02" }
+	effectButtonType = { name = "live_idol_card_pos3_03" quadTextureSprite = "GFX_live_idol_card_03"
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos3_03" }
+
+
+	iconType={
+		name = "live_frame_03"
+		quadTextureSprite = "GFX_idol_live_frame" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = {
+		name = "live_change_03"
+		quadTextureSprite = "GFX_idol_change_button"
+		Orientation = "CENTER"
+		position = { x = 140 y =293 }
+		effect = "live_change_button_03"
+		clicksound = "confirm_click"
+	}
+}
+
+# frame 04
+containerWindowType = {
+	name = "live_frame_04"
+
+	moveable = no
+	position = { x = @frame04_x y = @frame_y }
+
+	iconType={
+		name = "live_frame_background_04"
+		quadTextureSprite = "GFX_idol_live_frame_bg" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = { name = "live_idol_card_pos4_01" quadTextureSprite = "GFX_live_idol_card_01" 
+	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos4_01" }
+	effectButtonType = { name = "live_idol_card_pos4_02" quadTextureSprite = "GFX_live_idol_card_02"
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos4_02" }
+	effectButtonType = { name = "live_idol_card_pos4_03" quadTextureSprite = "GFX_live_idol_card_03" 
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos4_03" }
+
+
+	iconType={
+		name = "live_frame_04"
+		quadTextureSprite = "GFX_idol_live_frame" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = {
+		name = "live_change_04"
+		quadTextureSprite = "GFX_idol_change_button"
+		Orientation = "CENTER"
+		position = { x = 140 y =293 }
+		effect = "live_change_button_04"
+		clicksound = "confirm_click"
+	}
+}
+
+
+# frame 05
+containerWindowType = {
+	name = "live_frame_05"
+
+	moveable = no
+	position = { x = @frame05_x y = @frame_y }
+
+	iconType={
+		name = "live_frame_background_05"
+		quadTextureSprite = "GFX_idol_live_frame_bg"
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = { name = "live_idol_card_pos5_01" quadTextureSprite = "GFX_live_idol_card_01"
+	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos5_01" }
+	effectButtonType = { name = "live_idol_card_pos5_02" quadTextureSprite = "GFX_live_idol_card_02" 
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos5_02" }
+	effectButtonType = { name = "live_idol_card_pos5_03" quadTextureSprite = "GFX_live_idol_card_03" 
+	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos5_03" }
+
+
+	iconType={
+		name = "live_frame_05"
+		quadTextureSprite = "GFX_idol_live_frame" 
+		position = { x = 0 y = 0 }
+	}
+
+	effectButtonType = {
+		name = "live_change_05"
+		quadTextureSprite = "GFX_idol_change_button"
+		Orientation = "CENTER"
+		position = { x = 140 y =293 }
+		effect = "live_change_button_05"
+		clicksound = "confirm_click"
+	}
+}
+
+
+#--------------------------------------------------------------------------------
+#  
+# slection elements
+ #516x292 card size
+		@main_image_x = 480
+		@main_image_y = 290
+
+
+
+
+
+#
+#--------------------------------------------------------------------------------
+# overlay elements
+# 	main card frame
+
+#
+#
+# bottom area
+		effectButtonType = { name = "confirm_live_set" 
+		quadTextureSprite = "GFX_idol_button_pink_animated" Orientation = "UPPER_LEFT"
+		position = { x = 1000 y = 800  }  
+		effect = "button_confirm_live_set" }
+
+		instantTextBoxType={
+			name = "live_conditions"
+			font = "large_title_font"
+			position = { x = 800 y = 800 }
+			maxWidth = 200
+			alwaysTransparent = yes
+			text= "Need 5 or Need Group"
+			text_color_code = "H"
+		}
+
+
+
+#--------------------------------------------------------------------------------------
+#info section
+		@tags_pos_x = 170
+
+
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "malgun_goth_24"
+			#font = "malgun_goth_24"
+			text_color_code = "S"
+			position = { x = 290 y = 272 }
+			maxWidth = 750
+			maxHeight = 800
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+
+
+
+#--------------------------------------------------------------------------------
+		#TITLE
+
+		iconType = { name = "title_bg" quadTextureSprite ="GFX_idol_title_bg" position = { x = 480 y = 222 } alwaysTransparent = yes }
+	
+	
+
+
+		# Description Section
+		iconType={
+			name = "alien_message_bg"
+			position = { x = -1032 y = 705 }
+			maxWidth = 400
+			maxHeight = 500
+			format = left
+			#quadTextureSprite= "GFX_alien_buttons_bg"
+		}
+
+
+
+
+
+
+
+
+#-----------------------------------------------------------------
+
+
+
+				### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+				### EVENT DIPLO ###
+	
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 0 y = 0 }
+			#size = { width=563 height=220 }
+			moveable = no
+
+			instantTextBoxType={
+			 name = "action_title"
+			 font = "large_title_font"
+			 position = { x = 530 y = 255 }
+			 maxWidth = 500
+			 text_color_code = "H"
+			 alwaysTransparent = yes
+			}
+			instantTextBoxType={
+			 name = "action_desc"
+			 font = "malgun_goth_24"
+			 position = { x =0 y = 0 }
+			 maxWidth = 500
+			 maxHeight = 180
+			 Orientation = "UPPER_LEFT"
+			 format = center
+			 alwaysTransparent = yes
+			 text_color_code = "H"
+			}
+			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
+			listboxType = {
+				name = "option_list"
+				position = { x = -800 y = 690 }
+				
+				size = { x = 300 y = 400 }
+				scrollbartype = "standardlistbox_slider"
+				spacing = 20
+				borderSize = { x = 0 y = 0 }
+				Orientation = "CENTERED_UP"
+			}
+			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
+		}
+				instantTextBoxType = {
+					name = "irm_some_header"
+					font = "malgun_goth_24"
+					text = "ui_faction_header" 	# header text
+					position = { x = -20000 y = 5 }
+					maxWidth = 543
+					maxHeight = 22
+					fixedSize = yes
+					alwaysTransparent = yes
+				}
+		
+				buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+				instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+				buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+				buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+				containerWindowType = {
+					name = "portrait_background"
+					position = { x = -1117 y = -1145 }
+					size = { width = 0 height = 0 } 	# hide portrait window
+					iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+					iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+				}
+				containerWindowType = {
+					name = "portrait"
+					position = { x = -1117 y = -1145 }
+					size = { width = 0 height = 0 } # hide portrait window
+					iconType = { name = "portrait" spriteType = "GFX_portrait_gamesetup_mask" } # hidden
+					iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" } # hidden
+					iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2" } # hidden
+					iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+				}
+				iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+				instantTextBoxType={ name = "empire_name" font = "malgun_goth_24" } # hidden
+				instantTextBoxType={ name = "empire_government_type" font = "cg_16b" } # hidden
+				instantTextBoxType={ name = "empire_personality_type" font = "cg_16b" } # hidden
+				OverlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+				iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+				containerWindowType = {
+					name = "leader_details"
+					position = { x = -1125 y = -1175 }
+					containerWindowType = { name = "empire_traits_box" } # hidden
+					instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+					overlappingElementsBoxType = { name = "leader_traits" } # hidden
+					instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+					instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+				}
+				containerWindowType = {
+					name = "opinion_window"
+					position = { x = -1127 y = -11110 }
+					size = { width = 94 height = 30 }
+					iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+					instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+				}
+
+
+	}
+}

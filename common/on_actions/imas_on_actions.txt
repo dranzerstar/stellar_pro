@@ -9,6 +9,15 @@
 # Country scope
 # This = target country (player)
 # From = source country
+on_game_start={
+	events={
+		imas_world_events.0000
+
+	}
+
+
+}
+
 on_custom_diplomacy = {
 	events = {
 		imas_diplo_screen.0000

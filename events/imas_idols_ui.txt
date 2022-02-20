@@ -5,6 +5,7 @@ namespace = imas_idols_menu
 
 # main menu 0000
 # idol details 0100
+# live menu 1000
 
 country_event={
 	id=imas_idols_menu.0000
@@ -17,7 +18,7 @@ country_event={
 
 
 
-	title= Idols_menu
+	title= Idols_catalogue
 
 	immediate = {
 		#set_variable = { which = idols_page value = 1 }
@@ -42,10 +43,99 @@ country_event={
 	fire_only_once = no
 
 	custom_gui = imas_gui_detail
+	desc = { trigger = { check_variable = {which= idols_select value = 01 }}
+	text = Idols_detail_01 }
+	desc = { trigger = { check_variable = {which= idols_select value = 02 }}
+	text = Idols_detail_02 }
+	desc = { trigger = { check_variable = {which= idols_select value = 03 }}
+	text = Idols_detail_03 }
+	desc = { trigger = { check_variable = {which= idols_select value = 04 }}
+	text = Idols_detail_04 }
+	desc = { trigger = { check_variable = {which= idols_select value = 05 }}
+	text = Idols_detail_05 }
+	desc = { trigger = { check_variable = {which= idols_select value = 06 }}
+	text = Idols_detail_06 }
+	desc = { trigger = { check_variable = {which= idols_select value = 07 }}
+	text = Idols_detail_07 }
+	desc = { trigger = { check_variable = {which= idols_select value = 08 }}
+	text = Idols_detail_08 }
+	desc = { trigger = { check_variable = {which= idols_select value = 09 }}
+	text = Idols_detail_09 }
+	desc = { trigger = { check_variable = {which= idols_select value = 10 }}
+	text = Idols_detail_10 }
+	desc = { trigger = { check_variable = {which= idols_select value = 11 }}
+	text = Idols_detail_11 }
+	desc = { trigger = { check_variable = {which= idols_select value = 12 }}
+	text = Idols_detail_12 }
+	desc = { trigger = { check_variable = {which= idols_select value = 13 }}
+	text = Idols_detail_13 }
+	desc = { trigger = { check_variable = {which= idols_select value = 14 }}
+	text = Idols_detail_14 }
+	desc = { trigger = { check_variable = {which= idols_select value = 15 }}
+	text = Idols_detail_15 }
+	desc = { trigger = { check_variable = {which= idols_select value = 16 }}
+	text = Idols_detail_16 }
+	desc = { trigger = { check_variable = {which= idols_select value = 17 }}
+	text = Idols_detail_17 }
+	desc = { trigger = { check_variable = {which= idols_select value = 18 }}
+	text = Idols_detail_18 }
+	desc = { trigger = { check_variable = {which= idols_select value = 19 }}
+	text = Idols_detail_19 }
+	desc = { trigger = { check_variable = {which= idols_select value = 20 }}
+	text = Idols_detail_20 }
+	desc = { trigger = { check_variable = {which= idols_select value = 21 }}
+	text = Idols_detail_21 }
+	desc = { trigger = { check_variable = {which= idols_select value = 22 }}
+	text = Idols_detail_22 }
+	desc = { trigger = { check_variable = {which= idols_select value = 23 }}
+	text = Idols_detail_23 }
+	desc = { trigger = { check_variable = {which= idols_select value = 24 }}
+	text = Idols_detail_24 }
+	desc = { trigger = { check_variable = {which= idols_select value = 25 }}
+	text = Idols_detail_25 }
 
-	title= Idols_menu
+	
+
+
+	
+
+	title= Idols_detail
 	option={
 		name=close
 		#country_event={ id= imas_idols_menu.0000 }
 	}
+}
+
+
+
+
+country_event={
+	id=imas_idols_menu.1000
+	hide_window=no
+	diplomatic = yes
+	is_triggered_only = yes
+	fire_only_once = no
+
+	custom_gui = imas_gui_live
+
+
+
+	title= Idols_live_menu
+
+	immediate = {
+		set_variable = { which = live_member_1 value = 0 }
+		set_variable = { which = live_member_2 value = 0 }
+		set_variable = { which = live_member_3 value = 0 }
+		set_variable = { which = live_member_4 value = 0 }
+		set_variable = { which = live_member_5 value = 0 }
+	}
+
+
+	option={
+		name=close
+	}
+
+
+
+
 }

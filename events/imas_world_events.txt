@@ -3,9 +3,9 @@ namespace = imas_world_events
 
 
 @potential_idol_spawn_chance_base = 100  # chance = 1/500 pops roll per month
-@potential_idol_spawn_chance = 1 # chance= potential_idol_spawn_chance/potential_idol_spawn_chance_base  
-@idol_obtain_threshold = 80 
-@idol_obtain_threshold_step = 10
+@potential_idol_spawn_chance = 3 # chance= potential_idol_spawn_chance/potential_idol_spawn_chance_base  
+@idol_obtain_threshold = 40 
+@idol_obtain_threshold_step = 5
 
 
 # 0000 setup game event
@@ -19,21 +19,24 @@ namespace = imas_world_events
 
 # 0000
 # set on game start
-event={
+country_event={
 	id = imas_world_events.0000
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	immediate = {
-		set_variable = { which=idol_total value = 0 }
-		set_variable = { which=live_total value = 0 }
-		set_variable = { which=job_talent_seeker_total value = 0 }
-		set_variable = { which=job_idol_trainee_total value = 0 }
-		set_variable = { which=potential_idol_spawn_chance_base value =  @potential_idol_spawn_chance_base }
-		set_variable = { which=potential_idol_spawn_chance value =  @potential_idol_spawn_chance }
-		set_variable = { which=idol_obtain_progress  value =  0 }
-		set_variable = { which=idol_obtain_threshold  value =  @idol_obtain_threshold  }
+		event_target:283p_home_country = {
+			set_variable = { which=idol_total value = 0 }
+			set_variable = { which=live_total value = 0 }
+			set_variable = { which=job_talent_seeker_total value = 0 }
+			set_variable = { which=job_idol_trainee_total value = 0 }
+			set_variable = { which=potential_idol_spawn_chance_base value =  @potential_idol_spawn_chance_base }
+			set_variable = { which=potential_idol_spawn_chance value =  @potential_idol_spawn_chance }
+			set_variable = { which=idol_obtain_progress  value =  0 }
+			set_variable = { which=idol_obtain_threshold  value =  @idol_obtain_threshold  }
+		}
+
 
 	}
 
@@ -60,6 +63,7 @@ event={
 	trigger = {		
 	}
 	immediate = {
+		event_target:283p_home_country = {
 		set_variable = {
 			which = job_talent_seeker_total
 			value = 0
@@ -68,6 +72,7 @@ event={
 			which = job_idol_trainee_total
 			value = 0
 		}
+	}
 	}
 
 	after={
@@ -115,7 +120,9 @@ country_event={
 			}
 		}
 
-
+		country_event = {
+			id = imas_world_events.9021
+		}
 
 
 	}
@@ -135,12 +142,13 @@ planet_event={
 	}
 	immediate = {
 		
-		yearly_cal_spawn_potential_talent =  yes
+		yearly_cal_spawn_potential_talent =  yes  #<---這個 sciprted effect 計算 job_talent_seeker_total
 		set_variable = {
 			which = potential_idol_spawn_chance 
 			value = @potential_idol_spawn_chance 
 		}
-		change_variable = {
+		
+		multiply_variable = {
 			which = potential_idol_spawn_chance 
 			value = job_talent_seeker_total
 		}	
@@ -161,7 +169,13 @@ planet_event={
 		has_active_building = building_imas_production
 	}
 	immediate = {
-		yearly_cal_talent_train_progress  =  yes
+		yearly_cal_talent_train_progress  =  yes  
+		event_target:283p_home_country = {
+			change_variable = {
+				which = idol_obtain_progress 
+				value = job_idol_trainee_total
+			}
+		}
 
 	}
 }
@@ -179,7 +193,8 @@ planet_event = {
 	}
 	immediate = {
 		random_list = {
-			1={ modifier={ factor = potential_idol_spawn_chance }      
+			1={ modifier={ factor = potential_idol_spawn_chance } 
+				
 				random_owned_pop = {
 					modify_species = {
 						species = this
@@ -189,9 +204,16 @@ planet_event = {
 
 			#spawn
 			}
-			1={ modifier={ factor = potential_idol_spawn_chance_base } 
-		
+			1={ modifier={ factor = event_target:283p_home_country.potential_idol_spawn_chance_base } 
+		   
 			#no spawn
+			}
+			1={ modifier={ factor=0 count_owned_pop = {
+				limit = {
+					has_trait = trait_potential_idol
+				} count >15
+			} } 
+		
 			}
 		}
 	}
@@ -206,34 +228,57 @@ country_event = {
 		owner={ has_country_flag = 283p_contract_signed }	
 	}
 	immediate = {
+		set_variable = {
+			which = country_total_trainee
+			value = 0
+		}
+		every_owned_planet = {
+			limit = {
+				has_active_building = building_imas_production
+			}
+			change_variable = {
+				which = prev.country_total_trainee
+				value = job_idol_trainee_total
+			}
+		}
+
+
+
+		event_target:283p_home_country = {
 			change_variable = {
 				which = idol_obtain_progress
 				value = job_idol_trainee_total
 			}
-
+		}
 	}
 
 	after = {
 		if = {
 			limit = { 
+				event_target:283p_home_country = {
 						check_variable = {
 						which = idol_obtain_progress
 						value > idol_obtain_threshold
 						} 
+				}
 		
 			}
 				#spawn idol
 				spawn_full_idol = yes
-
-				set_variable={
-					which = idol_obtain_progress
-					value = 0
+				event_target:283p_home_country = {
+					set_variable={
+						which = idol_obtain_progress
+						value = 0
+					}
+					change_variable={
+						which = idol_obtain_threshold
+						value = @idol_obtain_threshold_step
+					}
 				}
-				change_variable={
-					which = idol_obtain_threshold
-					value = @idol_obtain_threshold_step
+				country_event = {
+					days = 5
+					id = imas_world_events.9022
 				}
-
 
 		}
 		
@@ -244,6 +289,18 @@ country_event = {
 
 }
 
+
+country_event = {
+	id = imas_world_events.9022
+	hide_window = no
+	title = idol_spawned
+	desc = idol_spawned
+	is_triggered_only = yes
+	immediate = {
+		spawn_full_idol = yes
+	}
+
+}
 
 
 #8xxx
@@ -343,6 +400,54 @@ country_event = {
 		set_variable={
 			which=idol_total value=0
 		}
+	}
+
+}
+
+
+
+# debug reset grp  
+country_event = {
+	id = imas_world_events.8100
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { which = live_member_1 value = 0 }
+		set_variable = { which = live_member_2 value = 0 }
+		set_variable = { which = live_member_3 value = 0 }
+		set_variable = { which = live_member_4 value = 0 }
+		set_variable = { which = live_member_5 value = 0 }
+	}
+
+}
+
+
+# debug set example grp  
+country_event = {
+	id = imas_world_events.8101
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { which = live_member_1 value = 0 }
+		set_variable = { which = live_member_2 value = 1 }
+		set_variable = { which = live_member_3 value = 2 }
+		set_variable = { which = live_member_4 value = 3 }
+		set_variable = { which = live_member_5 value = 0 }
+	}
+
+}
+
+# debug set random grp  
+country_event = {
+	id = imas_world_events.8102
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { which = live_member_1 value = 0 }
+		set_variable = { which = live_member_2 value = 3 }
+		set_variable = { which = live_member_3 value = 1 }
+		set_variable = { which = live_member_4 value = 2 }
+		set_variable = { which = live_member_5 value = 0 }
 	}
 
 }

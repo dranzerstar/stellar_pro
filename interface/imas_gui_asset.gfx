@@ -1,4 +1,6 @@
 spriteTypes = {
+
+	#ui elements
 	spriteType = {
 		name = "GFX_imas_combined_bg"
 		texturefile = "gfx/interface/imas_ui/pop_combined_bg.dds"
@@ -22,9 +24,29 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idol_card_frame"
-		texturefile = "gfx/interface/imas_ui/card_frame.dds"   ##TODO
+		texturefile = "gfx/interface/imas_ui/card_frame.dds"  
 		alwaysTransparent = yes
 	}
+
+
+
+	spriteType = {
+		name = "GFX_ui_button_box"
+		texturefile = "gfx/interface/imas_ui/ele_bg.dds"  
+		alwaysTransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ui_button_box_l"
+		texturefile = "gfx/interface/imas_ui/ele_l_bg.dds"  
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ui_text_box"
+		texturefile = "gfx/interface/imas_ui/ele_text_bg.dds"  
+		alwaysTransparent = yes
+	}
+
 
 	spriteType = {
 		name = "GFX_idol_icon_locked"
@@ -32,10 +54,66 @@ spriteTypes = {
 		alwaysTransparent = yes
 	}
 
+# live asset
+	spriteType = {
+		name = "GFX_idol_change_button"
+		texturefile = "gfx/interface/imas_ui/change_button.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_idol_live_frame"
+		texturefile = "gfx/interface/imas_ui/live_frame.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_idol_live_frame_bg"
+		texturefile = "gfx/interface/imas_ui/live_frame_bg.dds"
+		#alwaysTransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_idol_live_bg"
+		texturefile = "gfx/interface/imas_ui/live_bg.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_idol_title_bg"
+		texturefile = "gfx/interface/imas_ui/title_bg.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_idol_effect_bg"
+		texturefile = "gfx/interface/imas_ui/effect_bg.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_idol_ele_text_long_bg"
+		texturefile = "gfx/interface/imas_ui/ele_text_long_bg.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_idol_button_pink_animated"
+		texturefile = "gfx/interface/imas_ui/button_pink_animated.dds"
+		
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua" 
+		noOfFrames = 3
+	}
+
+
+
+
+	#------------------------idol pictures
 	spriteType = {
 		name = "GFX_grp_icon_01"
 		texturefile = "gfx/interface/imas_ui/gp1.dds"
-		alwaysTransparent = yes
+		
 	}
 
 	spriteType = {
@@ -125,10 +203,12 @@ spriteTypes = {
 
 
 
-
+	#live ui asset
 	
 
-
+	spriteType = { name = "GFX_live_idol_card_01" texturefile = "gfx/interface/imas_ui/live_cropped/frame_01.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" alwaysTransparent = yes }
+	spriteType = { name = "GFX_live_idol_card_02" texturefile = "gfx/interface/imas_ui/live_cropped/frame_02.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" alwaysTransparent = yes }
+	spriteType = { name = "GFX_live_idol_card_03" texturefile = "gfx/interface/imas_ui/live_cropped/frame_03.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" alwaysTransparent = yes }
 
 
 

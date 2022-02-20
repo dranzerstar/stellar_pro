@@ -30,3 +30,8 @@
  LATER:0 "Check back later"
  not_enough_energy:0 "Doesnt seem like you are financially capable."
  reconsider:0 "Reconsider"
+
+ idol_spawned:0 "idol spawned from yearly check"
+
+
+ imas_var_test:0 "VAR_TEST\nIDOL_TOTAL:[283p_home_country.idol_total]\nLIVE_TOTAL:[283p_home_country.live_total]\nSEEKER:[283p_home_country.job_talent_seeker_total]\nTRAINEE:[283p_home_country.job_idol_trainee_total]\nSPAWN_E:[283p_home_country.potential_idol_spawn_chance_base]\nPROGRESS:[283p_home_country.idol_obtain_progress]\nNEXT:[283p_home_country.idol_obtain_threshold]"

@@ -65,7 +65,7 @@ building_imas_production = {
 		category = planet_buildings
 		cost = {
 			# 花费
-			minerals = 10000
+			minerals = 1000
 		}
 		upkeep = {
 			energy = 4

@@ -44,7 +44,7 @@ country_event = {
 	id = imas_diplo_screen.1000
 	title = imas_diplo_screen.1000
 	desc = imas_diplo_screen.1000.desc
-
+	desc = imas_var_test
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "enclave_trader_window"
@@ -158,7 +158,7 @@ country_event = {
 country_event = {
 	id = imas_diplo_screen.1010
 	title = imas_diplo_screen.1000
-	desc = imas_diplo_screen.1010.desc
+	desc = imas_var_test
 
 	is_triggered_only = yes
 	diplomatic = yes
