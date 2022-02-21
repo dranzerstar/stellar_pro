@@ -11,7 +11,7 @@ namespace = imas_world_events
 # 0000 setup game event
 # 10xx idol potential spawner
 # 2xxx notifier events
-#
+# 5xxxx other events
 # 8xxxx debug events
 # 9xxxx value updates
 
@@ -450,4 +450,266 @@ country_event = {
 		set_variable = { which = live_member_5 value = 0 }
 	}
 
+}
+
+
+
+
+#################################
+# Caravaneer Fleet 1
+# 
+#################################
+# Fleet 1 - Initial Movement
+fleet_event = {
+	id = imas_world_events.5000
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# Reset any missed flags
+		if = {
+			limit = {
+				any_system = {
+					any_system_planet = {
+						has_planet_flag = imas_contact_fleet_capital_destination
+					}
+				}
+			}
+			every_galaxy_planet = {
+				limit = {
+					has_planet_flag = imas_contact_fleet_capital_destination
+				}
+				remove_planet_flag = imas_contact_fleet_capital_destination
+			}
+		}
+		# Roughly determine number of empires
+		# Decide number of capitals to visit
+		if = {
+			# >=30 countries exist
+			limit = {
+				owner = {
+					count_playable_country = {
+						count > 29
+					}
+				}
+			}
+			log = "elysia fleet >=30 countries found, tag 10"
+			# flag 10 capitals to visit
+			while = {
+				count = 10
+				random_playable_country = {
+					limit = {
+						is_homicidal = no
+						capital_scope = {
+							NOT = {
+								has_planet_flag = imas_contact_fleet_capital_destination
+							}
+						}
+					}
+					capital_scope = {
+						set_planet_flag = imas_contact_fleet_capital_destination
+						log = "1 imas_contact_fleet_capital_destination set"
+					}
+				}
+			}
+		}
+		else_if = {
+			# >=15 countries exist
+			limit = {
+				owner = {
+					count_playable_country = {
+						count > 14
+					}
+				}
+			}
+			log = "elysia fleet >=15 countries found, tag 5"
+			# flag 10 capitals to visit
+			while = {
+				count = 5
+				random_playable_country = {
+					limit = {
+						is_homicidal = no
+						capital_scope = {
+							NOT = {
+								has_planet_flag = imas_contact_fleet_capital_destination
+							}
+						}
+					}
+					capital_scope = {
+						set_planet_flag = imas_contact_fleet_capital_destination
+						log = "1 imas_contact_fleet_capital_destination set"
+					}
+				}
+			}
+		}
+		else_if = {
+			# >12 countries exist
+			limit = {
+				owner = {
+					count_playable_country = {
+						count > 11
+					}
+				}
+			}
+			# flag 4 capitals to visit
+			log = "elysia fleet >=12 countries found, tag 4"
+			while = {
+				count = 4
+				random_playable_country = {
+					limit = {
+						is_homicidal = no
+						capital_scope = {
+							NOT = {
+								has_planet_flag = imas_contact_fleet_capital_destination
+							}
+						}
+					}
+					capital_scope = {
+						set_planet_flag = imas_contact_fleet_capital_destination
+						log = "1 fimas_contact_fleet_capital_destination set"
+					}
+				}
+			}
+		}
+		else_if = {
+			# >=9 countries exist
+			limit = {
+				owner = {
+					count_playable_country = {
+						count > 8
+					}
+				}
+			}
+			# flag 3 capitals to visit
+			log = "elysia_fleet >=9 countries found, tag 3"
+			while = {
+				count = 6
+				random_playable_country = {
+					limit = {
+						is_homicidal = no
+						capital_scope = {
+							NOT = {
+								has_planet_flag = imas_contact_fleet_capital_destination
+							}
+						}
+					}
+					capital_scope = {
+						set_planet_flag = imas_contact_fleet_capital_destination
+						log = "1 imas_contact_fleet_capital_destination set"
+					}
+				}
+			}
+		}
+		else_if = {
+			# >=6 countries exist
+			limit = {
+				owner = {
+					count_playable_country = {
+						count > 5
+					}
+				}
+			}
+			# flag 2 capitals to visit
+			log = "elysia_fleet >=6 countries found, tag 2"
+			while = {
+				count = 2
+				random_playable_country = {
+					limit = {
+						is_homicidal = no
+						capital_scope = {
+							NOT = {
+								has_planet_flag = imas_contact_fleet_capital_destination
+							}
+						}
+					}
+					capital_scope = {
+						set_planet_flag = imas_contact_fleet_capital_destination
+						log = "1 imas_contact_fleet_capital_destination set"
+					}
+				}
+			}
+		}
+		else = {
+			# flag 1 capital to visit
+			log = "elysia_fleet <3 countries found, tag 1"
+			random_playable_country = {
+				limit = {
+					is_homicidal = no
+					capital_scope = {
+						NOT = {
+							has_planet_flag = imas_contact_fleet_capital_destination
+						}
+					}
+				}
+				capital_scope = {
+					set_planet_flag = imas_contact_fleet_capital_destination
+					log = "1 imas_contact_fleet_capital_destination set"
+				}
+			}
+		}
+		solar_system = {
+			closest_system = {
+				limit = {
+					is_capital_system = yes
+					any_system_planet = {
+						has_planet_flag = imas_contact_fleet_capital_destination
+					}
+				}
+				random_system_planet = {
+					limit = {
+						has_planet_flag = imas_contact_fleet_capital_destination
+					}
+					save_event_target_as = imas_contact_fleet_next_capital_destination
+				}
+				root = {
+					auto_move_to_planet = {
+						target = event_target:imas_contact_fleet_next_capital_destination
+						clear_auto_move_on_arrival = no
+						arrival_effect = imas_contact_fleet_continue_journey
+					}
+				}
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = imas_world_events.5001
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		solar_system = {
+			closest_system = {
+				min_steps = 1
+				limit = {
+					is_capital_system = yes
+					any_system_planet = {
+						has_planet_flag = imas_contact_fleet_capital_destination
+					}
+				}
+				random_system_planet = {
+					limit = {
+						has_planet_flag = imas_contact_fleet_capital_destination
+					}
+					save_event_target_as = imas_contact_fleet_next_capital_destination
+					log = "elysia_fleet set next destination"
+				}
+			}
+		}
+		auto_move_to_planet = {
+			target = event_target:imas_contact_fleet_next_capital_destination
+			clear_auto_move_on_arrival = no
+			arrival_effect = imas_contact_fleet_continue_journey
+		}
+		log = "elysia_fleet engaged auto_move"
+		if = {
+			#Make error log shut up thanks
+			limit = {
+				always = no
+			}
+			fleet_event = {
+				id = imas_world_events.5001
+				days = 1
+			}
+		}
+	}
 }

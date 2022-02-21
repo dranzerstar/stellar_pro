@@ -21,7 +21,7 @@ guiTypes = {
 				iconType = { name = "sidepanel" quadTextureSprite ="GFX_imas_right_bg" position = { x = 1150 y = 220 } alwaysTransparent = yes}
 				iconType = { name = "sidepanel_bg" quadTextureSprite ="GFX_idol_ele_text_long_bg" position = { x = 1170 y = 300 } alwaysTransparent = yes}
 				iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
-
+				instantTextBoxType={ name = "sidepanel_title" text= "Idols_effect_cal" position = { x = 1150 y = 220 } }
 		
 			}
 
@@ -62,11 +62,58 @@ guiTypes = {
 		}
 
 		effectButtonType = { name = "live_idol_card_pos1_01" quadTextureSprite = "GFX_live_idol_card_01"
-		position = { x = @frame01_x y = @frame_y }  effect = "eff_live_idol_card_pos1_01" }
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_01" }
 		effectButtonType = { name = "live_idol_card_pos1_02" quadTextureSprite = "GFX_live_idol_card_02"
-		position = { x = @frame01_x y = @frame_y } effect = "eff_live_idol_card_pos1_02" }
-		effectButtonType = { name = "live_idol_card_pos1_03" quadTextureSprite = "GFX_live_idol_card_03" 
-		position = { x = @frame01_x y = @frame_y } effect = "eff_live_idol_card_pos1_03" }
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_02" }
+		effectButtonType = { name = "live_idol_card_pos1_03" quadTextureSprite = "GFX_live_idol_card_03"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_03" }
+		effectButtonType = { name = "live_idol_card_pos1_04" quadTextureSprite = "GFX_live_idol_card_04"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_04" }
+		effectButtonType = { name = "live_idol_card_pos1_05" quadTextureSprite = "GFX_live_idol_card_05"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_05" }
+		effectButtonType = { name = "live_idol_card_pos1_06" quadTextureSprite = "GFX_live_idol_card_06"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_06" }
+		effectButtonType = { name = "live_idol_card_pos1_07" quadTextureSprite = "GFX_live_idol_card_07"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_07" }
+		effectButtonType = { name = "live_idol_card_pos1_08" quadTextureSprite = "GFX_live_idol_card_08"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_08" }
+		effectButtonType = { name = "live_idol_card_pos1_09" quadTextureSprite = "GFX_live_idol_card_09"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_09" }
+		effectButtonType = { name = "live_idol_card_pos1_10" quadTextureSprite = "GFX_live_idol_card_10"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_10" }
+		effectButtonType = { name = "live_idol_card_pos1_11" quadTextureSprite = "GFX_live_idol_card_11"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_11" }
+		effectButtonType = { name = "live_idol_card_pos1_12" quadTextureSprite = "GFX_live_idol_card_12"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_12" }
+		effectButtonType = { name = "live_idol_card_pos1_13" quadTextureSprite = "GFX_live_idol_card_13"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_13" }
+		effectButtonType = { name = "live_idol_card_pos1_14" quadTextureSprite = "GFX_live_idol_card_14"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_14" }
+		effectButtonType = { name = "live_idol_card_pos1_15" quadTextureSprite = "GFX_live_idol_card_15"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_15" }
+		effectButtonType = { name = "live_idol_card_pos1_16" quadTextureSprite = "GFX_live_idol_card_16"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_16" }
+		effectButtonType = { name = "live_idol_card_pos1_17" quadTextureSprite = "GFX_live_idol_card_17"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_17" }
+		effectButtonType = { name = "live_idol_card_pos1_18" quadTextureSprite = "GFX_live_idol_card_18"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_18" }
+		effectButtonType = { name = "live_idol_card_pos1_19" quadTextureSprite = "GFX_live_idol_card_19"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_19" }
+		effectButtonType = { name = "live_idol_card_pos1_20" quadTextureSprite = "GFX_live_idol_card_20"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_20" }
+		effectButtonType = { name = "live_idol_card_pos1_21" quadTextureSprite = "GFX_live_idol_card_21"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_21" }
+		effectButtonType = { name = "live_idol_card_pos1_22" quadTextureSprite = "GFX_live_idol_card_22"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_22" }
+		effectButtonType = { name = "live_idol_card_pos1_23" quadTextureSprite = "GFX_live_idol_card_23"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_23" }
+		effectButtonType = { name = "live_idol_card_pos1_24" quadTextureSprite = "GFX_live_idol_card_24"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_24" }
+		effectButtonType = { name = "live_idol_card_pos1_25" quadTextureSprite = "GFX_live_idol_card_25"
+		position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos1_25" }
+		
+		
+
 
 
 		iconType={
@@ -98,12 +145,57 @@ containerWindowType = {
 		position = { x = 0 y = 0 }
 	}
 
-	effectButtonType = { name = "live_idol_card_pos2_01" quadTextureSprite = "GFX_live_idol_card_01" 
-	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos2_01" }
-	effectButtonType = { name = "live_idol_card_pos2_02" quadTextureSprite = "GFX_live_idol_card_02" 
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos2_02" }
-	effectButtonType = { name = "live_idol_card_pos2_03" quadTextureSprite = "GFX_live_idol_card_03" 
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos2_03" }
+	effectButtonType = { name = "live_idol_card_pos2_01" quadTextureSprite = "GFX_live_idol_card_01"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_01" }
+	effectButtonType = { name = "live_idol_card_pos2_02" quadTextureSprite = "GFX_live_idol_card_02"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_02" }
+	effectButtonType = { name = "live_idol_card_pos2_03" quadTextureSprite = "GFX_live_idol_card_03"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_03" }
+	effectButtonType = { name = "live_idol_card_pos2_04" quadTextureSprite = "GFX_live_idol_card_04"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_04" }
+	effectButtonType = { name = "live_idol_card_pos2_05" quadTextureSprite = "GFX_live_idol_card_05"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_05" }
+	effectButtonType = { name = "live_idol_card_pos2_06" quadTextureSprite = "GFX_live_idol_card_06"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_06" }
+	effectButtonType = { name = "live_idol_card_pos2_07" quadTextureSprite = "GFX_live_idol_card_07"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_07" }
+	effectButtonType = { name = "live_idol_card_pos2_08" quadTextureSprite = "GFX_live_idol_card_08"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_08" }
+	effectButtonType = { name = "live_idol_card_pos2_09" quadTextureSprite = "GFX_live_idol_card_09"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_09" }
+	effectButtonType = { name = "live_idol_card_pos2_10" quadTextureSprite = "GFX_live_idol_card_10"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_10" }
+	effectButtonType = { name = "live_idol_card_pos2_11" quadTextureSprite = "GFX_live_idol_card_11"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_11" }
+	effectButtonType = { name = "live_idol_card_pos2_12" quadTextureSprite = "GFX_live_idol_card_12"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_12" }
+	effectButtonType = { name = "live_idol_card_pos2_13" quadTextureSprite = "GFX_live_idol_card_13"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_13" }
+	effectButtonType = { name = "live_idol_card_pos2_14" quadTextureSprite = "GFX_live_idol_card_14"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_14" }
+	effectButtonType = { name = "live_idol_card_pos2_15" quadTextureSprite = "GFX_live_idol_card_15"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_15" }
+	effectButtonType = { name = "live_idol_card_pos2_16" quadTextureSprite = "GFX_live_idol_card_16"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_16" }
+	effectButtonType = { name = "live_idol_card_pos2_17" quadTextureSprite = "GFX_live_idol_card_17"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_17" }
+	effectButtonType = { name = "live_idol_card_pos2_18" quadTextureSprite = "GFX_live_idol_card_18"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_18" }
+	effectButtonType = { name = "live_idol_card_pos2_19" quadTextureSprite = "GFX_live_idol_card_19"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_19" }
+	effectButtonType = { name = "live_idol_card_pos2_20" quadTextureSprite = "GFX_live_idol_card_20"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_20" }
+	effectButtonType = { name = "live_idol_card_pos2_21" quadTextureSprite = "GFX_live_idol_card_21"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_21" }
+	effectButtonType = { name = "live_idol_card_pos2_22" quadTextureSprite = "GFX_live_idol_card_22"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_22" }
+	effectButtonType = { name = "live_idol_card_pos2_23" quadTextureSprite = "GFX_live_idol_card_23"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_23" }
+	effectButtonType = { name = "live_idol_card_pos2_24" quadTextureSprite = "GFX_live_idol_card_24"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_24" }
+	effectButtonType = { name = "live_idol_card_pos2_25" quadTextureSprite = "GFX_live_idol_card_25"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos2_25" }
+	
 
 
 	iconType={
@@ -134,12 +226,57 @@ containerWindowType = {
 		position = { x = 0 y = 0 }
 	}
 
-	effectButtonType = { name = "live_idol_card_pos3_01" quadTextureSprite = "GFX_live_idol_card_01" 
-	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos3_01" }
-	effectButtonType = { name = "live_idol_card_pos3_02" quadTextureSprite = "GFX_live_idol_card_02" 
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos3_02" }
+	effectButtonType = { name = "live_idol_card_pos3_01" quadTextureSprite = "GFX_live_idol_card_01"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_01" }
+	effectButtonType = { name = "live_idol_card_pos3_02" quadTextureSprite = "GFX_live_idol_card_02"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_02" }
 	effectButtonType = { name = "live_idol_card_pos3_03" quadTextureSprite = "GFX_live_idol_card_03"
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos3_03" }
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_03" }
+	effectButtonType = { name = "live_idol_card_pos3_04" quadTextureSprite = "GFX_live_idol_card_04"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_04" }
+	effectButtonType = { name = "live_idol_card_pos3_05" quadTextureSprite = "GFX_live_idol_card_05"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_05" }
+	effectButtonType = { name = "live_idol_card_pos3_06" quadTextureSprite = "GFX_live_idol_card_06"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_06" }
+	effectButtonType = { name = "live_idol_card_pos3_07" quadTextureSprite = "GFX_live_idol_card_07"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_07" }
+	effectButtonType = { name = "live_idol_card_pos3_08" quadTextureSprite = "GFX_live_idol_card_08"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_08" }
+	effectButtonType = { name = "live_idol_card_pos3_09" quadTextureSprite = "GFX_live_idol_card_09"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_09" }
+	effectButtonType = { name = "live_idol_card_pos3_10" quadTextureSprite = "GFX_live_idol_card_10"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_10" }
+	effectButtonType = { name = "live_idol_card_pos3_11" quadTextureSprite = "GFX_live_idol_card_11"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_11" }
+	effectButtonType = { name = "live_idol_card_pos3_12" quadTextureSprite = "GFX_live_idol_card_12"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_12" }
+	effectButtonType = { name = "live_idol_card_pos3_13" quadTextureSprite = "GFX_live_idol_card_13"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_13" }
+	effectButtonType = { name = "live_idol_card_pos3_14" quadTextureSprite = "GFX_live_idol_card_14"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_14" }
+	effectButtonType = { name = "live_idol_card_pos3_15" quadTextureSprite = "GFX_live_idol_card_15"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_15" }
+	effectButtonType = { name = "live_idol_card_pos3_16" quadTextureSprite = "GFX_live_idol_card_16"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_16" }
+	effectButtonType = { name = "live_idol_card_pos3_17" quadTextureSprite = "GFX_live_idol_card_17"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_17" }
+	effectButtonType = { name = "live_idol_card_pos3_18" quadTextureSprite = "GFX_live_idol_card_18"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_18" }
+	effectButtonType = { name = "live_idol_card_pos3_19" quadTextureSprite = "GFX_live_idol_card_19"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_19" }
+	effectButtonType = { name = "live_idol_card_pos3_20" quadTextureSprite = "GFX_live_idol_card_20"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_20" }
+	effectButtonType = { name = "live_idol_card_pos3_21" quadTextureSprite = "GFX_live_idol_card_21"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_21" }
+	effectButtonType = { name = "live_idol_card_pos3_22" quadTextureSprite = "GFX_live_idol_card_22"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_22" }
+	effectButtonType = { name = "live_idol_card_pos3_23" quadTextureSprite = "GFX_live_idol_card_23"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_23" }
+	effectButtonType = { name = "live_idol_card_pos3_24" quadTextureSprite = "GFX_live_idol_card_24"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_24" }
+	effectButtonType = { name = "live_idol_card_pos3_25" quadTextureSprite = "GFX_live_idol_card_25"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos3_25" }
+	
 
 
 	iconType={
@@ -171,12 +308,58 @@ containerWindowType = {
 		position = { x = 0 y = 0 }
 	}
 
-	effectButtonType = { name = "live_idol_card_pos4_01" quadTextureSprite = "GFX_live_idol_card_01" 
-	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos4_01" }
+
+	effectButtonType = { name = "live_idol_card_pos4_01" quadTextureSprite = "GFX_live_idol_card_01"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_01" }
 	effectButtonType = { name = "live_idol_card_pos4_02" quadTextureSprite = "GFX_live_idol_card_02"
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos4_02" }
-	effectButtonType = { name = "live_idol_card_pos4_03" quadTextureSprite = "GFX_live_idol_card_03" 
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos4_03" }
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_02" }
+	effectButtonType = { name = "live_idol_card_pos4_03" quadTextureSprite = "GFX_live_idol_card_03"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_03" }
+	effectButtonType = { name = "live_idol_card_pos4_04" quadTextureSprite = "GFX_live_idol_card_04"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_04" }
+	effectButtonType = { name = "live_idol_card_pos4_05" quadTextureSprite = "GFX_live_idol_card_05"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_05" }
+	effectButtonType = { name = "live_idol_card_pos4_06" quadTextureSprite = "GFX_live_idol_card_06"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_06" }
+	effectButtonType = { name = "live_idol_card_pos4_07" quadTextureSprite = "GFX_live_idol_card_07"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_07" }
+	effectButtonType = { name = "live_idol_card_pos4_08" quadTextureSprite = "GFX_live_idol_card_08"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_08" }
+	effectButtonType = { name = "live_idol_card_pos4_09" quadTextureSprite = "GFX_live_idol_card_09"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_09" }
+	effectButtonType = { name = "live_idol_card_pos4_10" quadTextureSprite = "GFX_live_idol_card_10"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_10" }
+	effectButtonType = { name = "live_idol_card_pos4_11" quadTextureSprite = "GFX_live_idol_card_11"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_11" }
+	effectButtonType = { name = "live_idol_card_pos4_12" quadTextureSprite = "GFX_live_idol_card_12"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_12" }
+	effectButtonType = { name = "live_idol_card_pos4_13" quadTextureSprite = "GFX_live_idol_card_13"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_13" }
+	effectButtonType = { name = "live_idol_card_pos4_14" quadTextureSprite = "GFX_live_idol_card_14"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_14" }
+	effectButtonType = { name = "live_idol_card_pos4_15" quadTextureSprite = "GFX_live_idol_card_15"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_15" }
+	effectButtonType = { name = "live_idol_card_pos4_16" quadTextureSprite = "GFX_live_idol_card_16"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_16" }
+	effectButtonType = { name = "live_idol_card_pos4_17" quadTextureSprite = "GFX_live_idol_card_17"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_17" }
+	effectButtonType = { name = "live_idol_card_pos4_18" quadTextureSprite = "GFX_live_idol_card_18"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_18" }
+	effectButtonType = { name = "live_idol_card_pos4_19" quadTextureSprite = "GFX_live_idol_card_19"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_19" }
+	effectButtonType = { name = "live_idol_card_pos4_20" quadTextureSprite = "GFX_live_idol_card_20"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_20" }
+	effectButtonType = { name = "live_idol_card_pos4_21" quadTextureSprite = "GFX_live_idol_card_21"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_21" }
+	effectButtonType = { name = "live_idol_card_pos4_22" quadTextureSprite = "GFX_live_idol_card_22"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_22" }
+	effectButtonType = { name = "live_idol_card_pos4_23" quadTextureSprite = "GFX_live_idol_card_23"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_23" }
+	effectButtonType = { name = "live_idol_card_pos4_24" quadTextureSprite = "GFX_live_idol_card_24"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_24" }
+	effectButtonType = { name = "live_idol_card_pos4_25" quadTextureSprite = "GFX_live_idol_card_25"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos4_25" }
+	
 
 
 	iconType={
@@ -210,11 +393,56 @@ containerWindowType = {
 	}
 
 	effectButtonType = { name = "live_idol_card_pos5_01" quadTextureSprite = "GFX_live_idol_card_01"
-	position = { x = 0 y = 0  }  effect = "eff_live_idol_card_pos5_01" }
-	effectButtonType = { name = "live_idol_card_pos5_02" quadTextureSprite = "GFX_live_idol_card_02" 
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos5_02" }
-	effectButtonType = { name = "live_idol_card_pos5_03" quadTextureSprite = "GFX_live_idol_card_03" 
-	position = { x = 0 y = 0   } effect = "eff_live_idol_card_pos5_03" }
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_01" }
+	effectButtonType = { name = "live_idol_card_pos5_02" quadTextureSprite = "GFX_live_idol_card_02"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_02" }
+	effectButtonType = { name = "live_idol_card_pos5_03" quadTextureSprite = "GFX_live_idol_card_03"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_03" }
+	effectButtonType = { name = "live_idol_card_pos5_04" quadTextureSprite = "GFX_live_idol_card_04"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_04" }
+	effectButtonType = { name = "live_idol_card_pos5_05" quadTextureSprite = "GFX_live_idol_card_05"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_05" }
+	effectButtonType = { name = "live_idol_card_pos5_06" quadTextureSprite = "GFX_live_idol_card_06"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_06" }
+	effectButtonType = { name = "live_idol_card_pos5_07" quadTextureSprite = "GFX_live_idol_card_07"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_07" }
+	effectButtonType = { name = "live_idol_card_pos5_08" quadTextureSprite = "GFX_live_idol_card_08"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_08" }
+	effectButtonType = { name = "live_idol_card_pos5_09" quadTextureSprite = "GFX_live_idol_card_09"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_09" }
+	effectButtonType = { name = "live_idol_card_pos5_10" quadTextureSprite = "GFX_live_idol_card_10"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_10" }
+	effectButtonType = { name = "live_idol_card_pos5_11" quadTextureSprite = "GFX_live_idol_card_11"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_11" }
+	effectButtonType = { name = "live_idol_card_pos5_12" quadTextureSprite = "GFX_live_idol_card_12"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_12" }
+	effectButtonType = { name = "live_idol_card_pos5_13" quadTextureSprite = "GFX_live_idol_card_13"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_13" }
+	effectButtonType = { name = "live_idol_card_pos5_14" quadTextureSprite = "GFX_live_idol_card_14"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_14" }
+	effectButtonType = { name = "live_idol_card_pos5_15" quadTextureSprite = "GFX_live_idol_card_15"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_15" }
+	effectButtonType = { name = "live_idol_card_pos5_16" quadTextureSprite = "GFX_live_idol_card_16"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_16" }
+	effectButtonType = { name = "live_idol_card_pos5_17" quadTextureSprite = "GFX_live_idol_card_17"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_17" }
+	effectButtonType = { name = "live_idol_card_pos5_18" quadTextureSprite = "GFX_live_idol_card_18"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_18" }
+	effectButtonType = { name = "live_idol_card_pos5_19" quadTextureSprite = "GFX_live_idol_card_19"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_19" }
+	effectButtonType = { name = "live_idol_card_pos5_20" quadTextureSprite = "GFX_live_idol_card_20"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_20" }
+	effectButtonType = { name = "live_idol_card_pos5_21" quadTextureSprite = "GFX_live_idol_card_21"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_21" }
+	effectButtonType = { name = "live_idol_card_pos5_22" quadTextureSprite = "GFX_live_idol_card_22"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_22" }
+	effectButtonType = { name = "live_idol_card_pos5_23" quadTextureSprite = "GFX_live_idol_card_23"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_23" }
+	effectButtonType = { name = "live_idol_card_pos5_24" quadTextureSprite = "GFX_live_idol_card_24"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_24" }
+	effectButtonType = { name = "live_idol_card_pos5_25" quadTextureSprite = "GFX_live_idol_card_25"
+	position = { x = 0 y = 0 }  effect = "eff_live_idol_card_pos5_25" }
+	
 
 
 	iconType={
@@ -240,8 +468,33 @@ containerWindowType = {
  #516x292 card size
 		@main_image_x = 480
 		@main_image_y = 290
+#right panel section	
+	listboxType = {
+		name = "live_effect_list"
+		position = { x =1150  y = 300 }
+		
+		size = { x = 500 y = 800 }
+		scrollbartype = "standardlistbox_slider"
+		spacing = 80
+		borderSize = { x = 0 y = 0 }
+		Orientation = "CENTERED_UP"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	}
 
 
 

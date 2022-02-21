@@ -8,6 +8,6 @@ rem     echo !num!
 
 
 	
-echo	 text_idol_label_!num!:0 ""
+echo has_country_flag = live_member_flag_!num!
 
 )
