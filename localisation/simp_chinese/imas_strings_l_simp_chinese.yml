@@ -24,6 +24,7 @@
  mod_283p_contract_signed_live:0 "正在贊助283Pro的出演活動"
  more_details:0 "点击更多"
  close:0 "关闭"
+ Idols_live_menu:0 "FES巡回演唱准备"
 
 #idol names
  text_idol_label_01:0 "樱木真乃"
@@ -77,7 +78,7 @@
  Idols_detail:0 "偶像资料"
  Idols_group:0 "偶像组合"
  Idols_effect:0 "出演效果"
-
+ Idols_effect_cal:0 "当前出演效果"
 #idol details
 
 

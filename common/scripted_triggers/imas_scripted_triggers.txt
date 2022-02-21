@@ -20,3 +20,348 @@ idol_trainee_job_check_trigger = {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+##——————————————————————————————————————————————————————————————
+##   live team up triggers
+##
+##
+#example
+# flags
+#  idol_id_xx  idol id
+#  idol_grp_id_xx  higher spawn rate if have idol from grp
+# 01 illuminationstars   01 02 03
+# 02 LAntica   04 05 06 07 08
+# 03 hokagoclimaxgirls  09 10 11 12 13
+# 04 alstroemeria  14 15 16
+# 05 straylight  17 18 19
+# 06 noctchill  20 21 22 23
+# 07 shhis 24 25
+#
+#
+# live_member_flag_xx
+#
+# has_country_flag = live_member_flag_01
+# has_country_flag = live_member_flag_02
+# has_country_flag = live_member_flag_03
+# has_country_flag = live_member_flag_04
+# has_country_flag = live_member_flag_05
+# has_country_flag = live_member_flag_06
+# has_country_flag = live_member_flag_07
+# has_country_flag = live_member_flag_08
+# has_country_flag = live_member_flag_09
+# has_country_flag = live_member_flag_10
+# has_country_flag = live_member_flag_11
+# has_country_flag = live_member_flag_12
+# has_country_flag = live_member_flag_13
+# has_country_flag = live_member_flag_14
+# has_country_flag = live_member_flag_15
+# has_country_flag = live_member_flag_16
+# has_country_flag = live_member_flag_17
+# has_country_flag = live_member_flag_18
+# has_country_flag = live_member_flag_19
+# has_country_flag = live_member_flag_20
+# has_country_flag = live_member_flag_21
+# has_country_flag = live_member_flag_22
+# has_country_flag = live_member_flag_23
+# has_country_flag = live_member_flag_24
+# has_country_flag = live_member_flag_25
+
+is_illuminationstars_formed={
+	custom_tooltip = "is_illuminationstars_formed"
+	AND={
+		has_country_flag = live_member_flag_01
+		has_country_flag = live_member_flag_02
+		has_country_flag = live_member_flag_03
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_04
+				has_country_flag = live_member_flag_05
+				has_country_flag = live_member_flag_06
+				has_country_flag = live_member_flag_07
+				has_country_flag = live_member_flag_08
+				has_country_flag = live_member_flag_09
+				has_country_flag = live_member_flag_10
+				has_country_flag = live_member_flag_11
+				has_country_flag = live_member_flag_12
+				has_country_flag = live_member_flag_13
+				has_country_flag = live_member_flag_14
+				has_country_flag = live_member_flag_15
+				has_country_flag = live_member_flag_16
+				has_country_flag = live_member_flag_17
+				has_country_flag = live_member_flag_18
+				has_country_flag = live_member_flag_19
+				has_country_flag = live_member_flag_20
+				has_country_flag = live_member_flag_21
+				has_country_flag = live_member_flag_22
+				has_country_flag = live_member_flag_23
+				has_country_flag = live_member_flag_24
+				has_country_flag = live_member_flag_25
+			}
+
+
+		}
+	}
+
+}
+
+is_lantica_formed={
+	custom_tooltip = "is_lantica_formed"
+	AND={
+		has_country_flag = live_member_flag_04
+		has_country_flag = live_member_flag_05
+		has_country_flag = live_member_flag_06
+		has_country_flag = live_member_flag_07
+		has_country_flag = live_member_flag_08
+
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_01
+				has_country_flag = live_member_flag_02
+				has_country_flag = live_member_flag_03
+				has_country_flag = live_member_flag_09
+				has_country_flag = live_member_flag_10
+				has_country_flag = live_member_flag_11
+				has_country_flag = live_member_flag_12
+				has_country_flag = live_member_flag_13
+				has_country_flag = live_member_flag_14
+				has_country_flag = live_member_flag_15
+				has_country_flag = live_member_flag_16
+				has_country_flag = live_member_flag_17
+				has_country_flag = live_member_flag_18
+				has_country_flag = live_member_flag_19
+				has_country_flag = live_member_flag_20
+				has_country_flag = live_member_flag_21
+				has_country_flag = live_member_flag_22
+				has_country_flag = live_member_flag_23
+				has_country_flag = live_member_flag_24
+				has_country_flag = live_member_flag_25
+			}
+
+
+		}
+	}
+
+}
+
+is_hokago_formed={
+	custom_tooltip = "is_hokago_formed"
+	AND={				has_country_flag = live_member_flag_09
+		has_country_flag = live_member_flag_10
+		has_country_flag = live_member_flag_11
+		has_country_flag = live_member_flag_12
+		has_country_flag = live_member_flag_13
+
+
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_01
+				has_country_flag = live_member_flag_02
+				has_country_flag = live_member_flag_03
+				has_country_flag = live_member_flag_04
+				has_country_flag = live_member_flag_05
+				has_country_flag = live_member_flag_06
+				has_country_flag = live_member_flag_07
+				has_country_flag = live_member_flag_08
+				has_country_flag = live_member_flag_14
+				has_country_flag = live_member_flag_15
+				has_country_flag = live_member_flag_16
+				has_country_flag = live_member_flag_17
+				has_country_flag = live_member_flag_18
+				has_country_flag = live_member_flag_19
+				has_country_flag = live_member_flag_20
+				has_country_flag = live_member_flag_21
+				has_country_flag = live_member_flag_22
+				has_country_flag = live_member_flag_23
+				has_country_flag = live_member_flag_24
+				has_country_flag = live_member_flag_25
+			}
+
+
+		}
+	}
+
+}
+
+
+is_alstroemeria_formed={
+	custom_tooltip = "is_straylight_formed"
+	AND={
+
+		has_country_flag = live_member_flag_14
+		has_country_flag = live_member_flag_15
+		has_country_flag = live_member_flag_16
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_01
+				has_country_flag = live_member_flag_02
+				has_country_flag = live_member_flag_03
+				has_country_flag = live_member_flag_04
+				has_country_flag = live_member_flag_05
+				has_country_flag = live_member_flag_06
+				has_country_flag = live_member_flag_07
+				has_country_flag = live_member_flag_08
+				has_country_flag = live_member_flag_09
+				has_country_flag = live_member_flag_10
+				has_country_flag = live_member_flag_11
+				has_country_flag = live_member_flag_12
+				has_country_flag = live_member_flag_13
+
+				has_country_flag = live_member_flag_17
+				has_country_flag = live_member_flag_18
+				has_country_flag = live_member_flag_19
+				has_country_flag = live_member_flag_20
+				has_country_flag = live_member_flag_21
+				has_country_flag = live_member_flag_22
+				has_country_flag = live_member_flag_23
+				has_country_flag = live_member_flag_24
+				has_country_flag = live_member_flag_25
+			}
+
+
+		}
+	}
+
+}
+
+is_straylight_formed={
+	custom_tooltip = "is_straylight_formed"
+	AND={
+
+		has_country_flag = live_member_flag_17
+		has_country_flag = live_member_flag_18
+		has_country_flag = live_member_flag_19
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_01
+				has_country_flag = live_member_flag_02
+				has_country_flag = live_member_flag_03
+				has_country_flag = live_member_flag_04
+				has_country_flag = live_member_flag_05
+				has_country_flag = live_member_flag_06
+				has_country_flag = live_member_flag_07
+				has_country_flag = live_member_flag_08
+				has_country_flag = live_member_flag_09
+				has_country_flag = live_member_flag_10
+				has_country_flag = live_member_flag_11
+				has_country_flag = live_member_flag_12
+				has_country_flag = live_member_flag_13
+				has_country_flag = live_member_flag_14
+				has_country_flag = live_member_flag_15
+				has_country_flag = live_member_flag_16
+
+				has_country_flag = live_member_flag_20
+				has_country_flag = live_member_flag_21
+				has_country_flag = live_member_flag_22
+				has_country_flag = live_member_flag_23
+				has_country_flag = live_member_flag_24
+				has_country_flag = live_member_flag_25
+			}
+
+
+		}
+	}
+
+}
+
+is_noctchill_formed={
+	custom_tooltip = "is_noctchill_formed"
+	AND={
+		has_country_flag = live_member_flag_20
+		has_country_flag = live_member_flag_21
+		has_country_flag = live_member_flag_22
+		has_country_flag = live_member_flag_23
+
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_01
+				has_country_flag = live_member_flag_02
+				has_country_flag = live_member_flag_03
+				has_country_flag = live_member_flag_04
+				has_country_flag = live_member_flag_05
+				has_country_flag = live_member_flag_06
+				has_country_flag = live_member_flag_07
+				has_country_flag = live_member_flag_08
+				has_country_flag = live_member_flag_09
+				has_country_flag = live_member_flag_10
+				has_country_flag = live_member_flag_11
+				has_country_flag = live_member_flag_12
+				has_country_flag = live_member_flag_13
+				has_country_flag = live_member_flag_14
+				has_country_flag = live_member_flag_15
+				has_country_flag = live_member_flag_16
+
+				has_country_flag = live_member_flag_17
+				has_country_flag = live_member_flag_18
+				has_country_flag = live_member_flag_19
+				has_country_flag = live_member_flag_24
+				has_country_flag = live_member_flag_25
+			}
+
+
+		}
+	}
+
+}
+
+is_shhis_formed={
+	custom_tooltip = "is_shhis_formed"
+	AND={
+		has_country_flag = live_member_flag_24
+		has_country_flag = live_member_flag_25
+
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = live_member_flag_01
+				has_country_flag = live_member_flag_02
+				has_country_flag = live_member_flag_03
+				has_country_flag = live_member_flag_04
+				has_country_flag = live_member_flag_05
+				has_country_flag = live_member_flag_06
+				has_country_flag = live_member_flag_07
+				has_country_flag = live_member_flag_08
+				has_country_flag = live_member_flag_09
+				has_country_flag = live_member_flag_10
+				has_country_flag = live_member_flag_11
+				has_country_flag = live_member_flag_12
+				has_country_flag = live_member_flag_13
+				has_country_flag = live_member_flag_14
+				has_country_flag = live_member_flag_15
+				has_country_flag = live_member_flag_16
+
+				has_country_flag = live_member_flag_17
+				has_country_flag = live_member_flag_18
+				has_country_flag = live_member_flag_19
+				has_country_flag = live_member_flag_20
+				has_country_flag = live_member_flag_21
+				has_country_flag = live_member_flag_22
+				has_country_flag = live_member_flag_23
+
+			}
+
+
+		}
+	}
+
+}
+
+
+is_5_person_group={
+	custom_tooltip = "is_full_team"
+
+	hidden_trigger = {
+		NOT = {    check_variable = {  which = live_member_1 value = 00 }   }
+		NOT = {    check_variable = {  which = live_member_2 value = 00 }   }
+		NOT = {    check_variable = {  which = live_member_3 value = 00 }   }
+		NOT = {    check_variable = {  which = live_member_4 value = 00 }   }
+		NOT = {    check_variable = {  which = live_member_5 value = 00 }   }
+
+	}
+}

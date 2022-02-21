@@ -192,6 +192,48 @@ imas_caravaneer_init = {
 					set_leader = last_created_leader
 					create_ship_design = { design = "NAME_Caravaneer_Starbase" }
 					add_ship_design = last_created_design
+					create_fleet = {
+						name = "NAME_imas_fleet"
+						settings = {
+							spawn_debris = no
+						}
+						effect = {
+							set_fleet_stance = passive
+							set_formation_scale = 2.5
+							set_owner = prev
+							create_ship = {
+								name = "NAME_ima_ship1"
+								design = NAME_Schooner
+							}
+							while = {
+								count = 10
+								create_ship = {
+									name = "NAME_ima_ship2"
+									design = NAME_Yojimbo
+								}
+							}
+							while = {
+								count = 6
+								create_ship = {
+									name = "NAME_ima_ship3"
+									design = NAME_Gunslinger
+								}
+							}
+							set_location = {
+								target = event_target:imas_home_star
+								angle = 90
+								distance = 40
+							}
+							set_fleet_flag = imas_fleet
+							save_global_event_target_as = imas_contact_fleet
+						}
+					}
+					event_target:imas_contact_fleet = {
+						fleet_event = {
+							id = imas_world_events.5000
+							days = 100
+						}
+					}
 				}
 			}
 		}

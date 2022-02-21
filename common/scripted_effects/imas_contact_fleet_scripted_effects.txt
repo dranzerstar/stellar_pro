@@ -1,0 +1,52 @@
+# This = owner of fleet
+# From = fleet
+# FromFrom = planet (if any)
+imas_contact_fleet_continue_journey = {
+	# Untag capital planet
+	log = "triggered imas_contact_fleet_continue_journey"
+	from = {
+		remove_planet_flag = imas_contact_fleet_capital_destination
+		log = "elysia_fleet untagged planet"
+	}
+	# Move on to next capital
+	if = {
+		limit = {
+			any_country = {
+				exists = capital_scope
+				capital_scope = {
+					has_planet_flag = imas_contact_fleet_capital_destination
+					solar_system = {
+						NOT = { is_same_value = prevprevprev.solar_system }
+					}
+				}
+			}
+		}
+		fleet_event = { id = imas_world_events.5001 days = 1 scopes = { from = from fromfrom = fromfrom } }
+	}
+	# Or return home and reset in 3 years
+	else_if = {
+		limit = { exists = event_target:imas_home_star }
+		auto_move_to_planet = {
+			target = event_target:imas_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = imas_contact_fleet_reset_journey
+		}
+		log = "elysia_fleet returning home"
+	}
+	else = {
+		random_galaxy_planet = { save_event_target_as = temporary_elysia_fleet_destination }
+		auto_move_to_planet = {
+			target = event_target:temporary_elysia_fleet_destination
+			clear_auto_move_on_arrival = no
+			arrival_effect = imas_contact_fleet_continue_journey
+		}
+		log = "elysia_fleet taking a detour, home is dead/not yet reestablished"
+	}
+}
+
+# This = owner of fleet
+# From = fleet
+# FromFrom = planet (if any)
+imas_contact_fleet_reset_journey = {
+	fleet_event = { id = imas_world_events.5000 days = 1080 }
+}

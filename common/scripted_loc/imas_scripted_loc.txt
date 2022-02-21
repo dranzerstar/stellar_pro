@@ -1,0 +1,35 @@
+localization_key = {
+	name = live_luanch_button_text
+	text = {
+		trigger = {
+			has_country_flag = imas_live_planned
+		}
+		localization_key = live_prepared
+	}
+
+	text = {
+		trigger = {
+			NOT={ has_country_flag = imas_live_planned }
+			OR={
+				is_illuminationstars_formed =yes
+				is_lantica_formed =yes
+				is_hokago_formed =yes
+				is_alstroemeria_formed =yes
+				is_noctchill_formed =yes
+				is_shhis_formed =yes
+				is_5_person_group =yes
+			}
+		}
+		localization_key = confirm_live_grp
+	}
+
+	text = {
+		trigger = {
+			NOT={ has_country_flag = imas_live_planned }
+		}
+		localization_key = invalid_live_grp
+	}
+
+
+	
+}

@@ -26,6 +26,7 @@
  more_details:0 "click for more"
 
  close:0 "close"
+ Idols_live_menu:0 "FES Tours Planner"
 
 
 #UI STRINGS
@@ -70,7 +71,8 @@
  Idols_detail:0 "Talent Details"
  Idols_group:0 "Idol Groups"
  Idols_effect:0 "Live effects"
-
+ Idols_effect_cal:0 "Expected Live Effects"
+#idol details
 
  Idols_detail_01:0 "樱木真乃\n\n4月25日\n\n155\n\n48\n\n86-58-88\n\n[idol_country_01.GetName]\n\n外出、公园晒太阳\n\n被鸟喜欢\n\n和蔼可亲的治愈系女孩，心地善良，易于激发保护欲的类型，仅仅待在一起就令人产生幸福感。"
  Idols_detail_02:0 "风野灯织\n\n3月4日\n\n154\n\n43\n\n75-55-78\n\n[idol_country_02.GetName]\n\n音乐鉴赏、探寻美景、占卜\n\n料理、日程管理\n\n扎在头后的黑发给人深刻印象的高冷系美少女，在得到自己认可之前不吝惜努力的克己的性格。"

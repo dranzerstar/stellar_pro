@@ -1,50 +1,14 @@
-desc = { trigger = { check_variable = {which= idols_select value = 01 }}
-text = Idols_detail_01 }
-desc = { trigger = { check_variable = {which= idols_select value = 02 }}
-text = Idols_detail_02 }
-desc = { trigger = { check_variable = {which= idols_select value = 03 }}
-text = Idols_detail_03 }
-desc = { trigger = { check_variable = {which= idols_select value = 04 }}
-text = Idols_detail_04 }
-desc = { trigger = { check_variable = {which= idols_select value = 05 }}
-text = Idols_detail_05 }
-desc = { trigger = { check_variable = {which= idols_select value = 06 }}
-text = Idols_detail_06 }
-desc = { trigger = { check_variable = {which= idols_select value = 07 }}
-text = Idols_detail_07 }
-desc = { trigger = { check_variable = {which= idols_select value = 08 }}
-text = Idols_detail_08 }
-desc = { trigger = { check_variable = {which= idols_select value = 09 }}
-text = Idols_detail_09 }
-desc = { trigger = { check_variable = {which= idols_select value = 10 }}
-text = Idols_detail_10 }
-desc = { trigger = { check_variable = {which= idols_select value = 11 }}
-text = Idols_detail_11 }
-desc = { trigger = { check_variable = {which= idols_select value = 12 }}
-text = Idols_detail_12 }
-desc = { trigger = { check_variable = {which= idols_select value = 13 }}
-text = Idols_detail_13 }
-desc = { trigger = { check_variable = {which= idols_select value = 14 }}
-text = Idols_detail_14 }
-desc = { trigger = { check_variable = {which= idols_select value = 15 }}
-text = Idols_detail_15 }
-desc = { trigger = { check_variable = {which= idols_select value = 16 }}
-text = Idols_detail_16 }
-desc = { trigger = { check_variable = {which= idols_select value = 17 }}
-text = Idols_detail_17 }
-desc = { trigger = { check_variable = {which= idols_select value = 18 }}
-text = Idols_detail_18 }
-desc = { trigger = { check_variable = {which= idols_select value = 19 }}
-text = Idols_detail_19 }
-desc = { trigger = { check_variable = {which= idols_select value = 20 }}
-text = Idols_detail_20 }
-desc = { trigger = { check_variable = {which= idols_select value = 21 }}
-text = Idols_detail_21 }
-desc = { trigger = { check_variable = {which= idols_select value = 22 }}
-text = Idols_detail_22 }
-desc = { trigger = { check_variable = {which= idols_select value = 23 }}
-text = Idols_detail_23 }
-desc = { trigger = { check_variable = {which= idols_select value = 24 }}
-text = Idols_detail_24 }
-desc = { trigger = { check_variable = {which= idols_select value = 25 }}
-text = Idols_detail_25 }
+	effectButtonType = { name = "idol_effect_group_01_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_01" text="idol_group_effect_text_01" }
+	effectButtonType = { name = "idol_effect_group_02_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_02" text="idol_group_effect_text_02" }
+	effectButtonType = { name = "idol_effect_group_03_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_03" text="idol_group_effect_text_03" }
+	effectButtonType = { name = "idol_effect_group_04_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_04" text="idol_group_effect_text_04" }
+	effectButtonType = { name = "idol_effect_group_05_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_05" text="idol_group_effect_text_05" }
+	effectButtonType = { name = "idol_effect_group_06_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_06" text="idol_group_effect_text_06" }
+	effectButtonType = { name = "idol_effect_group_07_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_07" text="idol_group_effect_text_07" }
