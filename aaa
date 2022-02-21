@@ -1,25 +1,50 @@
-set_global_flag = idol_debut_01
-set_global_flag = idol_debut_02
-set_global_flag = idol_debut_03
-set_global_flag = idol_debut_04
-set_global_flag = idol_debut_05
-set_global_flag = idol_debut_06
-set_global_flag = idol_debut_07
-set_global_flag = idol_debut_08
-set_global_flag = idol_debut_09
-set_global_flag = idol_debut_10
-set_global_flag = idol_debut_11
-set_global_flag = idol_debut_12
-set_global_flag = idol_debut_13
-set_global_flag = idol_debut_14
-set_global_flag = idol_debut_15
-set_global_flag = idol_debut_16
-set_global_flag = idol_debut_17
-set_global_flag = idol_debut_18
-set_global_flag = idol_debut_19
-set_global_flag = idol_debut_20
-set_global_flag = idol_debut_21
-set_global_flag = idol_debut_22
-set_global_flag = idol_debut_23
-set_global_flag = idol_debut_24
-set_global_flag = idol_debut_25
+desc = { trigger = { check_variable = {which= idols_select value = 01 }}
+text = Idols_detail_01 }
+desc = { trigger = { check_variable = {which= idols_select value = 02 }}
+text = Idols_detail_02 }
+desc = { trigger = { check_variable = {which= idols_select value = 03 }}
+text = Idols_detail_03 }
+desc = { trigger = { check_variable = {which= idols_select value = 04 }}
+text = Idols_detail_04 }
+desc = { trigger = { check_variable = {which= idols_select value = 05 }}
+text = Idols_detail_05 }
+desc = { trigger = { check_variable = {which= idols_select value = 06 }}
+text = Idols_detail_06 }
+desc = { trigger = { check_variable = {which= idols_select value = 07 }}
+text = Idols_detail_07 }
+desc = { trigger = { check_variable = {which= idols_select value = 08 }}
+text = Idols_detail_08 }
+desc = { trigger = { check_variable = {which= idols_select value = 09 }}
+text = Idols_detail_09 }
+desc = { trigger = { check_variable = {which= idols_select value = 10 }}
+text = Idols_detail_10 }
+desc = { trigger = { check_variable = {which= idols_select value = 11 }}
+text = Idols_detail_11 }
+desc = { trigger = { check_variable = {which= idols_select value = 12 }}
+text = Idols_detail_12 }
+desc = { trigger = { check_variable = {which= idols_select value = 13 }}
+text = Idols_detail_13 }
+desc = { trigger = { check_variable = {which= idols_select value = 14 }}
+text = Idols_detail_14 }
+desc = { trigger = { check_variable = {which= idols_select value = 15 }}
+text = Idols_detail_15 }
+desc = { trigger = { check_variable = {which= idols_select value = 16 }}
+text = Idols_detail_16 }
+desc = { trigger = { check_variable = {which= idols_select value = 17 }}
+text = Idols_detail_17 }
+desc = { trigger = { check_variable = {which= idols_select value = 18 }}
+text = Idols_detail_18 }
+desc = { trigger = { check_variable = {which= idols_select value = 19 }}
+text = Idols_detail_19 }
+desc = { trigger = { check_variable = {which= idols_select value = 20 }}
+text = Idols_detail_20 }
+desc = { trigger = { check_variable = {which= idols_select value = 21 }}
+text = Idols_detail_21 }
+desc = { trigger = { check_variable = {which= idols_select value = 22 }}
+text = Idols_detail_22 }
+desc = { trigger = { check_variable = {which= idols_select value = 23 }}
+text = Idols_detail_23 }
+desc = { trigger = { check_variable = {which= idols_select value = 24 }}
+text = Idols_detail_24 }
+desc = { trigger = { check_variable = {which= idols_select value = 25 }}
+text = Idols_detail_25 }

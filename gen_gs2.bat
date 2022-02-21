@@ -7,7 +7,7 @@ for /L %%i in (1, 1, 25) do (
 rem     echo !num!
 
 
-	
-echo	 text_idol_label_!num!:0 ""
+echo desc = { trigger = { check_variable = {which= idols_select value = !num! }}
+echo	text = Idols_detail_!num! }
 
 )
