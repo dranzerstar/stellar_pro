@@ -1,13 +1,14 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-for /L %%i in (1, 1, 25) do (
+for /L %%i in (0, 1, 25) do (
      set "num=000000%%i"
      set "num=!num:~-2!"
 rem     echo !num!
 
 
 	
-echo has_country_flag = live_member_flag_!num!
+echo	text = { trigger = { check_variable={ which=live_member_5 value=!num! } } localization_key = idol_live_effect_!num! }
+
 
 )
