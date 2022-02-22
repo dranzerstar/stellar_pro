@@ -1,14 +1,25 @@
-	effectButtonType = { name = "idol_effect_group_01_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_01" text="idol_group_effect_text_01" }
-	effectButtonType = { name = "idol_effect_group_02_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_02" text="idol_group_effect_text_02" }
-	effectButtonType = { name = "idol_effect_group_03_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_03" text="idol_group_effect_text_03" }
-	effectButtonType = { name = "idol_effect_group_04_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_04" text="idol_group_effect_text_04" }
-	effectButtonType = { name = "idol_effect_group_05_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_05" text="idol_group_effect_text_05" }
-	effectButtonType = { name = "idol_effect_group_06_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_06" text="idol_group_effect_text_06" }
-	effectButtonType = { name = "idol_effect_group_07_desc" quadTextureSprite = "GFX_idol_effect_bg"
-	position = { x = 0 y = 0 }  effect = "idol_effect_group_07" text="idol_group_effect_text_07" }
+spriteType = { name = "GFX_live_idol_card_01" texturefile = "gfx/interface/imas_ui/live_cropped/frame_01.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_02" texturefile = "gfx/interface/imas_ui/live_cropped/frame_02.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_03" texturefile = "gfx/interface/imas_ui/live_cropped/frame_03.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_04" texturefile = "gfx/interface/imas_ui/live_cropped/frame_04.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_05" texturefile = "gfx/interface/imas_ui/live_cropped/frame_05.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_06" texturefile = "gfx/interface/imas_ui/live_cropped/frame_06.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_07" texturefile = "gfx/interface/imas_ui/live_cropped/frame_07.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_08" texturefile = "gfx/interface/imas_ui/live_cropped/frame_08.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_09" texturefile = "gfx/interface/imas_ui/live_cropped/frame_09.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_10" texturefile = "gfx/interface/imas_ui/live_cropped/frame_10.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_11" texturefile = "gfx/interface/imas_ui/live_cropped/frame_11.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_12" texturefile = "gfx/interface/imas_ui/live_cropped/frame_12.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_13" texturefile = "gfx/interface/imas_ui/live_cropped/frame_13.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_14" texturefile = "gfx/interface/imas_ui/live_cropped/frame_14.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_15" texturefile = "gfx/interface/imas_ui/live_cropped/frame_15.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_16" texturefile = "gfx/interface/imas_ui/live_cropped/frame_16.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_17" texturefile = "gfx/interface/imas_ui/live_cropped/frame_17.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_18" texturefile = "gfx/interface/imas_ui/live_cropped/frame_18.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_19" texturefile = "gfx/interface/imas_ui/live_cropped/frame_19.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_20" texturefile = "gfx/interface/imas_ui/live_cropped/frame_20.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_21" texturefile = "gfx/interface/imas_ui/live_cropped/frame_21.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_22" texturefile = "gfx/interface/imas_ui/live_cropped/frame_22.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_23" texturefile = "gfx/interface/imas_ui/live_cropped/frame_23.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_24" texturefile = "gfx/interface/imas_ui/live_cropped/frame_24.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+spriteType = { name = "GFX_live_idol_card_25" texturefile = "gfx/interface/imas_ui/live_cropped/frame_25.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
