@@ -475,14 +475,35 @@ containerWindowType = {
 		
 		size = { x = 500 y = 800 }
 		scrollbartype = "standardlistbox_slider"
-		spacing = 80
+		spacing = 74
 		borderSize = { x = 0 y = 0 }
 		Orientation = "CENTERED_UP"
 
+		effectButtonType = { name = "idol_01_effect_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_01" text="idol_effect_text_01" }
+	
+		effectButtonType = { name = "idol_02_effect_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_02" text="idol_effect_text_02" }
+		
+		effectButtonType = { name = "idol_03_effect_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_03" text="idol_effect_text_03" }
+	
 
-
-
-
+		effectButtonType = { name = "idol_effect_group_01_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_01" text="idol_group_effect_text_01" }
+		effectButtonType = { name = "idol_effect_group_02_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_02" text="idol_group_effect_text_02" }
+		effectButtonType = { name = "idol_effect_group_03_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_03" text="idol_group_effect_text_03" }
+		effectButtonType = { name = "idol_effect_group_04_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_04" text="idol_group_effect_text_04" }
+		effectButtonType = { name = "idol_effect_group_05_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_05" text="idol_group_effect_text_05" }
+		effectButtonType = { name = "idol_effect_group_06_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_06" text="idol_group_effect_text_06" }
+		effectButtonType = { name = "idol_effect_group_07_desc" quadTextureSprite = "GFX_idol_effect_bg"
+		position = { x = 0 y = 0 }  effect = "idol_effect_group_07" text="idol_group_effect_text_07" }
+	
 
 
 
@@ -506,10 +527,13 @@ containerWindowType = {
 #
 #
 # bottom area
-		effectButtonType = { name = "confirm_live_set" 
-		quadTextureSprite = "GFX_idol_button_pink_animated" Orientation = "UPPER_LEFT"
-		position = { x = 1000 y = 800  }  
-		effect = "button_confirm_live_set" }
+		effectButtonType = { 
+			name = "confirm_live_set" 
+			text = live_luanch_button_text
+			quadTextureSprite = "GFX_idol_button_pink_animated" Orientation = "UPPER_LEFT"
+			position = { x = 1000 y = 800  }  
+			effect = "button_confirm_live_set" 
+		}
 
 		instantTextBoxType={
 			name = "live_conditions"
@@ -533,7 +557,7 @@ containerWindowType = {
 			font = "malgun_goth_24"
 			#font = "malgun_goth_24"
 			text_color_code = "S"
-			position = { x = 290 y = 272 }
+			position = { x = -290 y = 272 }
 			maxWidth = 750
 			maxHeight = 800
 			format = left

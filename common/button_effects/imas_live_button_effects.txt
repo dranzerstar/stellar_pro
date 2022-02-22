@@ -3,19 +3,29 @@
 
 live_change_button_01={
 	potential = { always = yes } 
-	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+	allow = { always = yes } effect = { 
+
+	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_02={
 	potential = { always = yes } 
-	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+	allow = { always = yes } effect = { 
+
+	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_03={
 	potential = { always = yes } 
-	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+	allow = { always = yes } effect = { 
+
+	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_04={
 	potential = { always = yes } 
-	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+	allow = { always = yes } effect = { 
+
+	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_05={
 	potential = { always = yes } 
-	allow = { always = yes } effect = { } } #TODO POPUP TO CHANGE MEMBER
+	allow = { always = yes } effect = { 
+
+	} } #TODO POPUP TO CHANGE MEMBER
 
 
 	
@@ -23,7 +33,7 @@ button_confirm_live_set={
 	potential = { always = yes } 
 	allow = { 
 		OR={
-			is_illuminationstars_formed =yes
+			is_illuminationstars_formed =yes  #全是scripted trigger
 			is_lantica_formed =yes
 			is_hokago_formed =yes
 			is_alstroemeria_formed =yes
@@ -31,11 +41,48 @@ button_confirm_live_set={
 			is_noctchill_formed =yes
 			is_shhis_formed =yes
 			is_5_person_group =yes
-
-
-
 		}
-	 } effect = { } } #TODO POPUP TO CHANGE MEMBER
+
+
+} effect = { } } #TODO POPUP TO CHANGE MEMBER
+
+
+
+idol_effect_01 ={ potential = { has_country_flag = live_member_flag_01 } allow = { } effect = { custom_tooltip = idol_effect_01_text } }
+idol_effect_02 ={ potential = { has_country_flag = live_member_flag_02 } allow = { } effect = { custom_tooltip = idol_effect_02_text } }
+idol_effect_03 ={ potential = { has_country_flag = live_member_flag_03 } allow = { } effect = { custom_tooltip = idol_effect_03_text } }
+idol_effect_04 ={ potential = { has_country_flag = live_member_flag_04 } allow = { } effect = { custom_tooltip = idol_effect_04_text } }
+idol_effect_05 ={ potential = { has_country_flag = live_member_flag_05 } allow = { } effect = { custom_tooltip = idol_effect_05_text } }
+idol_effect_06 ={ potential = { has_country_flag = live_member_flag_06 } allow = { } effect = { custom_tooltip = idol_effect_06_text } }
+idol_effect_07 ={ potential = { has_country_flag = live_member_flag_07 } allow = { } effect = { custom_tooltip = idol_effect_07_text } }
+idol_effect_08 ={ potential = { has_country_flag = live_member_flag_08 } allow = { } effect = { custom_tooltip = idol_effect_08_text } }
+idol_effect_09 ={ potential = { has_country_flag = live_member_flag_09 } allow = { } effect = { custom_tooltip = idol_effect_09_text } }
+idol_effect_10 ={ potential = { has_country_flag = live_member_flag_10 } allow = { } effect = { custom_tooltip = idol_effect_10_text } }
+idol_effect_11 ={ potential = { has_country_flag = live_member_flag_11 } allow = { } effect = { custom_tooltip = idol_effect_11_text } }
+idol_effect_12 ={ potential = { has_country_flag = live_member_flag_12 } allow = { } effect = { custom_tooltip = idol_effect_12_text } }
+idol_effect_13 ={ potential = { has_country_flag = live_member_flag_13 } allow = { } effect = { custom_tooltip = idol_effect_13_text } }
+idol_effect_14 ={ potential = { has_country_flag = live_member_flag_14 } allow = { } effect = { custom_tooltip = idol_effect_14_text } }
+idol_effect_15 ={ potential = { has_country_flag = live_member_flag_15 } allow = { } effect = { custom_tooltip = idol_effect_15_text } }
+idol_effect_16 ={ potential = { has_country_flag = live_member_flag_16 } allow = { } effect = { custom_tooltip = idol_effect_16_text } }
+idol_effect_17 ={ potential = { has_country_flag = live_member_flag_17 } allow = { } effect = { custom_tooltip = idol_effect_17_text } }
+idol_effect_18 ={ potential = { has_country_flag = live_member_flag_18 } allow = { } effect = { custom_tooltip = idol_effect_18_text } }
+idol_effect_19 ={ potential = { has_country_flag = live_member_flag_19 } allow = { } effect = { custom_tooltip = idol_effect_19_text } }
+idol_effect_20 ={ potential = { has_country_flag = live_member_flag_20 } allow = { } effect = { custom_tooltip = idol_effect_20_text } }
+idol_effect_21 ={ potential = { has_country_flag = live_member_flag_21 } allow = { } effect = { custom_tooltip = idol_effect_21_text } }
+idol_effect_22 ={ potential = { has_country_flag = live_member_flag_22 } allow = { } effect = { custom_tooltip = idol_effect_22_text } }
+idol_effect_23 ={ potential = { has_country_flag = live_member_flag_23 } allow = { } effect = { custom_tooltip = idol_effect_23_text } }
+idol_effect_24 ={ potential = { has_country_flag = live_member_flag_24 } allow = { } effect = { custom_tooltip = idol_effect_24_text } }
+idol_effect_25 ={ potential = { has_country_flag = live_member_flag_25 } allow = { } effect = { custom_tooltip = idol_effect_25_text } }
+
+
+idol_effect_group_01 ={ potential = { is_illuminationstars_formed = yes } allow = { } effect = { custom_tooltip = idol_group_effect_01_text } }
+idol_effect_group_02 ={ potential = { is_lantica_formed = yes  } allow = { } effect = { custom_tooltip = idol_group_effect_02_text } }
+idol_effect_group_03 ={ potential = { is_hokago_formed = yes } allow = { } effect = { custom_tooltip = idol_group_effect_03_text } }
+idol_effect_group_04 ={ potential = { is_alstroemeria_formed = yes } allow = { } effect = { custom_tooltip = idol_group_effect_04_text } }
+idol_effect_group_05 ={ potential = { is_straylight_formed = yes } allow = { } effect = { custom_tooltip = idol_group_effect_05_text } }
+idol_effect_group_06 ={ potential = { is_noctchill_formed = yes } allow = { } effect = { custom_tooltip = idol_group_effect_06_text } }
+idol_effect_group_07 ={ potential = { is_shhis_formed = yes } allow = { } effect = { custom_tooltip = idol_group_effect_07_text } }
+
 
 
 

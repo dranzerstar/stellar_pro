@@ -589,6 +589,7 @@ fleet_event = {
 						capital_scope = {
 							NOT = {
 								has_planet_flag = imas_contact_fleet_capital_destination
+								
 							}
 						}
 					}
