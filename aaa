@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 spriteType = { name = "GFX_live_idol_card_01" texturefile = "gfx/interface/imas_ui/live_cropped/frame_01.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
 spriteType = { name = "GFX_live_idol_card_02" texturefile = "gfx/interface/imas_ui/live_cropped/frame_02.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
 spriteType = { name = "GFX_live_idol_card_03" texturefile = "gfx/interface/imas_ui/live_cropped/frame_03.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
@@ -23,3 +24,20 @@ spriteType = { name = "GFX_live_idol_card_22" texturefile = "gfx/interface/imas_
 spriteType = { name = "GFX_live_idol_card_23" texturefile = "gfx/interface/imas_ui/live_cropped/frame_23.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
 spriteType = { name = "GFX_live_idol_card_24" texturefile = "gfx/interface/imas_ui/live_cropped/frame_24.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
 spriteType = { name = "GFX_live_idol_card_25" texturefile = "gfx/interface/imas_ui/live_cropped/frame_25.dds" masking_texture="gfx/interface/imas_ui/live_frame_mask.dds" }
+=======
+
+	effectButtonType = { name = "idol_effect_group_01_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_01" text="idol_group_effect_text_01" }
+	effectButtonType = { name = "idol_effect_group_02_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_02" text="idol_group_effect_text_02" }
+	effectButtonType = { name = "idol_effect_group_03_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_03" text="idol_group_effect_text_03" }
+	effectButtonType = { name = "idol_effect_group_04_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_04" text="idol_group_effect_text_04" }
+	effectButtonType = { name = "idol_effect_group_05_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_05" text="idol_group_effect_text_05" }
+	effectButtonType = { name = "idol_effect_group_06_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_06" text="idol_group_effect_text_06" }
+	effectButtonType = { name = "idol_effect_group_07_desc" quadTextureSprite = "GFX_idol_effect_bg"
+	position = { x = 0 y = 0 }  effect = "idol_effect_group_07" text="idol_group_effect_text_07" }
+>>>>>>> efe906b0dc3db0c2211c229e4a146b93355bf6a4

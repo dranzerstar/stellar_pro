@@ -15,3 +15,95 @@ mod_283p_contract_signed_live={
 	country_energy_produces_add = -5
 	country_consumer_goods_produces_add = -5
 }
+
+
+
+idol_live_effect_01 = { icon=""
+					}
+#
+idol_live_effect_02 = { icon=""
+					}
+#
+idol_live_effect_03 = { icon=""
+					}
+#
+idol_live_effect_04 = { icon=""
+					}
+#
+idol_live_effect_05 = { icon=""
+					}
+#
+idol_live_effect_06 = { icon=""
+					}
+#
+idol_live_effect_07 = { icon=""
+					}
+#
+idol_live_effect_08 = { icon=""
+					}
+#
+idol_live_effect_09 = { icon=""
+					}
+#
+idol_live_effect_10 = { icon=""
+					}
+#
+idol_live_effect_11 = { icon=""
+					}
+#
+idol_live_effect_12 = { icon=""
+					}
+#
+idol_live_effect_13 = { icon=""
+					}
+#
+idol_live_effect_14 = { icon=""
+					}
+#
+idol_live_effect_15 = { icon=""
+					}
+#
+idol_live_effect_16 = { icon=""
+					}
+#
+idol_live_effect_17 = { icon=""
+					}
+#
+idol_live_effect_18 = { icon=""
+					}
+#
+idol_live_effect_19 = { icon=""
+					}
+#
+idol_live_effect_20 = { icon=""
+					}
+#
+idol_live_effect_21 = { icon=""
+					}
+#
+idol_live_effect_22 = { icon=""
+					}
+#
+idol_live_effect_23 = { icon=""
+					}
+#
+idol_live_effect_24 = { icon=""
+					}
+#
+idol_live_effect_25 = { icon=""
+					}
+#
+
+idol_group_live_effect_01={}
+
+idol_group_live_effect_02={}
+
+idol_group_live_effect_03={}
+
+idol_group_live_effect_04={}
+
+idol_group_live_effect_05={}
+
+idol_group_live_effect_06={}
+
+idol_group_live_effect_07={}
