@@ -21,8 +21,9 @@ guiTypes = {
 				iconType = { name = "sidepanel" quadTextureSprite ="GFX_imas_right_bg" position = { x = 1150 y = 220 } alwaysTransparent = yes}
 				iconType = { name = "sidepanel_bg" quadTextureSprite ="GFX_idol_ele_text_long_bg" position = { x = 1170 y = 300 } alwaysTransparent = yes}
 				iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
-				instantTextBoxType={ name = "sidepanel_title" text= "Idols_effect_cal" position = { x = 1150 y = 220 } }
-		
+				instantTextBoxType={ name = "sidepanel_title" font = "large_title_font" text_color_code="H" text= "Idols_effect_cal" position = { x = 1210 y = 238 } }
+				instantTextBoxType={ name = "sidepanel_texts" text= "Live_effects_fromatted" position = { x = 1190 y = 310 } maxWidth = 400  maxHeight = 500}
+				
 			}
 
 		buttonType = {
@@ -129,6 +130,7 @@ guiTypes = {
 			position = { x = 140 y =293 }
 			effect = "live_change_button_01"
 			clicksound = "confirm_click"
+			shortcut = "A"
 		}
 	}
 # frame 02
@@ -209,6 +211,7 @@ containerWindowType = {
 		quadTextureSprite = "GFX_idol_change_button"
 		Orientation = "CENTER"
 		position = { x = 140 y =293 }
+		shortcut = "S"
 		effect = "live_change_button_02"
 		clicksound = "confirm_click"
 	}
@@ -292,6 +295,7 @@ containerWindowType = {
 		position = { x = 140 y =293 }
 		effect = "live_change_button_03"
 		clicksound = "confirm_click"
+		shortcut = "D"
 	}
 }
 
@@ -375,6 +379,7 @@ containerWindowType = {
 		position = { x = 140 y =293 }
 		effect = "live_change_button_04"
 		clicksound = "confirm_click"
+		shortcut = "F"
 	}
 }
 
@@ -458,6 +463,7 @@ containerWindowType = {
 		position = { x = 140 y =293 }
 		effect = "live_change_button_05"
 		clicksound = "confirm_click"
+		shortcut = "G"
 	}
 }
 
@@ -521,8 +527,11 @@ containerWindowType = {
 		effectButtonType = { 
 			name = "confirm_live_set" 
 			text = live_luanch_button_text
+			font = "cg_16b"
+			#text="button"
+			text_color_code = "H"
 			quadTextureSprite = "GFX_idol_button_pink_animated" Orientation = "UPPER_LEFT"
-			position = { x = 1000 y = 800  }  
+			position = { x = 1000 y = 740  }  
 			effect = "button_confirm_live_set" 
 		}
 

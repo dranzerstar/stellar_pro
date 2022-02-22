@@ -18,92 +18,93 @@ mod_283p_contract_signed_live={
 
 
 
-idol_live_effect_01 = { icon=""
-					}
+idol_live_effect_01 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/01.dds"
+}
 #
-idol_live_effect_02 = { icon=""
-					}
+idol_live_effect_02 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/02.dds"
+}
 #
-idol_live_effect_03 = { icon=""
-					}
+idol_live_effect_03 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/03.dds"
+}
 #
-idol_live_effect_04 = { icon=""
-					}
+idol_live_effect_04 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/04.dds"
+}
 #
-idol_live_effect_05 = { icon=""
-					}
+idol_live_effect_05 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/05.dds"
+}
 #
-idol_live_effect_06 = { icon=""
-					}
+idol_live_effect_06 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/06.dds"
+}
 #
-idol_live_effect_07 = { icon=""
-					}
+idol_live_effect_07 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/07.dds"
+}
 #
-idol_live_effect_08 = { icon=""
-					}
+idol_live_effect_08 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/08.dds"
+}
 #
-idol_live_effect_09 = { icon=""
-					}
+idol_live_effect_09 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/09.dds"
+}
 #
-idol_live_effect_10 = { icon=""
-					}
+idol_live_effect_10 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/10.dds"
+}
 #
-idol_live_effect_11 = { icon=""
-					}
+idol_live_effect_11 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/11.dds"
+}
 #
-idol_live_effect_12 = { icon=""
-					}
+idol_live_effect_12 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/12.dds"
+}
 #
-idol_live_effect_13 = { icon=""
-					}
+idol_live_effect_13 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/13.dds"
+}
 #
-idol_live_effect_14 = { icon=""
-					}
+idol_live_effect_14 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/14.dds"
+}
 #
-idol_live_effect_15 = { icon=""
-					}
+idol_live_effect_15 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/15.dds"
+}
 #
-idol_live_effect_16 = { icon=""
-					}
+idol_live_effect_16 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/16.dds"
+}
 #
-idol_live_effect_17 = { icon=""
-					}
+idol_live_effect_17 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/17.dds"
+}
 #
-idol_live_effect_18 = { icon=""
-					}
+idol_live_effect_18 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/18.dds"
+}
 #
-idol_live_effect_19 = { icon=""
-					}
+idol_live_effect_19 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/19.dds"
+}
 #
-idol_live_effect_20 = { icon=""
-					}
+idol_live_effect_20 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/20.dds"
+}
 #
-idol_live_effect_21 = { icon=""
-					}
+idol_live_effect_21 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/21.dds"
+}
 #
-idol_live_effect_22 = { icon=""
-					}
+idol_live_effect_22 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/22.dds"
+}
 #
-idol_live_effect_23 = { icon=""
-					}
+idol_live_effect_23 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/23.dds"
+}
 #
-idol_live_effect_24 = { icon=""
-					}
+idol_live_effect_24 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/24.dds"
+}
 #
-idol_live_effect_25 = { icon=""
-					}
+idol_live_effect_25 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/25.dds"
+}
 #
 
-idol_group_live_effect_01={}
 
-idol_group_live_effect_02={}
+idol_group_live_effect_01={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g01.dds" }
 
-idol_group_live_effect_03={}
+idol_group_live_effect_02={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g02.dds" }
 
-idol_group_live_effect_04={}
+idol_group_live_effect_03={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g03.dds" }
 
-idol_group_live_effect_05={}
+idol_group_live_effect_04={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g04.dds" }
 
-idol_group_live_effect_06={}
+idol_group_live_effect_05={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g05.dds" }
 
-idol_group_live_effect_07={}
+idol_group_live_effect_06={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g06.dds" }
+
+idol_group_live_effect_07={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g07.dds" }

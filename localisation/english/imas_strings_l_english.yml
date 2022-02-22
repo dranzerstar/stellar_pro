@@ -75,46 +75,55 @@
 
 
 
-
+  live_luanch_button_text:0 "Confirm`` Members"
 
 #effects strings
 
  
+ idol_live_effect_00:0 "" 
  idol_live_effect_01:0 "櫻木真乃 -- 轻松的笑容 \n"
  idol_live_effect_02:0 "风野灯织 -- 温柔的微笑 \n"
- idol_live_effect_03:0 "八宫巡 -- 元气金色少女 \n"
- idol_live_effect_04:0 "月冈恋钟 -- \n"
- idol_live_effect_05:0 "\n"
- idol_live_effect_06:0 "\n"
- idol_live_effect_07:0 "\n"
- idol_live_effect_08:0 "\n"
- idol_live_effect_09:0 "\n"
- idol_live_effect_10:0 "\n"
- idol_live_effect_11:0 "\n"
- idol_live_effect_12:0 "\n"
- idol_live_effect_13:0 "\n"
- idol_live_effect_14:0 "\n"
- idol_live_effect_15:0 "\n"
- idol_live_effect_16:0 "\n"
- idol_live_effect_17:0 "\n"
- idol_live_effect_18:0 "\n"
- idol_live_effect_19:0 "\n"
- idol_live_effect_20:0 "\n"
- idol_live_effect_21:0 "\n"
- idol_live_effect_22:0 "\n"
- idol_live_effect_23:0 "\n"
- idol_live_effect_24:0 "\n"
- idol_live_effect_25:0 "\n"
+ idol_live_effect_03:0 "八宫巡 -- 元气黄金少女 \n"
+ idol_live_effect_04:0 "月冈恋钟 -- 巴里乌马卡蓝调  \n"
+ idol_live_effect_05:0 "田中摩美美 -- 棘手的夜晚 \n"
+ idol_live_effect_06:0 "白濑咲耶 -- 蔚蓝边界线 \n"
+ idol_live_effect_07:0 "三峰结华 -- 试炼 / 御幸三郎 \n"
+ idol_live_effect_08:0 "幽谷雾子 -- 霧・音・燦・燦\n"
+ idol_live_effect_09:0 "小宫果穗 -- 装甲型-第2形態\n"
+ idol_live_effect_10:0 "园田智代子 -- 巧克力色 x 闪光浪漫 \n"
+ idol_live_effect_11:0 "西城树里 -- 波子汽水色觉悟\n"
+ idol_live_effect_12:0 "杜野凛世 -- 印象派杜野凛世\n"
+ idol_live_effect_13:0 "有栖川夏叶 -- 终极美人鱼 \n"
+ idol_live_effect_14:0 "大崎甘奈 -- Standby OK\n"
+ idol_live_effect_15:0 "大崎甜花 -- 格兰特 金鱼 \n"
+ idol_live_effect_16:0 "桑山千雪 -- My Pure Romance\n"
+ idol_live_effect_17:0 "芹泽朝日 -- Jump! Stag!!!\n"
+ idol_live_effect_18:0 "黛冬优子 -- 記 録 外 \n"
+ idol_live_effect_19:0 "和泉爱依 -- 就一点点~\n"
+ idol_live_effect_20:0 "浅仓透 -- 10個、光\n"
+ idol_live_effect_21:0 "樋口圆香 -- Kara Kara Kara\n"
+ idol_live_effect_22:0 "福丸小糸 -- 口袋里 \n"
+ idol_live_effect_23:0 "市川雏菜 -- HAPPY-!NG\n"
+ idol_live_effect_24:0 "七草日花 -- 纯黑仓鼠兔\n"
+ idol_live_effect_25:0 "绯田美琴 -- ROUNDLY\n"
 
- idol_group_live_effect_01:0 "\n"
- idol_group_live_effect_02:0 "\n"
- idol_group_live_effect_03:0 "\n"
- idol_group_live_effect_04:0 "\n"
- idol_group_live_effect_05:0 "\n"
- idol_group_live_effect_06:0 "\n"
- idol_group_live_effect_07:0 "\n"
 
- Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"   #<-想要的效果
+ idol_group_live_effect_01:0 "Illumination STARS -- ヒカリのdestination -- 光芒的destination\n"
+ idol_group_live_effect_02:0 "L'Antica -- バベルシティ・グレイス -- 巴别城的恩泽\n"
+ idol_group_live_effect_03:0 "放学后Climax Girls -- 夢咲きAfter school -- 梦想盛开After school\n"
+ idol_group_live_effect_04:0 "Alstroemeria -- アルストロメリア -- ALSTROEMERIA\n"
+ idol_group_live_effect_05:0 "Straylight -- Hide & Attack \n"
+ idol_group_live_effect_06:0 "notchil -- いつだって僕らは -- 无论何时的我们\n"
+ idol_group_live_effect_07:0 "SHHis -- OH MY GOD \n"
+
+ effect_slot_1:0 "scripted"
+ effect_slot_2:0 "scripted"
+ effect_slot_3:0 "scripted"
+ effect_slot_4:0 "scripted"
+ effect_slot_5:0 "scripted"
+ effect_slot_group_1:0 "scripted"
+
+ Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"  
 
 
 #idol details
