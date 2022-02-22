@@ -72,6 +72,51 @@
  Idols_group:0 "Idol Groups"
  Idols_effect:0 "Live effects"
  Idols_effect_cal:0 "Expected Live Effects"
+
+
+
+
+
+#effects strings
+
+ 
+ idol_live_effect_01:0 "櫻木真乃 -- 轻松的笑容 \n"
+ idol_live_effect_02:0 "风野灯织 -- 温柔的微笑 \n"
+ idol_live_effect_03:0 "八宫巡 -- 元气金色少女 \n"
+ idol_live_effect_04:0 "月冈恋钟 -- \n"
+ idol_live_effect_05:0 "\n"
+ idol_live_effect_06:0 "\n"
+ idol_live_effect_07:0 "\n"
+ idol_live_effect_08:0 "\n"
+ idol_live_effect_09:0 "\n"
+ idol_live_effect_10:0 "\n"
+ idol_live_effect_11:0 "\n"
+ idol_live_effect_12:0 "\n"
+ idol_live_effect_13:0 "\n"
+ idol_live_effect_14:0 "\n"
+ idol_live_effect_15:0 "\n"
+ idol_live_effect_16:0 "\n"
+ idol_live_effect_17:0 "\n"
+ idol_live_effect_18:0 "\n"
+ idol_live_effect_19:0 "\n"
+ idol_live_effect_20:0 "\n"
+ idol_live_effect_21:0 "\n"
+ idol_live_effect_22:0 "\n"
+ idol_live_effect_23:0 "\n"
+ idol_live_effect_24:0 "\n"
+ idol_live_effect_25:0 "\n"
+
+ idol_group_live_effect_01:0 "\n"
+ idol_group_live_effect_02:0 "\n"
+ idol_group_live_effect_03:0 "\n"
+ idol_group_live_effect_04:0 "\n"
+ idol_group_live_effect_05:0 "\n"
+ idol_group_live_effect_06:0 "\n"
+ idol_group_live_effect_07:0 "\n"
+
+ Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"   #<-想要的效果
+
+
 #idol details
 
  Idols_detail_01:0 "樱木真乃\n\n4月25日\n\n155\n\n48\n\n86-58-88\n\n[idol_country_01.GetName]\n\n外出、公园晒太阳\n\n被鸟喜欢\n\n和蔼可亲的治愈系女孩，心地善良，易于激发保护欲的类型，仅仅待在一起就令人产生幸福感。"

@@ -27,6 +27,7 @@ button_confirm_live_set={
 			is_lantica_formed =yes
 			is_hokago_formed =yes
 			is_alstroemeria_formed =yes
+			is_straylight_formed = yes
 			is_noctchill_formed =yes
 			is_shhis_formed =yes
 			is_5_person_group =yes
