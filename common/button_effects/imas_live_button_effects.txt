@@ -21,7 +21,7 @@ live_change_button_01={
 				value = 0
 			}
 		}
-		recheck_live_menu_flags_01=yes
+		recheck_live_menu_flags=yes
 
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_02={
@@ -43,7 +43,10 @@ live_change_button_02={
 				value = 0
 			}
 		}
-		recheck_live_menu_flags_02=yes
+
+
+
+		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_03={
 	potential = { always = yes } 
@@ -64,7 +67,7 @@ live_change_button_03={
 				value = 0
 			}
 		}
-		recheck_live_menu_flags_03=yes
+		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 
 live_change_button_04={
@@ -86,7 +89,7 @@ live_change_button_04={
 				value = 0
 			}
 		}
-		recheck_live_menu_flags_04=yes
+		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_05={
 	potential = { always = yes } 
@@ -108,7 +111,7 @@ live_change_button_05={
 			}
 		}
 
-		recheck_live_menu_flags_05=yes
+		recheck_live_menu_flags=yes
 
 	} } #TODO POPUP TO CHANGE MEMBER
 

@@ -53,7 +53,31 @@
  text_idol_label_24:0 "七草日花"
  text_idol_label_25:0 "绯田美琴"
 
-
+ idol_name_with_icon_01:0 "£idol_icon_01£$text_idol_label_01$"
+ idol_name_with_icon_02:0 "£idol_icon_02£$text_idol_label_02$"
+ idol_name_with_icon_03:0 "£idol_icon_03£$text_idol_label_03$"
+ idol_name_with_icon_04:0 "£idol_icon_04£$text_idol_label_04$"
+ idol_name_with_icon_05:0 "£idol_icon_05£$text_idol_label_05$"
+ idol_name_with_icon_06:0 "£idol_icon_06£$text_idol_label_06$"
+ idol_name_with_icon_07:0 "£idol_icon_07£$text_idol_label_07$"
+ idol_name_with_icon_08:0 "£idol_icon_08£$text_idol_label_08$"
+ idol_name_with_icon_09:0 "£idol_icon_09£$text_idol_label_09$"
+ idol_name_with_icon_10:0 "£idol_icon_10£$text_idol_label_10$"
+ idol_name_with_icon_11:0 "£idol_icon_11£$text_idol_label_11$"
+ idol_name_with_icon_12:0 "£idol_icon_12£$text_idol_label_12$"
+ idol_name_with_icon_13:0 "£idol_icon_13£$text_idol_label_13$"
+ idol_name_with_icon_14:0 "£idol_icon_14£$text_idol_label_14$"
+ idol_name_with_icon_15:0 "£idol_icon_15£$text_idol_label_15$"
+ idol_name_with_icon_16:0 "£idol_icon_16£$text_idol_label_16$"
+ idol_name_with_icon_17:0 "£idol_icon_17£$text_idol_label_17$"
+ idol_name_with_icon_18:0 "£idol_icon_18£$text_idol_label_18$"
+ idol_name_with_icon_19:0 "£idol_icon_19£$text_idol_label_19$"
+ idol_name_with_icon_20:0 "£idol_icon_20£$text_idol_label_20$"
+ idol_name_with_icon_21:0 "£idol_icon_21£$text_idol_label_21$"
+ idol_name_with_icon_22:0 "£idol_icon_22£$text_idol_label_22$"
+ idol_name_with_icon_23:0 "£idol_icon_23£$text_idol_label_23$"
+ idol_name_with_icon_24:0 "£idol_icon_24£$text_idol_label_24$"
+ idol_name_with_icon_25:0 "£idol_icon_25£$text_idol_label_25$"
 
 
  page.illumination_stars:0 "Illumination STARS"
@@ -79,7 +103,9 @@
  Idols_group:0 "偶像组合"
  Idols_effect:0 "出演效果"
  Idols_effect_cal:0 "当前出演效果"
-
+ Idols_selection_screen:0 "偶像列表"
+ next_page:0 "下一页"
+ prev_page:0 "上一页"
 #effects strings
  live_luanch_button_text:0 "确定编成"
 
@@ -128,7 +154,10 @@
 
  Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"  
 
-
+ live_luanch_button_loc:0 "[Root.live_luanch_button_text]"
+ live_prepared:0 "Preparing for Planned Live"
+ confirm_live_grp:0 "Confirm Group"
+ invalid_live_grp:0 "Invalid Group "
 
 #idol details
 

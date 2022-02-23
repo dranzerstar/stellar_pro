@@ -258,7 +258,7 @@ spawn_full_idol={
 }
 
 
-recheck_live_menu_flags_01={
+recheck_live_menu_flags={
 	remove_country_flag = live_member_flag_01
 	remove_country_flag = live_member_flag_02
 	remove_country_flag = live_member_flag_03
@@ -285,268 +285,139 @@ recheck_live_menu_flags_01={
 	remove_country_flag = live_member_flag_24
 	remove_country_flag = live_member_flag_25
 
-	if = { limit={ check_variable = {  which = live_member_1 value = 01 } }  set_country_flag = live_member_flag_01  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 02 } }  set_country_flag = live_member_flag_02  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 03 } }  set_country_flag = live_member_flag_03  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 04 } }  set_country_flag = live_member_flag_04  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 05 } }  set_country_flag = live_member_flag_05  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 06 } }  set_country_flag = live_member_flag_06  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 07 } }  set_country_flag = live_member_flag_07  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 08 } }  set_country_flag = live_member_flag_08  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 09 } }  set_country_flag = live_member_flag_09  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 10 } }  set_country_flag = live_member_flag_10  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 11 } }  set_country_flag = live_member_flag_11  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 12 } }  set_country_flag = live_member_flag_12  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 13 } }  set_country_flag = live_member_flag_13  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 14 } }  set_country_flag = live_member_flag_14  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 15 } }  set_country_flag = live_member_flag_15  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 16 } }  set_country_flag = live_member_flag_16  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 17 } }  set_country_flag = live_member_flag_17  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 18 } }  set_country_flag = live_member_flag_18  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 19 } }  set_country_flag = live_member_flag_19  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 20 } }  set_country_flag = live_member_flag_20  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 21 } }  set_country_flag = live_member_flag_21  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 22 } }  set_country_flag = live_member_flag_22  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 23 } }  set_country_flag = live_member_flag_23  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 24 } }  set_country_flag = live_member_flag_24  }
-	if = { limit={ check_variable = {  which = live_member_1 value = 25 } }  set_country_flag = live_member_flag_25  }
+	if = { limit={ check_variable = {  which = live_member_1 value = 01 } }  set_country_flag = live_member_flag_01  } 
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 02 } }  set_country_flag = live_member_flag_02  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 03 } }  set_country_flag = live_member_flag_03  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 04 } }  set_country_flag = live_member_flag_04  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 05 } }  set_country_flag = live_member_flag_05  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 06 } }  set_country_flag = live_member_flag_06  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 07 } }  set_country_flag = live_member_flag_07  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 08 } }  set_country_flag = live_member_flag_08  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 09 } }  set_country_flag = live_member_flag_09  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 10 } }  set_country_flag = live_member_flag_10  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 11 } }  set_country_flag = live_member_flag_11  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 12 } }  set_country_flag = live_member_flag_12  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 13 } }  set_country_flag = live_member_flag_13  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 14 } }  set_country_flag = live_member_flag_14  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 15 } }  set_country_flag = live_member_flag_15  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 16 } }  set_country_flag = live_member_flag_16  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 17 } }  set_country_flag = live_member_flag_17  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 18 } }  set_country_flag = live_member_flag_18  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 19 } }  set_country_flag = live_member_flag_19  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 20 } }  set_country_flag = live_member_flag_20  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 21 } }  set_country_flag = live_member_flag_21  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 22 } }  set_country_flag = live_member_flag_22  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 23 } }  set_country_flag = live_member_flag_23  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 24 } }  set_country_flag = live_member_flag_24  }
+	else_if = { limit={ check_variable = {  which = live_member_1 value = 25 } }  set_country_flag = live_member_flag_25  }
 
-
-}
-
-
-
-recheck_live_menu_flags_02={
-	remove_country_flag = live_member_flag_01
-	remove_country_flag = live_member_flag_02
-	remove_country_flag = live_member_flag_03
-	remove_country_flag = live_member_flag_04
-	remove_country_flag = live_member_flag_05
-	remove_country_flag = live_member_flag_06
-	remove_country_flag = live_member_flag_07
-	remove_country_flag = live_member_flag_08
-	remove_country_flag = live_member_flag_09
-	remove_country_flag = live_member_flag_10
-	remove_country_flag = live_member_flag_11
-	remove_country_flag = live_member_flag_12
-	remove_country_flag = live_member_flag_13
-	remove_country_flag = live_member_flag_14
-	remove_country_flag = live_member_flag_15
-	remove_country_flag = live_member_flag_16
-	remove_country_flag = live_member_flag_17
-	remove_country_flag = live_member_flag_18
-	remove_country_flag = live_member_flag_19
-	remove_country_flag = live_member_flag_20
-	remove_country_flag = live_member_flag_21
-	remove_country_flag = live_member_flag_22
-	remove_country_flag = live_member_flag_23
-	remove_country_flag = live_member_flag_24
-	remove_country_flag = live_member_flag_25
-
-	if = { limit={ check_variable = {  which = live_member_2 value = 01 } }  set_country_flag = live_member_flag_01  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 02 } }  set_country_flag = live_member_flag_02  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 03 } }  set_country_flag = live_member_flag_03  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 04 } }  set_country_flag = live_member_flag_04  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 05 } }  set_country_flag = live_member_flag_05  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 06 } }  set_country_flag = live_member_flag_06  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 07 } }  set_country_flag = live_member_flag_07  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 08 } }  set_country_flag = live_member_flag_08  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 09 } }  set_country_flag = live_member_flag_09  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 10 } }  set_country_flag = live_member_flag_10  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 11 } }  set_country_flag = live_member_flag_11  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 12 } }  set_country_flag = live_member_flag_12  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 13 } }  set_country_flag = live_member_flag_13  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 14 } }  set_country_flag = live_member_flag_14  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 15 } }  set_country_flag = live_member_flag_15  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 16 } }  set_country_flag = live_member_flag_16  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 17 } }  set_country_flag = live_member_flag_17  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 18 } }  set_country_flag = live_member_flag_18  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 19 } }  set_country_flag = live_member_flag_19  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 20 } }  set_country_flag = live_member_flag_20  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 21 } }  set_country_flag = live_member_flag_21  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 22 } }  set_country_flag = live_member_flag_22  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 23 } }  set_country_flag = live_member_flag_23  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 24 } }  set_country_flag = live_member_flag_24  }
-	if = { limit={ check_variable = {  which = live_member_2 value = 25 } }  set_country_flag = live_member_flag_25  }
+	if = { limit={ check_variable = {  which = live_member_2 value = 1 } }  set_country_flag = live_member_flag_01  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 2 } }  set_country_flag = live_member_flag_02  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 3 } }  set_country_flag = live_member_flag_03  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 4 } }  set_country_flag = live_member_flag_04  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 5 } }  set_country_flag = live_member_flag_05  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 6 } }  set_country_flag = live_member_flag_06  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 7 } }  set_country_flag = live_member_flag_07  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 8 } }  set_country_flag = live_member_flag_08  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 9 } }  set_country_flag = live_member_flag_09  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 10 } }  set_country_flag = live_member_flag_10  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 11 } }  set_country_flag = live_member_flag_11  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 12 } }  set_country_flag = live_member_flag_12  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 13 } }  set_country_flag = live_member_flag_13  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 14 } }  set_country_flag = live_member_flag_14  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 15 } }  set_country_flag = live_member_flag_15  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 16 } }  set_country_flag = live_member_flag_16  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 17 } }  set_country_flag = live_member_flag_17  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 18 } }  set_country_flag = live_member_flag_18  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 19 } }  set_country_flag = live_member_flag_19  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 20 } }  set_country_flag = live_member_flag_20  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 21 } }  set_country_flag = live_member_flag_21  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 22 } }  set_country_flag = live_member_flag_22  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 23 } }  set_country_flag = live_member_flag_23  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 24 } }  set_country_flag = live_member_flag_24  }
+	else_if = { limit={ check_variable = {  which = live_member_2 value = 25 } }  set_country_flag = live_member_flag_25  }
 	
 
-
-}
-
-
-
-
-
-recheck_live_menu_flags_03={
-	remove_country_flag = live_member_flag_01
-	remove_country_flag = live_member_flag_02
-	remove_country_flag = live_member_flag_03
-	remove_country_flag = live_member_flag_04
-	remove_country_flag = live_member_flag_05
-	remove_country_flag = live_member_flag_06
-	remove_country_flag = live_member_flag_07
-	remove_country_flag = live_member_flag_08
-	remove_country_flag = live_member_flag_09
-	remove_country_flag = live_member_flag_10
-	remove_country_flag = live_member_flag_11
-	remove_country_flag = live_member_flag_12
-	remove_country_flag = live_member_flag_13
-	remove_country_flag = live_member_flag_14
-	remove_country_flag = live_member_flag_15
-	remove_country_flag = live_member_flag_16
-	remove_country_flag = live_member_flag_17
-	remove_country_flag = live_member_flag_18
-	remove_country_flag = live_member_flag_19
-	remove_country_flag = live_member_flag_20
-	remove_country_flag = live_member_flag_21
-	remove_country_flag = live_member_flag_22
-	remove_country_flag = live_member_flag_23
-	remove_country_flag = live_member_flag_24
-	remove_country_flag = live_member_flag_25
-
-	if = { limit={ check_variable = {  which = live_member_3 value = 01 } }  set_country_flag = live_member_flag_01  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 02 } }  set_country_flag = live_member_flag_02  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 03 } }  set_country_flag = live_member_flag_03  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 04 } }  set_country_flag = live_member_flag_04  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 05 } }  set_country_flag = live_member_flag_05  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 06 } }  set_country_flag = live_member_flag_06  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 07 } }  set_country_flag = live_member_flag_07  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 08 } }  set_country_flag = live_member_flag_08  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 09 } }  set_country_flag = live_member_flag_09  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 10 } }  set_country_flag = live_member_flag_10  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 11 } }  set_country_flag = live_member_flag_11  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 12 } }  set_country_flag = live_member_flag_12  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 13 } }  set_country_flag = live_member_flag_13  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 14 } }  set_country_flag = live_member_flag_14  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 15 } }  set_country_flag = live_member_flag_15  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 16 } }  set_country_flag = live_member_flag_16  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 17 } }  set_country_flag = live_member_flag_17  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 18 } }  set_country_flag = live_member_flag_18  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 19 } }  set_country_flag = live_member_flag_19  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 20 } }  set_country_flag = live_member_flag_20  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 21 } }  set_country_flag = live_member_flag_21  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 22 } }  set_country_flag = live_member_flag_22  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 23 } }  set_country_flag = live_member_flag_23  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 24 } }  set_country_flag = live_member_flag_24  }
-	if = { limit={ check_variable = {  which = live_member_3 value = 25 } }  set_country_flag = live_member_flag_25  }
+	if = { limit={ check_variable = {  which = live_member_3 value = 1 } }  set_country_flag = live_member_flag_1  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 2 } }  set_country_flag = live_member_flag_2  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 3 } }  set_country_flag = live_member_flag_3  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 4 } }  set_country_flag = live_member_flag_4  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 5 } }  set_country_flag = live_member_flag_5  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 6 } }  set_country_flag = live_member_flag_6  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 7 } }  set_country_flag = live_member_flag_7  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 8 } }  set_country_flag = live_member_flag_8  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 9 } }  set_country_flag = live_member_flag_9  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 10 } }  set_country_flag = live_member_flag_10  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 11 } }  set_country_flag = live_member_flag_11  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 12 } }  set_country_flag = live_member_flag_12  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 13 } }  set_country_flag = live_member_flag_13  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 14 } }  set_country_flag = live_member_flag_14  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 15 } }  set_country_flag = live_member_flag_15  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 16 } }  set_country_flag = live_member_flag_16  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 17 } }  set_country_flag = live_member_flag_17  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 18 } }  set_country_flag = live_member_flag_18  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 19 } }  set_country_flag = live_member_flag_19  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 20 } }  set_country_flag = live_member_flag_20  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 21 } }  set_country_flag = live_member_flag_21  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 22 } }  set_country_flag = live_member_flag_22  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 23 } }  set_country_flag = live_member_flag_23  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 24 } }  set_country_flag = live_member_flag_24  }
+	else_if = { limit={ check_variable = {  which = live_member_3 value = 25 } }  set_country_flag = live_member_flag_25  }
 	
+	if = { limit={ check_variable = {  which = live_member_4 value = 1 } }  set_country_flag = live_member_flag_1  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 2 } }  set_country_flag = live_member_flag_2  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 3 } }  set_country_flag = live_member_flag_3  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 4 } }  set_country_flag = live_member_flag_4  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 5 } }  set_country_flag = live_member_flag_5  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 6 } }  set_country_flag = live_member_flag_6  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 7 } }  set_country_flag = live_member_flag_7  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 8 } }  set_country_flag = live_member_flag_8  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 9 } }  set_country_flag = live_member_flag_9  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 10 } }  set_country_flag = live_member_flag_10  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 11 } }  set_country_flag = live_member_flag_11  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 12 } }  set_country_flag = live_member_flag_12  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 13 } }  set_country_flag = live_member_flag_13  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 14 } }  set_country_flag = live_member_flag_14  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 15 } }  set_country_flag = live_member_flag_15  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 16 } }  set_country_flag = live_member_flag_16  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 17 } }  set_country_flag = live_member_flag_17  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 18 } }  set_country_flag = live_member_flag_18  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 19 } }  set_country_flag = live_member_flag_19  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 20 } }  set_country_flag = live_member_flag_20  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 21 } }  set_country_flag = live_member_flag_21  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 22 } }  set_country_flag = live_member_flag_22  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 23 } }  set_country_flag = live_member_flag_23  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 24 } }  set_country_flag = live_member_flag_24  }
+	else_if = { limit={ check_variable = {  which = live_member_4 value = 25 } }  set_country_flag = live_member_flag_25  }
 	
-
-
-}
-
-
-
-recheck_live_menu_flags_04={
-	remove_country_flag = live_member_flag_01
-	remove_country_flag = live_member_flag_02
-	remove_country_flag = live_member_flag_03
-	remove_country_flag = live_member_flag_04
-	remove_country_flag = live_member_flag_05
-	remove_country_flag = live_member_flag_06
-	remove_country_flag = live_member_flag_07
-	remove_country_flag = live_member_flag_08
-	remove_country_flag = live_member_flag_09
-	remove_country_flag = live_member_flag_10
-	remove_country_flag = live_member_flag_11
-	remove_country_flag = live_member_flag_12
-	remove_country_flag = live_member_flag_13
-	remove_country_flag = live_member_flag_14
-	remove_country_flag = live_member_flag_15
-	remove_country_flag = live_member_flag_16
-	remove_country_flag = live_member_flag_17
-	remove_country_flag = live_member_flag_18
-	remove_country_flag = live_member_flag_19
-	remove_country_flag = live_member_flag_20
-	remove_country_flag = live_member_flag_21
-	remove_country_flag = live_member_flag_22
-	remove_country_flag = live_member_flag_23
-	remove_country_flag = live_member_flag_24
-	remove_country_flag = live_member_flag_25
-
-	if = { limit={ check_variable = {  which = live_member_4 value = 01 } }  set_country_flag = live_member_flag_01  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 02 } }  set_country_flag = live_member_flag_02  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 03 } }  set_country_flag = live_member_flag_03  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 04 } }  set_country_flag = live_member_flag_04  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 05 } }  set_country_flag = live_member_flag_05  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 06 } }  set_country_flag = live_member_flag_06  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 07 } }  set_country_flag = live_member_flag_07  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 08 } }  set_country_flag = live_member_flag_08  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 09 } }  set_country_flag = live_member_flag_09  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 10 } }  set_country_flag = live_member_flag_10  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 11 } }  set_country_flag = live_member_flag_11  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 12 } }  set_country_flag = live_member_flag_12  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 13 } }  set_country_flag = live_member_flag_13  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 14 } }  set_country_flag = live_member_flag_14  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 15 } }  set_country_flag = live_member_flag_15  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 16 } }  set_country_flag = live_member_flag_16  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 17 } }  set_country_flag = live_member_flag_17  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 18 } }  set_country_flag = live_member_flag_18  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 19 } }  set_country_flag = live_member_flag_19  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 20 } }  set_country_flag = live_member_flag_20  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 21 } }  set_country_flag = live_member_flag_21  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 22 } }  set_country_flag = live_member_flag_22  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 23 } }  set_country_flag = live_member_flag_23  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 24 } }  set_country_flag = live_member_flag_24  }
-	if = { limit={ check_variable = {  which = live_member_4 value = 25 } }  set_country_flag = live_member_flag_25  }
-
-
-}
-
-recheck_live_menu_flags_05={
-	remove_country_flag = live_member_flag_01
-	remove_country_flag = live_member_flag_02
-	remove_country_flag = live_member_flag_03
-	remove_country_flag = live_member_flag_04
-	remove_country_flag = live_member_flag_05
-	remove_country_flag = live_member_flag_06
-	remove_country_flag = live_member_flag_07
-	remove_country_flag = live_member_flag_08
-	remove_country_flag = live_member_flag_09
-	remove_country_flag = live_member_flag_10
-	remove_country_flag = live_member_flag_11
-	remove_country_flag = live_member_flag_12
-	remove_country_flag = live_member_flag_13
-	remove_country_flag = live_member_flag_14
-	remove_country_flag = live_member_flag_15
-	remove_country_flag = live_member_flag_16
-	remove_country_flag = live_member_flag_17
-	remove_country_flag = live_member_flag_18
-	remove_country_flag = live_member_flag_19
-	remove_country_flag = live_member_flag_20
-	remove_country_flag = live_member_flag_21
-	remove_country_flag = live_member_flag_22
-	remove_country_flag = live_member_flag_23
-	remove_country_flag = live_member_flag_24
-	remove_country_flag = live_member_flag_25
-
-	if = { limit={ check_variable = {  which = live_member_5 value = 01 } }  set_country_flag = live_member_flag_01  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 02 } }  set_country_flag = live_member_flag_02  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 03 } }  set_country_flag = live_member_flag_03  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 04 } }  set_country_flag = live_member_flag_04  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 05 } }  set_country_flag = live_member_flag_05  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 06 } }  set_country_flag = live_member_flag_06  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 07 } }  set_country_flag = live_member_flag_07  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 08 } }  set_country_flag = live_member_flag_08  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 09 } }  set_country_flag = live_member_flag_09  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 10 } }  set_country_flag = live_member_flag_10  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 11 } }  set_country_flag = live_member_flag_11  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 12 } }  set_country_flag = live_member_flag_12  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 13 } }  set_country_flag = live_member_flag_13  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 14 } }  set_country_flag = live_member_flag_14  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 15 } }  set_country_flag = live_member_flag_15  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 16 } }  set_country_flag = live_member_flag_16  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 17 } }  set_country_flag = live_member_flag_17  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 18 } }  set_country_flag = live_member_flag_18  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 19 } }  set_country_flag = live_member_flag_19  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 20 } }  set_country_flag = live_member_flag_20  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 21 } }  set_country_flag = live_member_flag_21  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 22 } }  set_country_flag = live_member_flag_22  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 23 } }  set_country_flag = live_member_flag_23  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 24 } }  set_country_flag = live_member_flag_24  }
-	if = { limit={ check_variable = {  which = live_member_5 value = 25 } }  set_country_flag = live_member_flag_25  }
+	if = { limit={ check_variable = {  which = live_member_5 value = 1 } }  set_country_flag = live_member_flag_1  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 2 } }  set_country_flag = live_member_flag_2  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 3 } }  set_country_flag = live_member_flag_3  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 4 } }  set_country_flag = live_member_flag_4  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 5 } }  set_country_flag = live_member_flag_5  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 6 } }  set_country_flag = live_member_flag_6  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 7 } }  set_country_flag = live_member_flag_7  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 8 } }  set_country_flag = live_member_flag_8  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 9 } }  set_country_flag = live_member_flag_9  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 10 } }  set_country_flag = live_member_flag_10  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 11 } }  set_country_flag = live_member_flag_11  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 12 } }  set_country_flag = live_member_flag_12  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 13 } }  set_country_flag = live_member_flag_13  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 14 } }  set_country_flag = live_member_flag_14  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 15 } }  set_country_flag = live_member_flag_15  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 16 } }  set_country_flag = live_member_flag_16  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 17 } }  set_country_flag = live_member_flag_17  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 18 } }  set_country_flag = live_member_flag_18  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 19 } }  set_country_flag = live_member_flag_19  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 20 } }  set_country_flag = live_member_flag_20  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 21 } }  set_country_flag = live_member_flag_21  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 22 } }  set_country_flag = live_member_flag_22  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 23 } }  set_country_flag = live_member_flag_23  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 24 } }  set_country_flag = live_member_flag_24  }
+	else_if = { limit={ check_variable = {  which = live_member_5 value = 25 } }  set_country_flag = live_member_flag_25  }
 	
-
-
 }
+
+
+
 
