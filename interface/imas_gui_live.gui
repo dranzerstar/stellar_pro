@@ -22,23 +22,34 @@ guiTypes = {
 				iconType = { name = "sidepanel_bg" quadTextureSprite ="GFX_idol_ele_text_long_bg" position = { x = 20 y = 80 } alwaysTransparent = yes}
 				iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
 				instantTextBoxType={ name = "sidepanel_title" font = "large_title_font" text_color_code="H" text= "Idols_effect_cal" position = { x = 60 y = 18 } }
-				effectButtonType={ name = "sidepanel_texts"    #this is a text box
-									text= "Live_effects_fromatted" 
-									text= "effect_slot_1"
-									#text= "Idols_detail_01"
-									format = LEFT_UP
-									font = "cg_16b"
-									position = { x = 40 y = 90 } 
-									maxWidth = 400  maxHeight = 500 
-									effect = "live_change_button_01" 
-									#alwaysTransparent = yes 
-								}
-				instantTextBoxType={	
-					name = "sidepanel_texts2" font = "cg_16b"  text= "effect_slot_1"
-					position = { x = 40 y = 90 } 
-					maxWidth = 400  maxHeight = 500 
-				}			
+				# effectButtonType={ name = "sidepanel_texts"    #this is a text box
+				# 					text= "Live_effects_fromatted" 
+				# 					text= "effect_slot_1"
+				# 					#text= "Idols_detail_01"
+				# 					format = LEFT_UP
+				# 					font = "cg_16b"
+				# 					position = { x = 40 y = 90 } 
+				# 					maxWidth = 400  maxHeight = 500 
+				# 					effect = "live_change_button_01" 
+				# 					#alwaysTransparent = yes 
+				# 				}
+				# instantTextBoxType={	
+				# 	name = "sidepanel_texts2" font = "cg_16b"  text= "live_screen_desc"
+				# 	position = { x = 40 y = 90 } 
+				# 	maxWidth = 400  maxHeight = 500 
+				# }			
 				
+		}
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "malgun_goth_24"
+			#font = "malgun_goth_24"
+			#text_color_code = "S"
+			position = { x = 1260 y = 310 }
+			maxWidth = 400
+			maxHeight = 500
+			format = left
+			scrollbartype = "standardtext_slider"
 		}
 
 		buttonType = {
@@ -517,6 +528,61 @@ containerWindowType = {
 		# position = { x = 0 y = 0 }  effect = "idol_effect_group_07" text="idol_group_effect_text_07" }
 	
 
+#-------------------------------------------------------------------------------------
+#  group formed icons  +tooltip
+
+@grp_icon_x = 1200
+@grp_icon_y = 500
+		effectButtonType = {
+			name = "grp_icon_01"
+			quadTextureSprite = "GFX_grp_icon_01"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "group_triggered_01"
+		}
+		effectButtonType = {
+			name = "grp_icon_02"
+			quadTextureSprite = "GFX_grp_icon_02"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y }
+			effect = "group_triggered_02"
+		}
+		effectButtonType = {
+			name = "grp_icon_03"
+			quadTextureSprite = "GFX_grp_icon_03"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y }
+			effect = "group_triggered_03"
+		}
+		effectButtonType = {
+			name = "grp_icon_04"
+			quadTextureSprite = "GFX_grp_icon_04"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "group_triggered_04"
+		}
+		effectButtonType = {
+			name = "grp_icon_05"
+			quadTextureSprite = "GFX_grp_icon_05"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "group_triggered_05"
+		}
+		effectButtonType = {
+			name = "grp_icon_06"
+			quadTextureSprite = "GFX_grp_icon_06"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y }
+			effect = "group_triggered_06"
+		}
+		effectButtonType = {
+			name = "grp_icon_07"
+			quadTextureSprite = "GFX_grp_icon_07"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y }
+			effect = "group_triggered_07"
+		}
+
 
 
 
@@ -567,17 +633,7 @@ containerWindowType = {
 		@tags_pos_x = 170
 
 
-		instantTextBoxType = {
-			name = "alien_message"
-			font = "malgun_goth_24"
-			#font = "malgun_goth_24"
-			text_color_code = "S"
-			position = { x = -290 y = 272 }
-			maxWidth = 750
-			maxHeight = 800
-			format = left
-			scrollbartype = "standardtext_slider"
-		}
+
 
 
 
