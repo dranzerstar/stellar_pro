@@ -186,7 +186,7 @@ country_event={
 	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_1 value=1 } set_country_flag = live_member_flag_01} }
 	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_1 value=2 } set_country_flag = live_member_flag_02} }
 	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_1 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.illumination_stars allow={always=no} }
+	option={ name=page.lantica allow={always=no} }
 	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_1 value=4 } set_country_flag = live_member_flag_04} }
 	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_1 value=5 } set_country_flag = live_member_flag_05} }
 	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_1 value=6 } set_country_flag = live_member_flag_06} }
@@ -321,7 +321,7 @@ country_event={
 	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_2 value=1 } set_country_flag = live_member_flag_01} }
 	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_2 value=2 } set_country_flag = live_member_flag_02} }
 	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_2 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.illumination_stars allow={always=no} }
+	option={ name=page.lantica allow={always=no} }
 	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_2 value=4 } set_country_flag = live_member_flag_04} }
 	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_2 value=5 } set_country_flag = live_member_flag_05} }
 	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_2 value=6 } set_country_flag = live_member_flag_06} }
@@ -450,7 +450,7 @@ country_event={
 	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_3 value=1 } set_country_flag = live_member_flag_01} }
 	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_3 value=2 } set_country_flag = live_member_flag_02} }
 	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_3 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.illumination_stars allow={always=no} }
+	option={ name=page.lantica allow={always=no} }
 	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_3 value=4 } set_country_flag = live_member_flag_04} }
 	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_3 value=5 } set_country_flag = live_member_flag_05} }
 	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_3 value=6 } set_country_flag = live_member_flag_06} }
@@ -579,7 +579,7 @@ country_event={
 	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_3 value=1 } set_country_flag = live_member_flag_01} }
 	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_3 value=2 } set_country_flag = live_member_flag_02} }
 	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_3 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.illumination_stars allow={always=no} }
+	option={ name=page.lantica allow={always=no} }
 	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_3 value=4 } set_country_flag = live_member_flag_04} }
 	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_3 value=5 } set_country_flag = live_member_flag_05} }
 	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_3 value=6 } set_country_flag = live_member_flag_06} }
@@ -709,7 +709,7 @@ country_event={
 	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_4 value=1 } set_country_flag = live_member_flag_01} }
 	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_4 value=2 } set_country_flag = live_member_flag_02} }
 	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_4 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.illumination_stars allow={always=no} }
+	option={ name=page.lantica allow={always=no} }
 	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_4 value=4 } set_country_flag = live_member_flag_04} }
 	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_4 value=5 } set_country_flag = live_member_flag_05} }
 	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_4 value=6 } set_country_flag = live_member_flag_06} }

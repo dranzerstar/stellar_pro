@@ -4,9 +4,10 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 500 height = 500 }
-
+		size = { width = 1920 height = 1080 }
+		position = { x= 40 y = 0 }
 		background = { name = "background" quadTextureSprite ="GFX_imas_right_bg" position = { x = 1220 y = 220 } }
+		iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
 		#iconType = { name = "background" quadTextureSprite ="GFX_imas_combined_bg" position = { x = 150 y = 200 } alwaysTransparent = yes}
 
 		containerWindowType = { 
@@ -14,26 +15,19 @@ guiTypes = {
 			name= "side_panel"
 				iconType = { name = "sidepanel" quadTextureSprite ="GFX_imas_right_bg" position = { x = 0 y = 0 } alwaysTransparent = yes}
 				iconType = { name = "sidepanel_bg" quadTextureSprite ="GFX_idol_ele_text_long_bg" position = { x = 20 y = 80 } alwaysTransparent = yes}
-				iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
+				
 				instantTextBoxType={ name = "action_title" font = "large_title_font" text_color_code="H"  position = { x = 10 y = 18 } }
 
 
-				listboxType = {
-					name = "option_list"
-					position = { x = 40 y = 90 }
-					
-					size = { x = 300 y = 800 }
-					scrollbartype = "standardlistbox_slider"
-					spacing = 20
-					borderSize = { x = 0 y = 0 }
-					Orientation = "CENTERED_UP"
-				}
 				
-			}
+		}
+
+
+
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_close"
-			position = { x= 1470 y = 215 }
+			position = { x= 1640 y = 240 }
 			
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
@@ -77,6 +71,17 @@ guiTypes = {
 
 
 
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "malgun_goth_24"
+			#font = "malgun_goth_24"
+			text_color_code = "S"
+			position = { x = -290 y = 272 }
+			maxWidth = 750
+			maxHeight = 800
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
 
 
 
@@ -97,7 +102,7 @@ guiTypes = {
 			instantTextBoxType={
 			 name = "action_title"
 			 font = "large_title_font"
-			 position = { x = -215 y = 218 }
+			 position = { x =1280 y = 238 }
 			 maxWidth = 200
 			 text_color_code = "H"
 			 alwaysTransparent = yes
@@ -116,6 +121,17 @@ guiTypes = {
 			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
 
 			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
+					
+			listboxType = {
+				name = "option_list"
+				position = { x = 1260 y =  310 }
+				
+				size = { x = 300 y = 800 }
+				scrollbartype = "standardlistbox_slider"
+				spacing = 20
+				borderSize = { x = 0 y = 0 }
+				Orientation = "CENTERED_UP"
+			}
 		}
 				instantTextBoxType = {
 					name = "irm_some_header"

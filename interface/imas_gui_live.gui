@@ -21,15 +21,25 @@ guiTypes = {
 				iconType = { name = "sidepanel" quadTextureSprite ="GFX_imas_right_bg" position = { x = 0 y = 0 } alwaysTransparent = yes}
 				iconType = { name = "sidepanel_bg" quadTextureSprite ="GFX_idol_ele_text_long_bg" position = { x = 20 y = 80 } alwaysTransparent = yes}
 				iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = -1000 y = 22 } alwaysTransparent = yes } #TITLE
-				instantTextBoxType={ name = "sidepanel_title" font = "large_title_font" text_color_code="H" text= "Idols_effect_cal" position = { x = 10 y = 18 } }
+				instantTextBoxType={ name = "sidepanel_title" font = "large_title_font" text_color_code="H" text= "Idols_effect_cal" position = { x = 60 y = 18 } }
 				effectButtonType={ name = "sidepanel_texts"    #this is a text box
 									text= "Live_effects_fromatted" 
+									text= "effect_slot_1"
+									#text= "Idols_detail_01"
+									format = LEFT_UP
 									font = "cg_16b"
 									position = { x = 40 y = 90 } 
 									maxWidth = 400  maxHeight = 500 
-									effect={} alwaysTransparent = yes }
+									effect = "live_change_button_01" 
+									#alwaysTransparent = yes 
+								}
+				instantTextBoxType={	
+					name = "sidepanel_texts2" font = "cg_16b"  text= "effect_slot_1"
+					position = { x = 40 y = 90 } 
+					maxWidth = 400  maxHeight = 500 
+				}			
 				
-			}
+		}
 
 		buttonType = {
 				name = "close"

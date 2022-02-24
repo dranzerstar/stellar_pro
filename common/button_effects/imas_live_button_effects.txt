@@ -5,113 +5,39 @@ live_change_button_01={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
 
-		change_variable = {
-			which = live_member_1
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1101
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_1
-				value >25
-			} }
-			set_variable = {
-				which = live_member_1
-				value = 0
-			}
-		}
-		recheck_live_menu_flags=yes
 
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_02={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_2
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1201
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_2
-				value >25
-			} }
-			set_variable = {
-				which = live_member_2
-				value = 0
-			}
-		}
-
-
-
-		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_03={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_3
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1301
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_3
-				value >25
-			} }
-			set_variable = {
-				which = live_member_3
-				value = 0
-			}
-		}
-		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 
 live_change_button_04={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_4
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1401
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_4
-				value >25
-			} }
-			set_variable = {
-				which = live_member_4
-				value = 0
-			}
-		}
-		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_05={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_5
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1501
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_5
-				value >25
-			} }
-			set_variable = {
-				which = live_member_5
-				value = 0
-			}
-		}
-
-		recheck_live_menu_flags=yes
 
 	} } #TODO POPUP TO CHANGE MEMBER
 
