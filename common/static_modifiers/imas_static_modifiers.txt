@@ -19,78 +19,172 @@ mod_283p_contract_signed_live={
 
 
 idol_live_effect_01 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/01.dds"
+		envoy_improve_relations_mult = 0.5
+		pop_ethic_xenophile_attraction_mult = 0.25
+		pop_happiness = 0.05 
+		diplo_weight_naval_mult = -0.25
 }
 #
 idol_live_effect_02 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/02.dds"
+		all_technology_research_speed = 0.1
+		country_physics_research_produces_add =30
+		station_researchers_produces_mult = 0.1
+	
 }
 #
 idol_live_effect_03 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/03.dds"
+		trade_value_mult = 0.15
+		diplo_weight_economy_mult = 0.25
+		planet_pops_consumer_goods_upkeep_mult = 0.05
+		
 }
 #
 idol_live_effect_04 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/04.dds"
+		country_energy_produces_mult = 0.3
+		planet_amenities_add = 10
+		planet_pops_consumer_goods_upkeep_mult = 0.4 
 }
 #
-idol_live_effect_05 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/05.dds"
+idol_live_effect_05 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/05.dds" #梗
+		country_border_friction_mult = 0.5
+		country_war_exhaustion_mult = -0.5
+		country_unity_produces_add = -10
+		country_produces_mult = -0.05
+		planet_stability_add = -20
+		envoy_harm_relations_mult = 0.2
 }
 #
 idol_live_effect_06 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/06.dds"
+		country_trust_growth = 4  #梗
+		country_admin_cap_add = 50
+		envoy_improve_relations_mult = 0.5
+
 }
 #
 idol_live_effect_07 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/07.dds"
+		all_technology_research_speed = 0.2  #梗
+		pop_ethics_shift_speed_mult = 0.5
+		planet_jobs_upkeep_mult = 0.05
 }
 #
 idol_live_effect_08 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/08.dds"
+		ship_hull_add = 5000 #梗
+		ship_hull_regen_add_static = 150 #梗
 }
 #
-idol_live_effect_09 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/09.dds"
+idol_live_effect_09 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/09.dds" #梗
+		damage_vs_country_type_swarm_mult = 0.2   
+		damage_vs_country_type_extradimensional_mult = 0.2
+		damage_vs_country_type_extradimensional_2_mult = 0.2
+		damage_vs_country_type_extradimensional_3_mult = 0.2
+		damage_vs_country_type_ai_empire_mult = 0.2
+		damage_vs_country_type_gray_goo_mult = 0.2
+		damage_vs_player_crisis_mult = 0.2
+		country_naval_cap_add = 100
 }
 #
 idol_live_effect_10 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/10.dds"
+		country_food_produces_mult = 1.0 # 梗
+		planet_pops_food_upkeep_add = 5 #梗
+		pop_happiness = 0.2 #梗
 }
 #
 idol_live_effect_11 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/11.dds"
+		pop_ethics_shift_speed_mult = 3.0 #梗
+		pop_ethic_xenophile_attraction_mult = 2.0 #梗
+		pop_ethic_xenophobe_attraction_mult = 2.0 #梗
+		planets_unity_produces_mult = 0.2
 }
 #
 idol_live_effect_12 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/12.dds"
+		country_admin_cap_add = 200
+		planet_administrators_upkeep_mult = 0.2
+		planet_administrators_produces_mult = 0.2
+		pop_category_robot_produces_mult = 0.5 #梗
 }
 #
 idol_live_effect_13 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/13.dds"
+		country_influence_produces_add = 2 
+		local_trade_protection_add = 10
+		damage_vs_country_type_pirate_mult = 0.2
+		damage_vs_country_type_dormant_marauders_mult = 0.2
+		damage_vs_country_type_awakened_marauders_mult = 0.2
 }
 #
 idol_live_effect_14 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/14.dds"
+		country_produces_mult =  0.3
+		diplo_weight_envoys_mult = 0.3
 }
 #
 idol_live_effect_15 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/15.dds"
+		country_produces_mult =  -0.6 #梗
+		pop_happiness = 0.2
+		pop_amenities_usage_mult = 0.2
+		planet_stability_add = 30
 }
 #
 idol_live_effect_16 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/16.dds"
+		pop_growth_speed = 0.3  #梗
+		planet_jobs_consumer_goods_produces_mult = 0.2
 }
 #
 idol_live_effect_17 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/17.dds"
+		ship_speed_mult = 0.5
+		science_ship_survey_speed = 1.5
+
 }
 #
 idol_live_effect_18 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/18.dds"
+		intel_encryption_add = 5  #梗
+		country_rare_crystals_produces_add = 2
+		country_exotic_gases_produces_add  = 2
+		planet_jobs_energy_upkeep_mult = 0.5
+
 }
 #
 idol_live_effect_19 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/19.dds"
+		country_minerals_produces_add = 10
+		country_sr_dark_matter_produces_add = 3  #梗
+		country_trust_growth = 2
+
 }
 #
 idol_live_effect_20 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/20.dds"
+		country_starbase_capacity_add = 4
+		planet_sensor_range_add = 3
+		diplo_action_acceptance_add = 10
+		country_energy_produces_add = -20  #梗
 }
 #
 idol_live_effect_21 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/21.dds"
+		intel_decryption_add = 2
+		planets_alloys_produces_mult = 0.3
 }
 #
 idol_live_effect_22 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/22.dds"
+		country_energy_produces_add = 3   #梗
+		country_minerals_produces_add = 1
+		country_food_produces_add = 4
+		country_unity_produces_add = 1
+		country_alloys_produces_add = 5
+		country_consumer_goods_produces_add = 9
 }
 #
 idol_live_effect_23 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/23.dds"
+
+		country_food_produces_add = 10  #梗  除了很幼和很大 我什么都不知道
 }
 #
 idol_live_effect_24 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/24.dds"
+		planet_jobs_unity_produces_mult = -0.1
+		diplo_action_acceptance_add = 10
+	    country_society_research_produces_add  = 30
+		#
 }
 #
 idol_live_effect_25 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/25.dds"
+		leaders_upkeep_mult = 0.5
+		species_leader_exp_gain = 0.2
 }
 #
 
