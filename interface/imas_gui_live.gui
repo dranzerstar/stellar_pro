@@ -547,6 +547,7 @@ containerWindowType = {
 			position = { x = @grp_icon_x y = @grp_icon_y }
 			effect = "group_triggered_02"
 		}
+	
 		effectButtonType = {
 			name = "grp_icon_03"
 			quadTextureSprite = "GFX_grp_icon_03"

@@ -76,11 +76,12 @@ idol_trainee_job_check_trigger = {
 
 is_illuminationstars_formed={
 	custom_tooltip = "is_illuminationstars_formed"
+	hidden_trigger = {
 	AND={
 		has_country_flag = live_member_flag_01
 		has_country_flag = live_member_flag_02
 		has_country_flag = live_member_flag_03
-		hidden_trigger = {
+		
 			NOT = {
 				has_country_flag = live_member_flag_04
 				has_country_flag = live_member_flag_05
@@ -114,6 +115,7 @@ is_illuminationstars_formed={
 
 is_lantica_formed={
 	custom_tooltip = "is_lantica_formed"
+	hidden_trigger = {
 	AND={
 		has_country_flag = live_member_flag_04
 		has_country_flag = live_member_flag_05
@@ -121,7 +123,7 @@ is_lantica_formed={
 		has_country_flag = live_member_flag_07
 		has_country_flag = live_member_flag_08
 
-		hidden_trigger = {
+		
 			NOT = {
 				has_country_flag = live_member_flag_01
 				has_country_flag = live_member_flag_02
@@ -153,6 +155,7 @@ is_lantica_formed={
 
 is_hokago_formed={
 	custom_tooltip = "is_hokago_formed"
+	hidden_trigger = {
 	AND={				has_country_flag = live_member_flag_09
 		has_country_flag = live_member_flag_10
 		has_country_flag = live_member_flag_11
@@ -160,7 +163,7 @@ is_hokago_formed={
 		has_country_flag = live_member_flag_13
 
 
-		hidden_trigger = {
+		
 			NOT = {
 				has_country_flag = live_member_flag_01
 				has_country_flag = live_member_flag_02
@@ -192,13 +195,14 @@ is_hokago_formed={
 
 
 is_alstroemeria_formed={
-	custom_tooltip = "is_straylight_formed"
+	custom_tooltip = "is_alstroemeria_formed"
+	hidden_trigger = {
 	AND={
 
 		has_country_flag = live_member_flag_14
 		has_country_flag = live_member_flag_15
 		has_country_flag = live_member_flag_16
-		hidden_trigger = {
+	
 			NOT = {
 				has_country_flag = live_member_flag_01
 				has_country_flag = live_member_flag_02
@@ -233,12 +237,13 @@ is_alstroemeria_formed={
 
 is_straylight_formed={
 	custom_tooltip = "is_straylight_formed"
+	hidden_trigger = {
 	AND={
 
 		has_country_flag = live_member_flag_17
 		has_country_flag = live_member_flag_18
 		has_country_flag = live_member_flag_19
-		hidden_trigger = {
+		
 			NOT = {
 				has_country_flag = live_member_flag_01
 				has_country_flag = live_member_flag_02
@@ -273,13 +278,14 @@ is_straylight_formed={
 
 is_noctchill_formed={
 	custom_tooltip = "is_noctchill_formed"
+	hidden_trigger = {
 	AND={
 		has_country_flag = live_member_flag_20
 		has_country_flag = live_member_flag_21
 		has_country_flag = live_member_flag_22
 		has_country_flag = live_member_flag_23
 
-		hidden_trigger = {
+		
 			NOT = {
 				has_country_flag = live_member_flag_01
 				has_country_flag = live_member_flag_02
@@ -313,11 +319,12 @@ is_noctchill_formed={
 
 is_shhis_formed={
 	custom_tooltip = "is_shhis_formed"
+	hidden_trigger = {
 	AND={
 		has_country_flag = live_member_flag_24
 		has_country_flag = live_member_flag_25
 
-		hidden_trigger = {
+		
 			NOT = {
 				has_country_flag = live_member_flag_01
 				has_country_flag = live_member_flag_02

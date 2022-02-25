@@ -98,6 +98,8 @@
  imas_ui_button_speciality:0 "特技"
  imas_ui_button_introduce:0 "简介"
 
+ grp-live-effects:0 "组合出场效果"
+
  Idols_catalogue:0 "偶像"
  Idols_detail:0 "偶像资料"
  Idols_group:0 "偶像组合"
@@ -106,6 +108,7 @@
  Idols_selection_screen:0 "偶像列表"
  next_page:0 "下一页"
  prev_page:0 "上一页"
+
 #effects strings
  live_luanch_button_text:0 "确定编成"
 
@@ -158,6 +161,15 @@
  live_prepared:0 "Preparing for Planned Live"
  confirm_live_grp:0 "Confirm Group"
  invalid_live_grp:0 "Invalid Group "
+
+ is_illuminationstars_formed:0 "组成$page.illumination_stars$"
+ is_lantica_formed:0 "组成$page.lantica$"
+ is_hokago_formed:0 "组成$page.climax$"
+ is_alstroemeria_formed "组成$page.alstroemeria$"
+ is_straylight_formed:0 "组成$page.straylight$"
+ is_noctchill_formed:0 "组成$page.noctchill$"
+ is_shhis_formed:0 "组成$page.shiis$"
+ is_full_team:0 "组成五人组合"
 
 #idol details
 

@@ -112,8 +112,66 @@ guiTypes = {
 	effectButtonType = { name = "idol_card_25" quadTextureSprite = "GFX_idol_card_25" Orientation = "UPPER_LEFT"
 		position = { x = @main_image_x y = @main_image_y } effect = "imas_idol_card_25" }
 	#
+#-------------------------------------------------------------------------------------
+#right info panel
+
+@grp_icon_x= 0 @grp_icon_y=500
+	containerWindowType = {
+			position = { x = 1220 y =220 }
+			name= "side_panel"
+
+			effectButtonType = {
+			name = "grp_icon_01"
+			quadTextureSprite = "GFX_grp_icon_01"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_1"
+		}
+		effectButtonType = {
+			name = "grp_icon_02"
+			quadTextureSprite = "GFX_grp_icon_02"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_2"
+		}
+		effectButtonType = {
+			name = "grp_icon_03"
+			quadTextureSprite = "GFX_grp_icon_03"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_3"
+		}
+		effectButtonType = {
+			name = "grp_icon_04"
+			quadTextureSprite = "GFX_grp_icon_04"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_4"
+		}
+		effectButtonType = {
+			name = "grp_icon_05"
+			quadTextureSprite = "GFX_grp_icon_05"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_5"
+		}
+		effectButtonType = {
+			name = "grp_icon_06"
+			quadTextureSprite = "GFX_grp_icon_06"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_6"
+		}
+		effectButtonType = {
+			name = "grp_icon_07"
+			quadTextureSprite = "GFX_grp_icon_07"
+			Orientation = "UPPER_LEFT"
+			position = { x = @grp_icon_x y = @grp_icon_y  }
+			effect = "imas_gui_details_idols_grp_7"
+		}
 
 
+	}
 
 #
 #--------------------------------------------------------------------------------

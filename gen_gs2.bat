@@ -8,6 +8,5 @@ for /L %%i in (1, 1, 25) do (
 rem     echo !num!
 
 
-echo	option={ name=idol_name_with_icon_!num! trigger={has_global_flag=idol_debut_!num!} hidden_effect={ set_variable={which=live_member_1 value=!numf! } set_country_flag = live_member_flag_!num!} }
-
+echo remove_country_flag = live_member_flag_!num!
 )

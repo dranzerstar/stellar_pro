@@ -99,7 +99,7 @@
  Idols_effect:0 "Live effects"
  Idols_effect_cal:0 "Expected Live Effects"
 
-
+ grp-live-effects:0 "Group Live Effects"
 
  live_luanch_button_loc:0 "[Root.live_luanch_button_text]"
  live_prepared:0 "Preparing for Planned Live"
