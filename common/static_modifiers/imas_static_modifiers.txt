@@ -178,27 +178,90 @@ idol_live_effect_23 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/23.dds
 idol_live_effect_24 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/24.dds"
 		planet_jobs_unity_produces_mult = -0.1
 		diplo_action_acceptance_add = 10
-	    country_society_research_produces_add  = 30
+	    country_society_research_produces_add  = 40
+		country_subject_acceptance_add =20
 		#
 }
 #
 idol_live_effect_25 = { icon="gfx/interface/icons/modifiers/idol_mod_icon/25.dds"
+
 		leaders_upkeep_mult = 0.5
-		species_leader_exp_gain = 0.2
+		species_leader_exp_gain = 0.5
 }
 #
 
 
-idol_group_live_effect_01={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g01.dds" }
+idol_group_live_effect_01={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g01.dds" 
+		trade_value_mult = 0.3
+	
+		country_produces_mult = 0.2
+		country_war_exhaustion_mult = 2.0
+		country_naval_cap_add = -200
+}
 
-idol_group_live_effect_02={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g02.dds" }
+idol_group_live_effect_02={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g02.dds" 
+		country_naval_cap_add = 200
+		ship_accuracy_mult = 0.5
+		ship_speed_mult = 0.5
+		country_alloys_produces_add = 400
+		ship_shield_mult = -0.5
+		ship_armor_mult = -1.0
+		ship_hull_mult = -0.5
+		ship_fire_rate_mult = 0.5
+		damage_vs_country_type_adversary_mult = 0.5
 
-idol_group_live_effect_03={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g03.dds" }
+}
 
-idol_group_live_effect_04={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g04.dds" }
+idol_group_live_effect_03={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g03.dds"
+		planet_building_build_speed_mult = 1.5
+		planet_jobs_food_produces_mult = 1.5
+		pop_growth_speed = 0.8
+		planet_clear_blocker_time_mult = 0.5
+		terraform_speed_mult = 2.0
+		planet_decision_enact_speed_mult = 1.5
 
-idol_group_live_effect_05={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g05.dds" }
 
-idol_group_live_effect_06={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g06.dds" }
 
-idol_group_live_effect_07={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g07.dds" }
+
+}
+
+idol_group_live_effect_04={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g04.dds" 
+		country_unity_produces_add = 1000
+		planet_immigration_pull_mult = 0.25
+		edicts_cost_mult = -0.5
+		all_technology_research_speed = -0.4
+		country_produces_mult = -0.3	
+}
+
+idol_group_live_effect_05={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g05.dds" 
+		all_technology_research_speed = 0.3
+		country_physics_research_produces_add = 500
+		country_society_research_produces_add  = 500
+		country_engineering_research_produces_add  = 500
+		planet_jobs_energy_upkeep_mult = 0.5
+
+
+
+
+
+}
+
+idol_group_live_effect_06={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g06.dds" 
+	starbase_building_build_speed_mult = 1.0
+	starbases_upkeep_mult = -0.5
+	country_starbase_capacity_add = 5
+	planet_sensor_range_add = 3
+	ship_sensor_range_add = 3
+	local_trade_protection_add =20
+
+
+}
+
+idol_group_live_effect_07={ icon="gfx/interface/icons/modifiers/idol_group_mod_icon/g07.dds"
+	
+	country_sr_dark_matter_produces_add = 2
+	country_sr_living_metal_produces_add = 2
+	country_sr_zro_produces_add = 2
+	country_minor_artifacts_produces_add = 2
+	
+}
