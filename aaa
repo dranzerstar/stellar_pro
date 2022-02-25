@@ -1,25 +1,25 @@
-eff_live_idol_card_pos5_01={ potential = { check_variable = {  which = live_member_5 value = 1 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_01  tooltip={add_modifier={modifier=idol_live_effect_01 }}}
-eff_live_idol_card_pos5_02={ potential = { check_variable = {  which = live_member_5 value = 2 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_02  tooltip={add_modifier={modifier=idol_live_effect_02 }}}
-eff_live_idol_card_pos5_03={ potential = { check_variable = {  which = live_member_5 value = 3 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_03  tooltip={add_modifier={modifier=idol_live_effect_03 }}}
-eff_live_idol_card_pos5_04={ potential = { check_variable = {  which = live_member_5 value = 4 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_04  tooltip={add_modifier={modifier=idol_live_effect_04 }}}
-eff_live_idol_card_pos5_05={ potential = { check_variable = {  which = live_member_5 value = 5 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_05  tooltip={add_modifier={modifier=idol_live_effect_05 }}}
-eff_live_idol_card_pos5_06={ potential = { check_variable = {  which = live_member_5 value = 6 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_06  tooltip={add_modifier={modifier=idol_live_effect_06 }}}
-eff_live_idol_card_pos5_07={ potential = { check_variable = {  which = live_member_5 value = 7 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_07  tooltip={add_modifier={modifier=idol_live_effect_07 }}}
-eff_live_idol_card_pos5_08={ potential = { check_variable = {  which = live_member_5 value = 8 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_08  tooltip={add_modifier={modifier=idol_live_effect_08 }}}
-eff_live_idol_card_pos5_09={ potential = { check_variable = {  which = live_member_5 value = 9 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_09  tooltip={add_modifier={modifier=idol_live_effect_09 }}}
-eff_live_idol_card_pos5_10={ potential = { check_variable = {  which = live_member_5 value = 10 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_10  tooltip={add_modifier={modifier=idol_live_effect_10 }}}
-eff_live_idol_card_pos5_11={ potential = { check_variable = {  which = live_member_5 value = 11 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_11  tooltip={add_modifier={modifier=idol_live_effect_11 }}}
-eff_live_idol_card_pos5_12={ potential = { check_variable = {  which = live_member_5 value = 12 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_12  tooltip={add_modifier={modifier=idol_live_effect_12 }}}
-eff_live_idol_card_pos5_13={ potential = { check_variable = {  which = live_member_5 value = 13 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_13  tooltip={add_modifier={modifier=idol_live_effect_13 }}}
-eff_live_idol_card_pos5_14={ potential = { check_variable = {  which = live_member_5 value = 14 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_14  tooltip={add_modifier={modifier=idol_live_effect_14 }}}
-eff_live_idol_card_pos5_15={ potential = { check_variable = {  which = live_member_5 value = 15 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_15  tooltip={add_modifier={modifier=idol_live_effect_15 }}}
-eff_live_idol_card_pos5_16={ potential = { check_variable = {  which = live_member_5 value = 16 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_16  tooltip={add_modifier={modifier=idol_live_effect_16 }}}
-eff_live_idol_card_pos5_17={ potential = { check_variable = {  which = live_member_5 value = 17 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_17  tooltip={add_modifier={modifier=idol_live_effect_17 }}}
-eff_live_idol_card_pos5_18={ potential = { check_variable = {  which = live_member_5 value = 18 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_18  tooltip={add_modifier={modifier=idol_live_effect_18 }}}
-eff_live_idol_card_pos5_19={ potential = { check_variable = {  which = live_member_5 value = 19 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_19  tooltip={add_modifier={modifier=idol_live_effect_19 }}}
-eff_live_idol_card_pos5_20={ potential = { check_variable = {  which = live_member_5 value = 20 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_20  tooltip={add_modifier={modifier=idol_live_effect_20 }}}
-eff_live_idol_card_pos5_21={ potential = { check_variable = {  which = live_member_5 value = 21 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_21  tooltip={add_modifier={modifier=idol_live_effect_21 }}}
-eff_live_idol_card_pos5_22={ potential = { check_variable = {  which = live_member_5 value = 22 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_22  tooltip={add_modifier={modifier=idol_live_effect_22 }}}
-eff_live_idol_card_pos5_23={ potential = { check_variable = {  which = live_member_5 value = 23 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_23  tooltip={add_modifier={modifier=idol_live_effect_23 }}}
-eff_live_idol_card_pos5_24={ potential = { check_variable = {  which = live_member_5 value = 24 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_24  tooltip={add_modifier={modifier=idol_live_effect_24 }}}
-eff_live_idol_card_pos5_25={ potential = { check_variable = {  which = live_member_5 value = 25 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_25  tooltip={add_modifier={modifier=idol_live_effect_25 }}}
+remove_country_flag = live_member_flag_01
+remove_country_flag = live_member_flag_02
+remove_country_flag = live_member_flag_03
+remove_country_flag = live_member_flag_04
+remove_country_flag = live_member_flag_05
+remove_country_flag = live_member_flag_06
+remove_country_flag = live_member_flag_07
+remove_country_flag = live_member_flag_08
+remove_country_flag = live_member_flag_09
+remove_country_flag = live_member_flag_10
+remove_country_flag = live_member_flag_11
+remove_country_flag = live_member_flag_12
+remove_country_flag = live_member_flag_13
+remove_country_flag = live_member_flag_14
+remove_country_flag = live_member_flag_15
+remove_country_flag = live_member_flag_16
+remove_country_flag = live_member_flag_17
+remove_country_flag = live_member_flag_18
+remove_country_flag = live_member_flag_19
+remove_country_flag = live_member_flag_20
+remove_country_flag = live_member_flag_21
+remove_country_flag = live_member_flag_22
+remove_country_flag = live_member_flag_23
+remove_country_flag = live_member_flag_24
+remove_country_flag = live_member_flag_25

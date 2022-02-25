@@ -542,3 +542,146 @@ imas_gui_idols_grp_7 = {
 		allow = { always = yes }
 		effect = {} }
 		
+
+
+
+		imas_gui_details_idols_grp_1 = {
+			potential = {  OR={  check_variable={which= idols_select value = 1 } 
+								 check_variable={which= idols_select value = 2 }  
+								 check_variable={which= idols_select value = 3 }  
+								} } 
+			allow = { always = yes }
+			effect = {
+
+				custom_tooltip = "page.illumination_stars"
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_01
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_01
+					}
+				}
+			}
+		}
+		
+		imas_gui_details_idols_grp_2 = {
+			potential = {  OR={  check_variable={which= idols_select value = 4 } 
+								 check_variable={which= idols_select value = 5 }  
+								 check_variable={which= idols_select value = 6 }  
+								 check_variable={which= idols_select value = 7 }  
+								 check_variable={which= idols_select value = 8 }  
+								} } 
+			allow = { always = yes }
+			effect = {
+
+				custom_tooltip = "page.lantica"
+
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_02
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_02
+					}
+				}
+			}
+		}
+		
+		imas_gui_details_idols_grp_3 = {
+			potential = { OR={  check_variable={which= idols_select value = 9 } 
+								check_variable={which= idols_select value = 10 }  
+								check_variable={which= idols_select value = 13 }  
+								check_variable={which= idols_select value = 11 }  
+								check_variable={which= idols_select value = 12 }  
+		   } } 
+			allow = { always = yes }
+			effect = {
+
+				custom_tooltip = "page.alstroemeria"
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_03
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_03
+					}
+				}
+			}
+		}
+		
+		imas_gui_details_idols_grp_4 = {
+			potential = {OR={  check_variable={which= idols_select value = 14 } 
+								check_variable={which= idols_select value = 15 }  
+								check_variable={which= idols_select value = 16 }  
+
+			}} 
+			allow = { always = yes }
+			effect = {
+
+				custom_tooltip = "page.alstroemeria"
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_04
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_04
+					}
+				}
+			}
+		}
+		
+		imas_gui_details_idols_grp_5 = {
+			potential = {OR={  check_variable={which= idols_select value = 17 } 
+								check_variable={which= idols_select value = 18 }  
+								check_variable={which= idols_select value = 19 }  
+							}	 
+			} 
+			allow = { always = yes }
+			effect = {
+
+				custom_tooltip = page.straylight
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_05
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_05
+					}
+				}
+			}
+		}
+		
+		imas_gui_details_idols_grp_6 = {
+			potential = {OR={  check_variable={which= idols_select value = 20 } 
+								check_variable={which= idols_select value = 21 }  
+								check_variable={which= idols_select value = 22 }  
+								check_variable={which= idols_select value = 23 }  
+		}	} 
+			allow = { always = yes }
+			effect = {
+				custom_tooltip = page.notchil
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_06
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_06
+					}
+				}
+			}
+		}
+		
+		imas_gui_details_idols_grp_7 = {
+			potential = { OR={	 check_variable={which= idols_select value = 24 }  
+								check_variable={which= idols_select value = 25 }  } } 
+			allow = { always = yes }
+			effect = {
+
+				custom_tooltip = page.shiis
+				custom_tooltip = grp-live-effects
+				custom_tooltip = idol_group_live_effect_07
+				tooltip = {
+					add_modifier = {
+						modifier = idol_group_live_effect_07
+					}
+				}
+
+			}
+		}
+		
+		

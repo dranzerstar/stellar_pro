@@ -124,6 +124,32 @@ country_event={
 	title= Idols_live_menu
 
 	immediate = {
+		remove_country_flag = live_member_flag_01
+		remove_country_flag = live_member_flag_02
+		remove_country_flag = live_member_flag_03
+		remove_country_flag = live_member_flag_04
+		remove_country_flag = live_member_flag_05
+		remove_country_flag = live_member_flag_06
+		remove_country_flag = live_member_flag_07
+		remove_country_flag = live_member_flag_08
+		remove_country_flag = live_member_flag_09
+		remove_country_flag = live_member_flag_10
+		remove_country_flag = live_member_flag_11
+		remove_country_flag = live_member_flag_12
+		remove_country_flag = live_member_flag_13
+		remove_country_flag = live_member_flag_14
+		remove_country_flag = live_member_flag_15
+		remove_country_flag = live_member_flag_16
+		remove_country_flag = live_member_flag_17
+		remove_country_flag = live_member_flag_18
+		remove_country_flag = live_member_flag_19
+		remove_country_flag = live_member_flag_20
+		remove_country_flag = live_member_flag_21
+		remove_country_flag = live_member_flag_22
+		remove_country_flag = live_member_flag_23
+		remove_country_flag = live_member_flag_24
+		remove_country_flag = live_member_flag_25
+
 		set_variable = { which = live_member_1 value = 0 }
 		set_variable = { which = live_member_2 value = 0 }
 		set_variable = { which = live_member_3 value = 0 }
@@ -135,7 +161,14 @@ country_event={
 	option={
 		name=close
 	}
+	after={
+		#remove_country_flag = live_member_flag_01
 
+
+
+
+		
+	}
 
 
 
