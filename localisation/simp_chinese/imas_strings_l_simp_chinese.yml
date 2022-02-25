@@ -145,12 +145,12 @@
  idol_group_live_effect_07:0 "SHHis -- OH MY GOD \n"
 
 
- effect_slot_1:0 "scripted"
- effect_slot_2:0 "scripted"
- effect_slot_3:0 "scripted"
- effect_slot_4:0 "scripted"
- effect_slot_5:0 "scripted"
- effect_slot_group_1:0 "scripted"
+ effect_slot_1:0 "[Root.effect_slot_1]"
+ effect_slot_2:0 "[Root.effect_slot_2]"
+ effect_slot_3:0 "[Root.effect_slot_3]"
+ effect_slot_4:0 "[Root.effect_slot_4]"
+ effect_slot_5:0 "[Root.effect_slot_5]"
+ effect_slot_group_1:0 "[Root.effect_slot_group_1]"
 
  Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"  
 

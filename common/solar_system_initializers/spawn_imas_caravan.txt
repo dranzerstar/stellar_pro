@@ -208,17 +208,11 @@ imas_caravaneer_init = {
 							while = {
 								count = 10
 								create_ship = {
-									name = "NAME_ima_ship2"
+									name = "NAME_ima_ship1"
 									design = NAME_Yojimbo
 								}
 							}
-							while = {
-								count = 6
-								create_ship = {
-									name = "NAME_ima_ship3"
-									design = NAME_Gunslinger
-								}
-							}
+
 							set_location = {
 								target = event_target:imas_home_star
 								angle = 90

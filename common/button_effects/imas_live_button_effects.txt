@@ -5,115 +5,85 @@ live_change_button_01={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
 
-		change_variable = {
-			which = live_member_1
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1101
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_1
-				value >25
-			} }
-			set_variable = {
-				which = live_member_1
-				value = 0
-			}
-		}
-		recheck_live_menu_flags=yes
 
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_02={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_2
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1201
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_2
-				value >25
-			} }
-			set_variable = {
-				which = live_member_2
-				value = 0
-			}
-		}
-
-
-
-		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_03={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_3
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1301
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_3
-				value >25
-			} }
-			set_variable = {
-				which = live_member_3
-				value = 0
-			}
-		}
-		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 
 live_change_button_04={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_4
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1401
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_4
-				value >25
-			} }
-			set_variable = {
-				which = live_member_4
-				value = 0
-			}
-		}
-		recheck_live_menu_flags=yes
 	} } #TODO POPUP TO CHANGE MEMBER
 live_change_button_05={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
-		change_variable = {
-			which = live_member_5
-			value = 1
+		country_event = {
+			id = imas_idols_menu.1501
 		}
-
-
-		if = {
-			limit = { check_variable = {
-				which = live_member_5
-				value >25
-			} }
-			set_variable = {
-				which = live_member_5
-				value = 0
-			}
-		}
-
-		recheck_live_menu_flags=yes
 
 	} } #TODO POPUP TO CHANGE MEMBER
+
+
+group_triggered_01={
+	potential = { is_illuminationstars_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_01
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_01 } }
+}}
+group_triggered_02={
+	potential = { is_lantica_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_02
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_02 } }
+}}
+group_triggered_03={
+	potential = { is_hokago_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_03
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_03 } }
+}}
+group_triggered_04={
+	potential = { is_alstroemeria_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_04
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_04 } }
+}}
+group_triggered_05={
+	potential = { is_straylight_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_05
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_05 } }
+}}
+group_triggered_06={
+	potential = { is_noctchill_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_06
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_06 } }
+}}
+group_triggered_07={
+	potential = { is_shhis_formed = yes } 
+	allow = { always = yes } effect = { 	
+		custom_tooltip = idol_group_live_effect_07
+		tooltip = {	 add_modifier = { modifier = idol_group_live_effect_07 } }
+}}
 
 
 	
@@ -178,144 +148,146 @@ button_confirm_live_set={
 # all the crap starts here
 
 #pos1
-eff_live_idol_card_pos1_01={ potential = { check_variable = {  which = live_member_1 value = 1 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_02={ potential = { check_variable = {  which = live_member_1 value = 2 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_03={ potential = { check_variable = {  which = live_member_1 value = 3 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_04={ potential = { check_variable = {  which = live_member_1 value = 4 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_05={ potential = { check_variable = {  which = live_member_1 value = 5 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_06={ potential = { check_variable = {  which = live_member_1 value = 6 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_07={ potential = { check_variable = {  which = live_member_1 value = 7 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_08={ potential = { check_variable = {  which = live_member_1 value = 8 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_09={ potential = { check_variable = {  which = live_member_1 value = 9 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_10={ potential = { check_variable = {  which = live_member_1 value = 10 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_11={ potential = { check_variable = {  which = live_member_1 value = 11 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_12={ potential = { check_variable = {  which = live_member_1 value = 12 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_13={ potential = { check_variable = {  which = live_member_1 value = 13 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_14={ potential = { check_variable = {  which = live_member_1 value = 14 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_15={ potential = { check_variable = {  which = live_member_1 value = 15 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_16={ potential = { check_variable = {  which = live_member_1 value = 16 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_17={ potential = { check_variable = {  which = live_member_1 value = 17 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_18={ potential = { check_variable = {  which = live_member_1 value = 18 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_19={ potential = { check_variable = {  which = live_member_1 value = 19 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_20={ potential = { check_variable = {  which = live_member_1 value = 20 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_21={ potential = { check_variable = {  which = live_member_1 value = 21 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_22={ potential = { check_variable = {  which = live_member_1 value = 22 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_23={ potential = { check_variable = {  which = live_member_1 value = 23 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_24={ potential = { check_variable = {  which = live_member_1 value = 24 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos1_25={ potential = { check_variable = {  which = live_member_1 value = 25 } }  allow = { always = yes } effect = {} }
+
+eff_live_idol_card_pos1_01={ potential = { check_variable = {  which = live_member_1 value = 1 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_01  tooltip={add_modifier={modifier=idol_live_effect_01 }}}}
+eff_live_idol_card_pos1_02={ potential = { check_variable = {  which = live_member_1 value = 2 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_02  tooltip={add_modifier={modifier=idol_live_effect_02 }}}}
+eff_live_idol_card_pos1_03={ potential = { check_variable = {  which = live_member_1 value = 3 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_03  tooltip={add_modifier={modifier=idol_live_effect_03 }}}}
+eff_live_idol_card_pos1_04={ potential = { check_variable = {  which = live_member_1 value = 4 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_04  tooltip={add_modifier={modifier=idol_live_effect_04 }}}}
+eff_live_idol_card_pos1_05={ potential = { check_variable = {  which = live_member_1 value = 5 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_05  tooltip={add_modifier={modifier=idol_live_effect_05 }}}}
+eff_live_idol_card_pos1_06={ potential = { check_variable = {  which = live_member_1 value = 6 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_06  tooltip={add_modifier={modifier=idol_live_effect_06 }}}}
+eff_live_idol_card_pos1_07={ potential = { check_variable = {  which = live_member_1 value = 7 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_07  tooltip={add_modifier={modifier=idol_live_effect_07 }}}}
+eff_live_idol_card_pos1_08={ potential = { check_variable = {  which = live_member_1 value = 8 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_08  tooltip={add_modifier={modifier=idol_live_effect_08 }}}}
+eff_live_idol_card_pos1_09={ potential = { check_variable = {  which = live_member_1 value = 9 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_09  tooltip={add_modifier={modifier=idol_live_effect_09 }}}}
+eff_live_idol_card_pos1_10={ potential = { check_variable = {  which = live_member_1 value = 10 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_10  tooltip={add_modifier={modifier=idol_live_effect_10 }}}}
+eff_live_idol_card_pos1_11={ potential = { check_variable = {  which = live_member_1 value = 11 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_11  tooltip={add_modifier={modifier=idol_live_effect_11 }}}}
+eff_live_idol_card_pos1_12={ potential = { check_variable = {  which = live_member_1 value = 12 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_12  tooltip={add_modifier={modifier=idol_live_effect_12 }}}}
+eff_live_idol_card_pos1_13={ potential = { check_variable = {  which = live_member_1 value = 13 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_13  tooltip={add_modifier={modifier=idol_live_effect_13 }}}}
+eff_live_idol_card_pos1_14={ potential = { check_variable = {  which = live_member_1 value = 14 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_14  tooltip={add_modifier={modifier=idol_live_effect_14 }}}}
+eff_live_idol_card_pos1_15={ potential = { check_variable = {  which = live_member_1 value = 15 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_15  tooltip={add_modifier={modifier=idol_live_effect_15 }}}}
+eff_live_idol_card_pos1_16={ potential = { check_variable = {  which = live_member_1 value = 16 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_16  tooltip={add_modifier={modifier=idol_live_effect_16 }}}}
+eff_live_idol_card_pos1_17={ potential = { check_variable = {  which = live_member_1 value = 17 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_17  tooltip={add_modifier={modifier=idol_live_effect_17 }}}}
+eff_live_idol_card_pos1_18={ potential = { check_variable = {  which = live_member_1 value = 18 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_18  tooltip={add_modifier={modifier=idol_live_effect_18 }}}}
+eff_live_idol_card_pos1_19={ potential = { check_variable = {  which = live_member_1 value = 19 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_19  tooltip={add_modifier={modifier=idol_live_effect_19 }}}}
+eff_live_idol_card_pos1_20={ potential = { check_variable = {  which = live_member_1 value = 20 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_20  tooltip={add_modifier={modifier=idol_live_effect_20 }}}}
+eff_live_idol_card_pos1_21={ potential = { check_variable = {  which = live_member_1 value = 21 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_21  tooltip={add_modifier={modifier=idol_live_effect_21 }}}}
+eff_live_idol_card_pos1_22={ potential = { check_variable = {  which = live_member_1 value = 22 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_22  tooltip={add_modifier={modifier=idol_live_effect_22 }}}}
+eff_live_idol_card_pos1_23={ potential = { check_variable = {  which = live_member_1 value = 23 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_23  tooltip={add_modifier={modifier=idol_live_effect_23 }}}}
+eff_live_idol_card_pos1_24={ potential = { check_variable = {  which = live_member_1 value = 24 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_24  tooltip={add_modifier={modifier=idol_live_effect_24 }}}}
+eff_live_idol_card_pos1_25={ potential = { check_variable = {  which = live_member_1 value = 25 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_25  tooltip={add_modifier={modifier=idol_live_effect_25 }}}}
 
 	
 
 #pos2
-eff_live_idol_card_pos2_01={ potential = { check_variable = {  which = live_member_2 value = 1 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_02={ potential = { check_variable = {  which = live_member_2 value = 2 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_03={ potential = { check_variable = {  which = live_member_2 value = 3 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_04={ potential = { check_variable = {  which = live_member_2 value = 4 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_05={ potential = { check_variable = {  which = live_member_2 value = 5 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_06={ potential = { check_variable = {  which = live_member_2 value = 6 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_07={ potential = { check_variable = {  which = live_member_2 value = 7 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_08={ potential = { check_variable = {  which = live_member_2 value = 8 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_09={ potential = { check_variable = {  which = live_member_2 value = 9 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_10={ potential = { check_variable = {  which = live_member_2 value = 10 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_11={ potential = { check_variable = {  which = live_member_2 value = 11 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_12={ potential = { check_variable = {  which = live_member_2 value = 12 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_13={ potential = { check_variable = {  which = live_member_2 value = 13 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_14={ potential = { check_variable = {  which = live_member_2 value = 14 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_15={ potential = { check_variable = {  which = live_member_2 value = 15 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_16={ potential = { check_variable = {  which = live_member_2 value = 16 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_17={ potential = { check_variable = {  which = live_member_2 value = 17 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_18={ potential = { check_variable = {  which = live_member_2 value = 18 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_19={ potential = { check_variable = {  which = live_member_2 value = 19 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_20={ potential = { check_variable = {  which = live_member_2 value = 20 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_21={ potential = { check_variable = {  which = live_member_2 value = 21 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_22={ potential = { check_variable = {  which = live_member_2 value = 22 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_23={ potential = { check_variable = {  which = live_member_2 value = 23 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_24={ potential = { check_variable = {  which = live_member_2 value = 24 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos2_25={ potential = { check_variable = {  which = live_member_2 value = 25 } }  allow = { always = yes } effect = {} }
+eff_live_idol_card_pos2_01={ potential = { check_variable = {  which = live_member_2 value = 1 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_01  tooltip={add_modifier={modifier=idol_live_effect_01 }}}}
+eff_live_idol_card_pos2_02={ potential = { check_variable = {  which = live_member_2 value = 2 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_02  tooltip={add_modifier={modifier=idol_live_effect_02 }}}}
+eff_live_idol_card_pos2_03={ potential = { check_variable = {  which = live_member_2 value = 3 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_03  tooltip={add_modifier={modifier=idol_live_effect_03 }}}}
+eff_live_idol_card_pos2_04={ potential = { check_variable = {  which = live_member_2 value = 4 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_04  tooltip={add_modifier={modifier=idol_live_effect_04 }}}}
+eff_live_idol_card_pos2_05={ potential = { check_variable = {  which = live_member_2 value = 5 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_05  tooltip={add_modifier={modifier=idol_live_effect_05 }}}}
+eff_live_idol_card_pos2_06={ potential = { check_variable = {  which = live_member_2 value = 6 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_06  tooltip={add_modifier={modifier=idol_live_effect_06 }}}}
+eff_live_idol_card_pos2_07={ potential = { check_variable = {  which = live_member_2 value = 7 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_07  tooltip={add_modifier={modifier=idol_live_effect_07 }}}}
+eff_live_idol_card_pos2_08={ potential = { check_variable = {  which = live_member_2 value = 8 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_08  tooltip={add_modifier={modifier=idol_live_effect_08 }}}}
+eff_live_idol_card_pos2_09={ potential = { check_variable = {  which = live_member_2 value = 9 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_09  tooltip={add_modifier={modifier=idol_live_effect_09 }}}}
+eff_live_idol_card_pos2_10={ potential = { check_variable = {  which = live_member_2 value = 10 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_10  tooltip={add_modifier={modifier=idol_live_effect_10 }}}}
+eff_live_idol_card_pos2_11={ potential = { check_variable = {  which = live_member_2 value = 11 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_11  tooltip={add_modifier={modifier=idol_live_effect_11 }}}}
+eff_live_idol_card_pos2_12={ potential = { check_variable = {  which = live_member_2 value = 12 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_12  tooltip={add_modifier={modifier=idol_live_effect_12 }}}}
+eff_live_idol_card_pos2_13={ potential = { check_variable = {  which = live_member_2 value = 13 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_13  tooltip={add_modifier={modifier=idol_live_effect_13 }}}}
+eff_live_idol_card_pos2_14={ potential = { check_variable = {  which = live_member_2 value = 14 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_14  tooltip={add_modifier={modifier=idol_live_effect_14 }}}}
+eff_live_idol_card_pos2_15={ potential = { check_variable = {  which = live_member_2 value = 15 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_15  tooltip={add_modifier={modifier=idol_live_effect_15 }}}}
+eff_live_idol_card_pos2_16={ potential = { check_variable = {  which = live_member_2 value = 16 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_16  tooltip={add_modifier={modifier=idol_live_effect_16 }}}}
+eff_live_idol_card_pos2_17={ potential = { check_variable = {  which = live_member_2 value = 17 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_17  tooltip={add_modifier={modifier=idol_live_effect_17 }}}}
+eff_live_idol_card_pos2_18={ potential = { check_variable = {  which = live_member_2 value = 18 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_18  tooltip={add_modifier={modifier=idol_live_effect_18 }}}}
+eff_live_idol_card_pos2_19={ potential = { check_variable = {  which = live_member_2 value = 19 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_19  tooltip={add_modifier={modifier=idol_live_effect_19 }}}}
+eff_live_idol_card_pos2_20={ potential = { check_variable = {  which = live_member_2 value = 20 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_20  tooltip={add_modifier={modifier=idol_live_effect_20 }}}}
+eff_live_idol_card_pos2_21={ potential = { check_variable = {  which = live_member_2 value = 21 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_21  tooltip={add_modifier={modifier=idol_live_effect_21 }}}}
+eff_live_idol_card_pos2_22={ potential = { check_variable = {  which = live_member_2 value = 22 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_22  tooltip={add_modifier={modifier=idol_live_effect_22 }}}}
+eff_live_idol_card_pos2_23={ potential = { check_variable = {  which = live_member_2 value = 23 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_23  tooltip={add_modifier={modifier=idol_live_effect_23 }}}}
+eff_live_idol_card_pos2_24={ potential = { check_variable = {  which = live_member_2 value = 24 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_24  tooltip={add_modifier={modifier=idol_live_effect_24 }}}}
+eff_live_idol_card_pos2_25={ potential = { check_variable = {  which = live_member_2 value = 25 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_25  tooltip={add_modifier={modifier=idol_live_effect_25 }}}}
 
 #pos3
-eff_live_idol_card_pos3_01={ potential = { check_variable = {  which = live_member_3 value = 1 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_02={ potential = { check_variable = {  which = live_member_3 value = 2 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_03={ potential = { check_variable = {  which = live_member_3 value = 3 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_04={ potential = { check_variable = {  which = live_member_3 value = 4 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_05={ potential = { check_variable = {  which = live_member_3 value = 5 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_06={ potential = { check_variable = {  which = live_member_3 value = 6 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_07={ potential = { check_variable = {  which = live_member_3 value = 7 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_08={ potential = { check_variable = {  which = live_member_3 value = 8 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_09={ potential = { check_variable = {  which = live_member_3 value = 9 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_10={ potential = { check_variable = {  which = live_member_3 value = 10 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_11={ potential = { check_variable = {  which = live_member_3 value = 11 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_12={ potential = { check_variable = {  which = live_member_3 value = 12 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_13={ potential = { check_variable = {  which = live_member_3 value = 13 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_14={ potential = { check_variable = {  which = live_member_3 value = 14 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_15={ potential = { check_variable = {  which = live_member_3 value = 15 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_16={ potential = { check_variable = {  which = live_member_3 value = 16 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_17={ potential = { check_variable = {  which = live_member_3 value = 17 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_18={ potential = { check_variable = {  which = live_member_3 value = 18 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_19={ potential = { check_variable = {  which = live_member_3 value = 19 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_20={ potential = { check_variable = {  which = live_member_3 value = 20 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_21={ potential = { check_variable = {  which = live_member_3 value = 21 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_22={ potential = { check_variable = {  which = live_member_3 value = 22 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_23={ potential = { check_variable = {  which = live_member_3 value = 23 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_24={ potential = { check_variable = {  which = live_member_3 value = 24 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos3_25={ potential = { check_variable = {  which = live_member_3 value = 25 } }  allow = { always = yes } effect = {} }
+eff_live_idol_card_pos3_01={ potential = { check_variable = {  which = live_member_3 value = 1 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_01  tooltip={add_modifier={modifier=idol_live_effect_01 }}}}
+eff_live_idol_card_pos3_02={ potential = { check_variable = {  which = live_member_3 value = 2 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_02  tooltip={add_modifier={modifier=idol_live_effect_02 }}}}
+eff_live_idol_card_pos3_03={ potential = { check_variable = {  which = live_member_3 value = 3 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_03  tooltip={add_modifier={modifier=idol_live_effect_03 }}}}
+eff_live_idol_card_pos3_04={ potential = { check_variable = {  which = live_member_3 value = 4 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_04  tooltip={add_modifier={modifier=idol_live_effect_04 }}}}
+eff_live_idol_card_pos3_05={ potential = { check_variable = {  which = live_member_3 value = 5 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_05  tooltip={add_modifier={modifier=idol_live_effect_05 }}}}
+eff_live_idol_card_pos3_06={ potential = { check_variable = {  which = live_member_3 value = 6 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_06  tooltip={add_modifier={modifier=idol_live_effect_06 }}}}
+eff_live_idol_card_pos3_07={ potential = { check_variable = {  which = live_member_3 value = 7 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_07  tooltip={add_modifier={modifier=idol_live_effect_07 }}}}
+eff_live_idol_card_pos3_08={ potential = { check_variable = {  which = live_member_3 value = 8 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_08  tooltip={add_modifier={modifier=idol_live_effect_08 }}}}
+eff_live_idol_card_pos3_09={ potential = { check_variable = {  which = live_member_3 value = 9 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_09  tooltip={add_modifier={modifier=idol_live_effect_09 }}}}
+eff_live_idol_card_pos3_10={ potential = { check_variable = {  which = live_member_3 value = 10 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_10  tooltip={add_modifier={modifier=idol_live_effect_10 }}}}
+eff_live_idol_card_pos3_11={ potential = { check_variable = {  which = live_member_3 value = 11 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_11  tooltip={add_modifier={modifier=idol_live_effect_11 }}}}
+eff_live_idol_card_pos3_12={ potential = { check_variable = {  which = live_member_3 value = 12 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_12  tooltip={add_modifier={modifier=idol_live_effect_12 }}}}
+eff_live_idol_card_pos3_13={ potential = { check_variable = {  which = live_member_3 value = 13 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_13  tooltip={add_modifier={modifier=idol_live_effect_13 }}}}
+eff_live_idol_card_pos3_14={ potential = { check_variable = {  which = live_member_3 value = 14 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_14  tooltip={add_modifier={modifier=idol_live_effect_14 }}}}
+eff_live_idol_card_pos3_15={ potential = { check_variable = {  which = live_member_3 value = 15 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_15  tooltip={add_modifier={modifier=idol_live_effect_15 }}}}
+eff_live_idol_card_pos3_16={ potential = { check_variable = {  which = live_member_3 value = 16 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_16  tooltip={add_modifier={modifier=idol_live_effect_16 }}}}
+eff_live_idol_card_pos3_17={ potential = { check_variable = {  which = live_member_3 value = 17 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_17  tooltip={add_modifier={modifier=idol_live_effect_17 }}}}
+eff_live_idol_card_pos3_18={ potential = { check_variable = {  which = live_member_3 value = 18 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_18  tooltip={add_modifier={modifier=idol_live_effect_18 }}}}
+eff_live_idol_card_pos3_19={ potential = { check_variable = {  which = live_member_3 value = 19 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_19  tooltip={add_modifier={modifier=idol_live_effect_19 }}}}
+eff_live_idol_card_pos3_20={ potential = { check_variable = {  which = live_member_3 value = 20 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_20  tooltip={add_modifier={modifier=idol_live_effect_20 }}}}
+eff_live_idol_card_pos3_21={ potential = { check_variable = {  which = live_member_3 value = 21 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_21  tooltip={add_modifier={modifier=idol_live_effect_21 }}}}
+eff_live_idol_card_pos3_22={ potential = { check_variable = {  which = live_member_3 value = 22 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_22  tooltip={add_modifier={modifier=idol_live_effect_22 }}}}
+eff_live_idol_card_pos3_23={ potential = { check_variable = {  which = live_member_3 value = 23 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_23  tooltip={add_modifier={modifier=idol_live_effect_23 }}}}
+eff_live_idol_card_pos3_24={ potential = { check_variable = {  which = live_member_3 value = 24 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_24  tooltip={add_modifier={modifier=idol_live_effect_24 }}}}
+eff_live_idol_card_pos3_25={ potential = { check_variable = {  which = live_member_3 value = 25 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_25  tooltip={add_modifier={modifier=idol_live_effect_25 }}}}
 
 
 
 #pos4
-eff_live_idol_card_pos4_01={ potential = { check_variable = {  which = live_member_4 value = 1 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_02={ potential = { check_variable = {  which = live_member_4 value = 2 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_03={ potential = { check_variable = {  which = live_member_4 value = 3 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_04={ potential = { check_variable = {  which = live_member_4 value = 4 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_05={ potential = { check_variable = {  which = live_member_4 value = 5 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_06={ potential = { check_variable = {  which = live_member_4 value = 6 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_07={ potential = { check_variable = {  which = live_member_4 value = 7 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_08={ potential = { check_variable = {  which = live_member_4 value = 8 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_09={ potential = { check_variable = {  which = live_member_4 value = 9 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_10={ potential = { check_variable = {  which = live_member_4 value = 10 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_11={ potential = { check_variable = {  which = live_member_4 value = 11 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_12={ potential = { check_variable = {  which = live_member_4 value = 12 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_13={ potential = { check_variable = {  which = live_member_4 value = 13 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_14={ potential = { check_variable = {  which = live_member_4 value = 14 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_15={ potential = { check_variable = {  which = live_member_4 value = 15 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_16={ potential = { check_variable = {  which = live_member_4 value = 16 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_17={ potential = { check_variable = {  which = live_member_4 value = 17 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_18={ potential = { check_variable = {  which = live_member_4 value = 18 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_19={ potential = { check_variable = {  which = live_member_4 value = 19 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_20={ potential = { check_variable = {  which = live_member_4 value = 20 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_21={ potential = { check_variable = {  which = live_member_4 value = 21 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_22={ potential = { check_variable = {  which = live_member_4 value = 22 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_23={ potential = { check_variable = {  which = live_member_4 value = 23 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_24={ potential = { check_variable = {  which = live_member_4 value = 24 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos4_25={ potential = { check_variable = {  which = live_member_4 value = 25 } }  allow = { always = yes } effect = {} }
+eff_live_idol_card_pos4_01={ potential = { check_variable = {  which = live_member_4 value = 1 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_01  tooltip={add_modifier={modifier=idol_live_effect_01 }}}}
+eff_live_idol_card_pos4_02={ potential = { check_variable = {  which = live_member_4 value = 2 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_02  tooltip={add_modifier={modifier=idol_live_effect_02 }}}}
+eff_live_idol_card_pos4_03={ potential = { check_variable = {  which = live_member_4 value = 3 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_03  tooltip={add_modifier={modifier=idol_live_effect_03 }}}}
+eff_live_idol_card_pos4_04={ potential = { check_variable = {  which = live_member_4 value = 4 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_04  tooltip={add_modifier={modifier=idol_live_effect_04 }}}}
+eff_live_idol_card_pos4_05={ potential = { check_variable = {  which = live_member_4 value = 5 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_05  tooltip={add_modifier={modifier=idol_live_effect_05 }}}}
+eff_live_idol_card_pos4_06={ potential = { check_variable = {  which = live_member_4 value = 6 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_06  tooltip={add_modifier={modifier=idol_live_effect_06 }}}}
+eff_live_idol_card_pos4_07={ potential = { check_variable = {  which = live_member_4 value = 7 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_07  tooltip={add_modifier={modifier=idol_live_effect_07 }}}}
+eff_live_idol_card_pos4_08={ potential = { check_variable = {  which = live_member_4 value = 8 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_08  tooltip={add_modifier={modifier=idol_live_effect_08 }}}}
+eff_live_idol_card_pos4_09={ potential = { check_variable = {  which = live_member_4 value = 9 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_09  tooltip={add_modifier={modifier=idol_live_effect_09 }}}}
+eff_live_idol_card_pos4_10={ potential = { check_variable = {  which = live_member_4 value = 10 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_10  tooltip={add_modifier={modifier=idol_live_effect_10 }}}}
+eff_live_idol_card_pos4_11={ potential = { check_variable = {  which = live_member_4 value = 11 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_11  tooltip={add_modifier={modifier=idol_live_effect_11 }}}}
+eff_live_idol_card_pos4_12={ potential = { check_variable = {  which = live_member_4 value = 12 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_12  tooltip={add_modifier={modifier=idol_live_effect_12 }}}}
+eff_live_idol_card_pos4_13={ potential = { check_variable = {  which = live_member_4 value = 13 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_13  tooltip={add_modifier={modifier=idol_live_effect_13 }}}}
+eff_live_idol_card_pos4_14={ potential = { check_variable = {  which = live_member_4 value = 14 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_14  tooltip={add_modifier={modifier=idol_live_effect_14 }}}}
+eff_live_idol_card_pos4_15={ potential = { check_variable = {  which = live_member_4 value = 15 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_15  tooltip={add_modifier={modifier=idol_live_effect_15 }}}}
+eff_live_idol_card_pos4_16={ potential = { check_variable = {  which = live_member_4 value = 16 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_16  tooltip={add_modifier={modifier=idol_live_effect_16 }}}}
+eff_live_idol_card_pos4_17={ potential = { check_variable = {  which = live_member_4 value = 17 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_17  tooltip={add_modifier={modifier=idol_live_effect_17 }}}}
+eff_live_idol_card_pos4_18={ potential = { check_variable = {  which = live_member_4 value = 18 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_18  tooltip={add_modifier={modifier=idol_live_effect_18 }}}}
+eff_live_idol_card_pos4_19={ potential = { check_variable = {  which = live_member_4 value = 19 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_19  tooltip={add_modifier={modifier=idol_live_effect_19 }}}}
+eff_live_idol_card_pos4_20={ potential = { check_variable = {  which = live_member_4 value = 20 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_20  tooltip={add_modifier={modifier=idol_live_effect_20 }}}}
+eff_live_idol_card_pos4_21={ potential = { check_variable = {  which = live_member_4 value = 21 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_21  tooltip={add_modifier={modifier=idol_live_effect_21 }}}}
+eff_live_idol_card_pos4_22={ potential = { check_variable = {  which = live_member_4 value = 22 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_22  tooltip={add_modifier={modifier=idol_live_effect_22 }}}}
+eff_live_idol_card_pos4_23={ potential = { check_variable = {  which = live_member_4 value = 23 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_23  tooltip={add_modifier={modifier=idol_live_effect_23 }}}}
+eff_live_idol_card_pos4_24={ potential = { check_variable = {  which = live_member_4 value = 24 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_24  tooltip={add_modifier={modifier=idol_live_effect_24 }}}}
+eff_live_idol_card_pos4_25={ potential = { check_variable = {  which = live_member_4 value = 25 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_25  tooltip={add_modifier={modifier=idol_live_effect_25 }}}}
 
 
 
 
 #pos5
 
-eff_live_idol_card_pos5_01={ potential = { check_variable = {  which = live_member_5 value = 1 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_02={ potential = { check_variable = {  which = live_member_5 value = 2 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_03={ potential = { check_variable = {  which = live_member_5 value = 3 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_04={ potential = { check_variable = {  which = live_member_5 value = 4 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_05={ potential = { check_variable = {  which = live_member_5 value = 5 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_06={ potential = { check_variable = {  which = live_member_5 value = 6 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_07={ potential = { check_variable = {  which = live_member_5 value = 7 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_08={ potential = { check_variable = {  which = live_member_5 value = 8 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_09={ potential = { check_variable = {  which = live_member_5 value = 9 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_10={ potential = { check_variable = {  which = live_member_5 value = 10 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_11={ potential = { check_variable = {  which = live_member_5 value = 11 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_12={ potential = { check_variable = {  which = live_member_5 value = 12 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_13={ potential = { check_variable = {  which = live_member_5 value = 13 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_14={ potential = { check_variable = {  which = live_member_5 value = 14 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_15={ potential = { check_variable = {  which = live_member_5 value = 15 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_16={ potential = { check_variable = {  which = live_member_5 value = 16 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_17={ potential = { check_variable = {  which = live_member_5 value = 17 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_18={ potential = { check_variable = {  which = live_member_5 value = 18 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_19={ potential = { check_variable = {  which = live_member_5 value = 19 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_20={ potential = { check_variable = {  which = live_member_5 value = 20 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_21={ potential = { check_variable = {  which = live_member_5 value = 21 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_22={ potential = { check_variable = {  which = live_member_5 value = 22 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_23={ potential = { check_variable = {  which = live_member_5 value = 23 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_24={ potential = { check_variable = {  which = live_member_5 value = 24 } }  allow = { always = yes } effect = {} }
-eff_live_idol_card_pos5_25={ potential = { check_variable = {  which = live_member_5 value = 25 } }  allow = { always = yes } effect = {} }
+eff_live_idol_card_pos5_01={ potential = { check_variable = {  which = live_member_5 value = 1 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_01  tooltip={add_modifier={modifier=idol_live_effect_01 }}}}
+eff_live_idol_card_pos5_02={ potential = { check_variable = {  which = live_member_5 value = 2 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_02  tooltip={add_modifier={modifier=idol_live_effect_02 }}}}
+eff_live_idol_card_pos5_03={ potential = { check_variable = {  which = live_member_5 value = 3 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_03  tooltip={add_modifier={modifier=idol_live_effect_03 }}}}
+eff_live_idol_card_pos5_04={ potential = { check_variable = {  which = live_member_5 value = 4 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_04  tooltip={add_modifier={modifier=idol_live_effect_04 }}}}
+eff_live_idol_card_pos5_05={ potential = { check_variable = {  which = live_member_5 value = 5 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_05  tooltip={add_modifier={modifier=idol_live_effect_05 }}}}
+eff_live_idol_card_pos5_06={ potential = { check_variable = {  which = live_member_5 value = 6 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_06  tooltip={add_modifier={modifier=idol_live_effect_06 }}}}
+eff_live_idol_card_pos5_07={ potential = { check_variable = {  which = live_member_5 value = 7 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_07  tooltip={add_modifier={modifier=idol_live_effect_07 }}}}
+eff_live_idol_card_pos5_08={ potential = { check_variable = {  which = live_member_5 value = 8 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_08  tooltip={add_modifier={modifier=idol_live_effect_08 }}}}
+eff_live_idol_card_pos5_09={ potential = { check_variable = {  which = live_member_5 value = 9 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_09  tooltip={add_modifier={modifier=idol_live_effect_09 }}}}
+eff_live_idol_card_pos5_10={ potential = { check_variable = {  which = live_member_5 value = 10 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_10  tooltip={add_modifier={modifier=idol_live_effect_10 }}}}
+eff_live_idol_card_pos5_11={ potential = { check_variable = {  which = live_member_5 value = 11 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_11  tooltip={add_modifier={modifier=idol_live_effect_11 }}}}
+eff_live_idol_card_pos5_12={ potential = { check_variable = {  which = live_member_5 value = 12 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_12  tooltip={add_modifier={modifier=idol_live_effect_12 }}}}
+eff_live_idol_card_pos5_13={ potential = { check_variable = {  which = live_member_5 value = 13 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_13  tooltip={add_modifier={modifier=idol_live_effect_13 }}}}
+eff_live_idol_card_pos5_14={ potential = { check_variable = {  which = live_member_5 value = 14 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_14  tooltip={add_modifier={modifier=idol_live_effect_14 }}}}
+eff_live_idol_card_pos5_15={ potential = { check_variable = {  which = live_member_5 value = 15 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_15  tooltip={add_modifier={modifier=idol_live_effect_15 }}}}
+eff_live_idol_card_pos5_16={ potential = { check_variable = {  which = live_member_5 value = 16 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_16  tooltip={add_modifier={modifier=idol_live_effect_16 }}}}
+eff_live_idol_card_pos5_17={ potential = { check_variable = {  which = live_member_5 value = 17 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_17  tooltip={add_modifier={modifier=idol_live_effect_17 }}}}
+eff_live_idol_card_pos5_18={ potential = { check_variable = {  which = live_member_5 value = 18 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_18  tooltip={add_modifier={modifier=idol_live_effect_18 }}}}
+eff_live_idol_card_pos5_19={ potential = { check_variable = {  which = live_member_5 value = 19 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_19  tooltip={add_modifier={modifier=idol_live_effect_19 }}}}
+eff_live_idol_card_pos5_20={ potential = { check_variable = {  which = live_member_5 value = 20 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_20  tooltip={add_modifier={modifier=idol_live_effect_20 }}}}
+eff_live_idol_card_pos5_21={ potential = { check_variable = {  which = live_member_5 value = 21 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_21  tooltip={add_modifier={modifier=idol_live_effect_21 }}}}
+eff_live_idol_card_pos5_22={ potential = { check_variable = {  which = live_member_5 value = 22 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_22  tooltip={add_modifier={modifier=idol_live_effect_22 }}}}
+eff_live_idol_card_pos5_23={ potential = { check_variable = {  which = live_member_5 value = 23 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_23  tooltip={add_modifier={modifier=idol_live_effect_23 }}}}
+eff_live_idol_card_pos5_24={ potential = { check_variable = {  which = live_member_5 value = 24 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_24  tooltip={add_modifier={modifier=idol_live_effect_24 }}}}
+eff_live_idol_card_pos5_25={ potential = { check_variable = {  which = live_member_5 value = 25 } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_25  tooltip={add_modifier={modifier=idol_live_effect_25 }}} }
+
