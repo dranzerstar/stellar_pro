@@ -105,7 +105,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua" 
 		noOfFrames = 3
 	}
-
+	spriteType = {
+		name = "GFX_idol_button_long_animated"
+		texturefile = "gfx/interface/imas_ui/button_long_animated.dds"
+		
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua" 
+		noOfFrames = 3
+	}
 
 
 

@@ -22,7 +22,7 @@ country_event={
 	title= Idols_catalogue
 
 	immediate = {
-		#set_variable = { which = idols_page value = 1 }
+		set_variable = { which = idols_page value = 1 }
 	}
 
 
@@ -151,6 +151,7 @@ country_event={
 	fire_only_once = no
 
 	custom_gui = imas_gui_selector
+	custom_gui_option = "imas_gui_live_list_button"
 	desc= ""
 	immediate = {
 		if = { limit={ check_variable = {  which = live_member_1 value = 01 } }  remove_country_flag  = live_member_flag_01  } 
@@ -204,7 +205,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -247,7 +248,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -284,7 +285,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -339,7 +340,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -382,7 +383,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -413,7 +414,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -468,7 +469,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -511,7 +512,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -542,7 +543,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -597,7 +598,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -640,7 +641,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -672,7 +673,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -727,7 +728,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -770,7 +771,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -801,7 +802,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -856,7 +857,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -899,7 +900,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	custom_gui_option = "imas_gui_live_list_button"
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {

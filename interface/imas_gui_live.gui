@@ -701,7 +701,7 @@ containerWindowType = {
 				
 				size = { x = 300 y = 400 }
 				scrollbartype = "standardlistbox_slider"
-				spacing = 20
+				spacing = 43
 				borderSize = { x = 0 y = 0 }
 				Orientation = "CENTERED_UP"
 			}
@@ -762,5 +762,29 @@ containerWindowType = {
 				}
 
 
+	}
+}
+
+
+
+containerWindowType = {
+	name = "imas_gui_live_list_button"
+	position = { x=0 y=0 }
+	size = { width = 384 height = 43 }
+	moveable = no
+	
+	buttonType = {
+		name = "option_button"
+		quadTextureSprite = "GFX_idol_button_long_animated"
+		position = { x=0 y=85 }
+		font = "cg_16b"
+		text = "OPTION_TEXT"
+		clicksound = "confirm_click"
+	}
+
+	OverlappingElementsBoxType = {
+		name = "trigger_icons"
+		position = { x = 0  y = 10 }
+		size = { x=65 y= 28 }
 	}
 }
