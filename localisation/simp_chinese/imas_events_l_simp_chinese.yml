@@ -31,7 +31,8 @@
  ENGAGE:0 "看看是什么"
  LATER:0 "稍后再看"
 
- idol_spawned:0 "idol spawned from yearly check"
+ idol_spawned:0 "偶像出道!"
+ idol_spawned_desc:0 "一个新的偶像在你的国家诞生!出事务所看看吧!"
 
  imas_var_test:0 "VAR_TEST\nIDOL_TOTAL:[283p_home_country.idol_total]\nLIVE_TOTAL:[283p_home_country.live_total]\nSEEKER:[283p_home_country.job_talent_seeker_total]\nTRAINEE:[283p_home_country.job_idol_trainee_total]\nSPAWN_E:[283p_home_country.potential_idol_spawn_chance_base]\nPROGRESS:[283p_home_country.idol_obtain_progress]\nNEXT:[283p_home_country.idol_obtain_threshold]"
 

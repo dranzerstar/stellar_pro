@@ -277,7 +277,7 @@ is_straylight_formed={
 }
 
 is_noctchill_formed={
-	custom_tooltip = "is_noctchill_formed"
+	custom_tooltip = "is_notchil_formed"
 	hidden_trigger = {
 	AND={
 		has_country_flag = live_member_flag_20

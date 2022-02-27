@@ -4,6 +4,10 @@
 live_change_button_01={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
+		hidden_effect = {
+			remove_country_flag = confirm_valid_group
+			remove_country_flag = confirm_invalid_group
+		}
 
 		country_event = {
 			id = imas_idols_menu.1101
@@ -13,6 +17,10 @@ live_change_button_01={
 live_change_button_02={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
+		hidden_effect = {
+			remove_country_flag = confirm_valid_group
+			remove_country_flag = confirm_invalid_group
+		}
 		country_event = {
 			id = imas_idols_menu.1201
 		}
@@ -20,6 +28,10 @@ live_change_button_02={
 live_change_button_03={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
+		hidden_effect = {
+			remove_country_flag = confirm_valid_group
+			remove_country_flag = confirm_invalid_group
+		}
 		country_event = {
 			id = imas_idols_menu.1301
 		}
@@ -28,6 +40,10 @@ live_change_button_03={
 live_change_button_04={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
+		hidden_effect = {
+			remove_country_flag = confirm_valid_group
+			remove_country_flag = confirm_invalid_group
+		}
 		country_event = {
 			id = imas_idols_menu.1401
 		}
@@ -35,6 +51,10 @@ live_change_button_04={
 live_change_button_05={
 	potential = { always = yes } 
 	allow = { always = yes } effect = { 
+		hidden_effect = {
+			remove_country_flag = confirm_valid_group
+			remove_country_flag = confirm_invalid_group
+		}
 		country_event = {
 			id = imas_idols_menu.1501
 		}
@@ -88,22 +108,81 @@ group_triggered_07={
 
 	
 button_confirm_live_set={
+	potential = { 		
+			NOT={ has_country_flag = confirm_valid_group }
+		 } 
+	allow = { } 
+	effect = { 
+	hidden_effect = {
+		
+
+	if={limit={OR={
+		is_illuminationstars_formed =yes 
+		is_lantica_formed =yes
+		is_hokago_formed =yes
+		is_alstroemeria_formed =yes
+		is_straylight_formed = yes
+		is_noctchill_formed =yes
+		is_shhis_formed =yes
+		is_5_person_group =yes
+		}}
+		set_country_flag = confirm_valid_group
+	}else={
+		set_country_flag = confirm_invalid_group	
+
+	}
+
+	}
+
+} } #TODO POPUP TO CHANGE MEMBER
+
+eff_confirm_live_set_tooltip={
+	potential = { OR={  has_country_flag = confirm_valid_group  
+						has_country_flag = confirm_invalid_group	}	}
+	allow = { } 
+	effect = { }
+}
+
+button_clear_live_set={
 	potential = { always = yes } 
 	allow = { 
-		OR={
-			is_illuminationstars_formed =yes  #全是scripted trigger
-			is_lantica_formed =yes
-			is_hokago_formed =yes
-			is_alstroemeria_formed =yes
-			is_straylight_formed = yes
-			is_noctchill_formed =yes
-			is_shhis_formed =yes
-			is_5_person_group =yes
-		}
+} effect = { 
+	hidden_effect = {
+		
+	
+	remove_country_flag = live_member_flag_01
+	remove_country_flag = live_member_flag_02
+	remove_country_flag = live_member_flag_03
+	remove_country_flag = live_member_flag_04
+	remove_country_flag = live_member_flag_05
+	remove_country_flag = live_member_flag_06
+	remove_country_flag = live_member_flag_07
+	remove_country_flag = live_member_flag_08
+	remove_country_flag = live_member_flag_09
+	remove_country_flag = live_member_flag_10
+	remove_country_flag = live_member_flag_11
+	remove_country_flag = live_member_flag_12
+	remove_country_flag = live_member_flag_13
+	remove_country_flag = live_member_flag_14
+	remove_country_flag = live_member_flag_15
+	remove_country_flag = live_member_flag_16
+	remove_country_flag = live_member_flag_17
+	remove_country_flag = live_member_flag_18
+	remove_country_flag = live_member_flag_19
+	remove_country_flag = live_member_flag_20
+	remove_country_flag = live_member_flag_21
+	remove_country_flag = live_member_flag_22
+	remove_country_flag = live_member_flag_23
+	remove_country_flag = live_member_flag_24
+	remove_country_flag = live_member_flag_25
 
-
-} effect = { } } #TODO POPUP TO CHANGE MEMBER
-
+	set_variable = { which = live_member_1 value = 0 }
+	set_variable = { which = live_member_2 value = 0 }
+	set_variable = { which = live_member_3 value = 0 }
+	set_variable = { which = live_member_4 value = 0 }
+	set_variable = { which = live_member_5 value = 0 }
+}
+} } #TODO POPUP TO CHANGE MEMBER
 
 
 # idol_effect_01 ={ potential = { has_country_flag = live_member_flag_01 } allow = { } effect = { custom_tooltip = idol_effect_01_text } }

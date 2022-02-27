@@ -238,10 +238,9 @@ idol_group_live_effect_05={ icon="gfx/interface/icons/modifiers/idol_group_mod_i
 		country_physics_research_produces_add = 500
 		country_society_research_produces_add  = 500
 		country_engineering_research_produces_add  = 500
-		planet_jobs_energy_upkeep_mult = 0.5
-
-
-
+		
+		planet_jobs_specialist_energy_upkeep_mult = 0.5
+		planet_jobs_specialist_consumer_goods_upkeep_mult = 0.5
 
 
 }

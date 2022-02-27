@@ -1,5 +1,28 @@
 guiTypes = {
 	containerWindowType = {
+		name = "imas_gui_real_cofirm_button"
+		position = { x=0 y=0 }
+		size = { width = 384 height = 41 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_idol_button_pink_animated"
+			position = { x=0 y=0 }
+			font = "cg_16b"
+			text_color_code = "P"
+			text = "OPTION_TEXT"
+			clicksound = "imas_buttons_sounds"
+		}
+	
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+
+	containerWindowType = {
 		name = "imas_gui_live"
 		orientation = center
 		origo = center
@@ -155,7 +178,7 @@ guiTypes = {
 			
 			position = { x = 140 y =293 }
 			effect = "live_change_button_01"
-			clicksound = "confirm_click"
+			clicksound = "imas_buttons_sounds"
 			shortcut = "A"
 		}
 	}
@@ -239,7 +262,7 @@ containerWindowType = {
 		position = { x = 140 y =293 }
 		shortcut = "S"
 		effect = "live_change_button_02"
-		clicksound = "confirm_click"
+		clicksound = "imas_buttons_sounds"
 	}
 }
 # frame 03
@@ -320,7 +343,7 @@ containerWindowType = {
 		Orientation = "CENTER"
 		position = { x = 140 y =293 }
 		effect = "live_change_button_03"
-		clicksound = "confirm_click"
+		clicksound = "imas_buttons_sounds"
 		shortcut = "D"
 	}
 }
@@ -404,7 +427,7 @@ containerWindowType = {
 		Orientation = "CENTER"
 		position = { x = 140 y =293 }
 		effect = "live_change_button_04"
-		clicksound = "confirm_click"
+		clicksound = "imas_buttons_sounds"
 		shortcut = "F"
 	}
 }
@@ -488,7 +511,7 @@ containerWindowType = {
 		Orientation = "CENTER"
 		position = { x = 140 y =293 }
 		effect = "live_change_button_05"
-		clicksound = "confirm_click"
+		clicksound = "imas_buttons_sounds"
 		shortcut = "G"
 	}
 }
@@ -531,7 +554,7 @@ containerWindowType = {
 #-------------------------------------------------------------------------------------
 #  group formed icons  +tooltip
 
-@grp_icon_x = 1200
+@grp_icon_x = 1350
 @grp_icon_y = 500
 		effectButtonType = {
 			name = "grp_icon_01"
@@ -606,21 +629,44 @@ containerWindowType = {
 #
 #
 # bottom area
+
+
 		effectButtonType = { 
-			name = "confirm_live_set" 
-			text = live_luanch_button_loc
+			name = "confirm_live_set_tooltip1" 
+			text = live_luanch_tooltip_loc
+			font = "cg_16b"
+			
+			size = {
+				x = 0	
+				y = 0
+			}
+			text=live_luanch_tooltip_loc
+			
+			#text_color_code = "H"
+			#quadTextureSprite = "GFX_idol_button_pink_animated" 
+			Orientation = "UPPER_LEFT"
+			position = { x = 800 y = 680  }  
+			effect = "eff_confirm_live_set_tooltip" 
+			alwaysTransparent = yes
+		}
+
+
+
+		effectButtonType = { 
+			name = "Clear" 
+			text = Clear_selection
 			font = "cg_16b"
 			#text="button"
 			text_color_code = "H"
 			quadTextureSprite = "GFX_idol_button_pink_animated" Orientation = "UPPER_LEFT"
-			position = { x = 1000 y = 740  }  
-			effect = "button_confirm_live_set" 
+			position = { x = 135 y = 700  }  
+			effect = "button_clear_live_set" 
 		}
 
 		instantTextBoxType={
 			name = "live_conditions"
 			font = "large_title_font"
-			position = { x = 800 y = 800 }
+			position = { x = -800 y = 800 }
 			maxWidth = 200
 			alwaysTransparent = yes
 			text= "Need 5 or Need Group"
@@ -698,7 +744,7 @@ containerWindowType = {
 			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
 			listboxType = {
 				name = "option_list"
-				position = { x = -800 y = 690 }
+				position = { x = 600 y = 740 }
 				
 				size = { x = 300 y = 400 }
 				scrollbartype = "standardlistbox_slider"
@@ -706,6 +752,17 @@ containerWindowType = {
 				borderSize = { x = 0 y = 0 }
 				Orientation = "CENTERED_UP"
 			}
+			effectButtonType = { 
+				name = "confirm_live_set_cover" 
+				text = confirm_group_1
+				font = "cg_16b"
+				#text="button"
+				text_color_code = "H"
+				quadTextureSprite = "GFX_idol_button_pink_animated" Orientation = "UPPER_LEFT"
+				position = { x = 600 y = 740  }  
+				effect = "button_confirm_live_set" 
+			}
+
 			#listboxType = { name = "option_list" position = { x = 958 y = 732 } } # hidden option list
 		}
 				instantTextBoxType = {
@@ -780,7 +837,7 @@ containerWindowType = {
 		position = { x=0 y=85 }
 		font = "cg_16b"
 		text = "OPTION_TEXT"
-		clicksound = "confirm_click"
+		clicksound = "imas_buttons_sounds"
 	}
 
 	OverlappingElementsBoxType = {

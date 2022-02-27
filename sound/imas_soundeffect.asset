@@ -1,0 +1,97 @@
+soundeffect  = {
+	name = imas_song_01
+	sounds = {
+		sound = imas_song_01
+	} 
+	max_audible = 1
+	
+}
+
+soundeffect  = {
+	name = imas_song_02
+	sounds = {
+		sound = imas_song_02
+	} 
+	max_audible = 1
+}
+
+soundeffect  = {
+	name = imas_song_03
+	sounds = {
+		sound = imas_song_03
+	} 
+	max_audible = 1
+}
+
+soundeffect  = {
+	name = imas_song_04
+	sounds = {
+		sound = imas_song_04
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_song_05
+	sounds = {
+		sound = imas_song_05
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_song_06
+	sounds = {
+		sound = imas_song_06
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_song_07
+	sounds = {
+		sound = imas_song_07
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_song_m_01
+	sounds = {
+		sound = imas_song_m_01
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_song_m_02
+	sounds = {
+		sound = imas_song_m_02
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_song_m_03
+	sounds = {
+		sound = imas_song_m_03
+	} 
+	max_audible = 1
+}
+soundeffect  = {
+	name = imas_buttons_sounds
+	sounds = {
+		sound = imas_buttons_sounds
+	} 
+	max_audible = 1
+}
+
+soundeffect  = {
+	name = imas_song_BGM_n
+	sounds = {
+		sound = imas_song_BGM_n
+	} 
+	max_audible = 1
+}
+
+soundeffect  = {
+	name = imas_song_BGM_live
+	sounds = {
+		sound = imas_song_BGM_live
+	} 
+	max_audible = 1
+}

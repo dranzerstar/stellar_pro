@@ -7,7 +7,5 @@ for /L %%i in (1, 1, 25) do (
       set "num=!num:~-2!"
 rem     echo !num!
 
-echo eff_live_idol_card_pos5_!num!={ potential = { check_variable = {  which = live_member_5 value = !num2! } }  allow = { always = yes } effect = { custom_tooltip=idol_live_effect_!num!  tooltip={add_modifier={modifier=idol_live_effect_!num! }}}
-                                                                                                                                                                 
-
+echo	option={ name=idol_name_with_icon_!num! allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_!num! }}}trigger={has_global_flag=idol_debut_!num!} hidden_effect={ set_variable={which=live_member_5 value=!num2! } set_country_flag = live_member_flag_!num!} }
 )

@@ -11,6 +11,7 @@ namespace = imas_world_events
 # 0000 setup game event
 # 10xx idol potential spawner
 # 2xxx notifier events
+# 3xxx live events
 # 5xxxx other events
 # 8xxxx debug events
 # 9xxxx value updates
@@ -39,20 +40,19 @@ country_event={
 
 
 	}
-
-
-
-
-
-
-
-
-
-
-	
 }
+country_event={
+	id= imas_world_events.3000
+	hide_window = yes
+	is_triggered_only = yes
 
 
+
+
+
+
+
+}
 
 # yearly handler
 # updated country with contract only
@@ -264,7 +264,9 @@ country_event = {
 		
 			}
 				#spawn idol
-				spawn_full_idol = yes
+				if={limit={event_target:283p_home_country={ check_variable = { which = idol_total value <= 25 } }}
+					spawn_full_idol = yes
+				}
 				event_target:283p_home_country = {
 					set_variable={
 						which = idol_obtain_progress
@@ -289,15 +291,20 @@ country_event = {
 
 }
 
-
+#edit this
 country_event = {
 	id = imas_world_events.9022
 	hide_window = no
 	title = idol_spawned
-	desc = idol_spawned
+	desc = idol_spawned_desc
+	picture=GFX_evt_debut
 	is_triggered_only = yes
+	trigger={
+		event_target:283p_home_country={ check_variable = { which = idol_total value <= 25 } }
+
+	}
 	immediate = {
-		spawn_full_idol = yes
+		#spawn_full_idol = yes
 	}
 
 }

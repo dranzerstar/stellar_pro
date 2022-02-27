@@ -207,3 +207,20 @@ defined_text   = {
 	
 
 }
+
+defined_text   = {
+	name = live_luanch_tooltip_loc
+	text = {
+		trigger = {
+			has_country_flag = confirm_valid_group
+		}
+		localization_key = live_luanch_tooltip_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = confirm_invalid_group
+		}
+		localization_key = live_luanch_tooltip_loc2
+	}
+
+}

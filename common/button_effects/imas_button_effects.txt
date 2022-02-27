@@ -553,9 +553,9 @@ imas_gui_idols_grp_7 = {
 			allow = { always = yes }
 			effect = {
 
-				custom_tooltip = "page.illumination_stars"
+				#custom_tooltip = "page.illumination_stars"
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_01
+				#custom_tooltip = idol_group_live_effect_01
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_01
@@ -574,10 +574,10 @@ imas_gui_idols_grp_7 = {
 			allow = { always = yes }
 			effect = {
 
-				custom_tooltip = "page.lantica"
+				#custom_tooltip = "page.lantica"
 
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_02
+				#custom_tooltip = idol_group_live_effect_02
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_02
@@ -596,9 +596,9 @@ imas_gui_idols_grp_7 = {
 			allow = { always = yes }
 			effect = {
 
-				custom_tooltip = "page.alstroemeria"
+				#custom_tooltip = "page.alstroemeria"
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_03
+				#custom_tooltip = idol_group_live_effect_03
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_03
@@ -616,9 +616,9 @@ imas_gui_idols_grp_7 = {
 			allow = { always = yes }
 			effect = {
 
-				custom_tooltip = "page.alstroemeria"
+				#custom_tooltip = "page.alstroemeria"
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_04
+			#	custom_tooltip = idol_group_live_effect_04
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_04
@@ -636,9 +636,9 @@ imas_gui_idols_grp_7 = {
 			allow = { always = yes }
 			effect = {
 
-				custom_tooltip = page.straylight
+			#	custom_tooltip = page.straylight
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_05
+			#	custom_tooltip = idol_group_live_effect_05
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_05
@@ -655,9 +655,9 @@ imas_gui_idols_grp_7 = {
 		}	} 
 			allow = { always = yes }
 			effect = {
-				custom_tooltip = page.notchil
+			#	custom_tooltip = page.notchil
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_06
+			#	custom_tooltip = idol_group_live_effect_06
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_06
@@ -672,9 +672,9 @@ imas_gui_idols_grp_7 = {
 			allow = { always = yes }
 			effect = {
 
-				custom_tooltip = page.shiis
+			#	custom_tooltip = page.shiis
 				custom_tooltip = grp-live-effects
-				custom_tooltip = idol_group_live_effect_07
+			#	custom_tooltip = idol_group_live_effect_07
 				tooltip = {
 					add_modifier = {
 						modifier = idol_group_live_effect_07
@@ -684,4 +684,104 @@ imas_gui_idols_grp_7 = {
 			}
 		}
 		
-		
+		imas_gui_details_idols_01={
+			potential = {   check_variable={which= idols_select value = 1 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_01 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_02={
+			potential = {   check_variable={which= idols_select value = 2 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_02 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_03={
+			potential = {   check_variable={which= idols_select value = 3 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_03 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_04={
+			potential = {   check_variable={which= idols_select value = 4 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_04 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_05={
+			potential = {   check_variable={which= idols_select value = 5 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_05 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_06={
+			potential = {   check_variable={which= idols_select value = 6 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_06 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_07={
+			potential = {   check_variable={which= idols_select value = 7 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_07 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_08={
+			potential = {   check_variable={which= idols_select value = 8 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_08 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_09={
+			potential = {   check_variable={which= idols_select value = 9 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_09 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_10={
+			potential = {   check_variable={which= idols_select value = 10 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_10 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_11={
+			potential = {   check_variable={which= idols_select value = 11 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_11 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_12={
+			potential = {   check_variable={which= idols_select value = 12 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_12 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_13={
+			potential = {   check_variable={which= idols_select value = 13 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_13 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_14={
+			potential = {   check_variable={which= idols_select value = 14 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_14 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_15={
+			potential = {   check_variable={which= idols_select value = 15 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_15 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_16={
+			potential = {   check_variable={which= idols_select value = 16 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_16 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_17={
+			potential = {   check_variable={which= idols_select value = 17 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_17 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_18={
+			potential = {   check_variable={which= idols_select value = 18 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_18 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_19={
+			potential = {   check_variable={which= idols_select value = 19 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_19 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_20={
+			potential = {   check_variable={which= idols_select value = 20 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_20 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_21={
+			potential = {   check_variable={which= idols_select value = 21 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_21 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_22={
+			potential = {   check_variable={which= idols_select value = 22 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_22 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_23={
+			potential = {   check_variable={which= idols_select value = 23 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_23 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_24={
+			potential = {   check_variable={which= idols_select value = 24 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_24 }}}}                                                                                                                                                              
+			   imas_gui_details_idols_25={
+			potential = {   check_variable={which= idols_select value = 25 } } allow = { always = yes }
+			effect = { custom_tooltip = indv-live-effects
+			tooltip = { add_modifier = { modifier = idol_live_effect_25 }}}}                                                                                                                                                              
+			

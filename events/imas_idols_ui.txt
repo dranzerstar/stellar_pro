@@ -14,7 +14,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	show_sound = imas_song_BGM_n
 	custom_gui = imas_gui_idols
 
 
@@ -116,14 +116,16 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-
+	show_sound = imas_song_BGM_live
 	custom_gui = imas_gui_live
+	custom_gui_option = imas_gui_real_cofirm_button
 
-
-
+	desc = imas_idols_menu_desc
 	title= Idols_live_menu
 
 	immediate = {
+		remove_country_flag = confirm_valid_group
+		remove_country_flag = confirm_invalid_group
 		remove_country_flag = live_member_flag_01
 		remove_country_flag = live_member_flag_02
 		remove_country_flag = live_member_flag_03
@@ -159,20 +161,35 @@ country_event={
 
 
 	option={
-		name=close
+		name=prepare_live
+		
 	}
 	after={
 		#remove_country_flag = live_member_flag_01
 
 
 
-
-		
+		#event_target:283p_home_country = {
+			set_country_flag=preparing_live
+			set_timed_global_flag = {
+				flag = global_preparing_live
+				years=1
+			}
+			save_global_event_target_as = country_hosting_live
+		#}
+		#set_country_flag
+			country_event = {
+				id = imas_world_events.3000
+			}
 	}
 
 
 
 }
+
+
+
+
 
 
 
@@ -184,7 +201,7 @@ country_event={
 	fire_only_once = no
 
 	custom_gui = imas_gui_selector
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	desc= ""
 	immediate = {
 		if = { limit={ check_variable = {  which = live_member_1 value = 01 } }  remove_country_flag  = live_member_flag_01  } 
@@ -216,16 +233,16 @@ country_event={
 	
 
 	title= Idols_selection_screen
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_1 value=1 } set_country_flag = live_member_flag_01} }
-	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_1 value=2 } set_country_flag = live_member_flag_02} }
-	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_1 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.lantica allow={always=no} }
-	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_1 value=4 } set_country_flag = live_member_flag_04} }
-	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_1 value=5 } set_country_flag = live_member_flag_05} }
-	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_1 value=6 } set_country_flag = live_member_flag_06} }
-	option={ name=idol_name_with_icon_07 trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_1 value=7 } set_country_flag = live_member_flag_07} }
-	option={ name=idol_name_with_icon_08 trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_1 value=8 } set_country_flag = live_member_flag_08} }
+	option={ name=page.illumination_stars allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_01 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_01 } }}trigger={has_global_flag=idol_debut_01 } hidden_effect={ set_variable={which=live_member_1 value=1 } set_country_flag = live_member_flag_01 } }
+	option={ name=idol_name_with_icon_02 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_02 } }}trigger={has_global_flag=idol_debut_02 } hidden_effect={ set_variable={which=live_member_1 value=2 } set_country_flag = live_member_flag_02} }
+	option={ name=idol_name_with_icon_03 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_03 } }}trigger={has_global_flag=idol_debut_03 } hidden_effect={ set_variable={which=live_member_1 value=3 } set_country_flag = live_member_flag_03} }
+	option={ name=page.lantica allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_04 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_04 } }}trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_1 value=4 } set_country_flag = live_member_flag_04} }
+	option={ name=idol_name_with_icon_05 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_05 } }}trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_1 value=5 } set_country_flag = live_member_flag_05} }
+	option={ name=idol_name_with_icon_06 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_06 } }}trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_1 value=6 } set_country_flag = live_member_flag_06} }
+	option={ name=idol_name_with_icon_07 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_07 } }}trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_1 value=7 } set_country_flag = live_member_flag_07} }
+	option={ name=idol_name_with_icon_08 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_08 } }}trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_1 value=8 } set_country_flag = live_member_flag_08} }
 	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1102 } } }
 	
 
@@ -238,7 +255,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -248,24 +265,24 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1101 } } }
-	option={ name=page.climax allow={always=no} }
+	option={ name=page.climax allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_09 trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_1 value=9 } set_country_flag = live_member_flag_09} }
-	option={ name=idol_name_with_icon_10 trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_1 value=10 } set_country_flag = live_member_flag_10} }
-	option={ name=idol_name_with_icon_11 trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_1 value=11 } set_country_flag = live_member_flag_11} }
-	option={ name=idol_name_with_icon_12 trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_1 value=12 } set_country_flag = live_member_flag_12} }
-	option={ name=idol_name_with_icon_13 trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_1 value=13 } set_country_flag = live_member_flag_13} }
+	option={ name=idol_name_with_icon_09 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_09 } }}trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_1 value=9 } set_country_flag = live_member_flag_09} }
+	option={ name=idol_name_with_icon_10 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_10 } }}trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_1 value=10 } set_country_flag = live_member_flag_10} }
+	option={ name=idol_name_with_icon_11 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_11 } }}trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_1 value=11 } set_country_flag = live_member_flag_11} }
+	option={ name=idol_name_with_icon_12 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_12 } }}trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_1 value=12 } set_country_flag = live_member_flag_12} }
+	option={ name=idol_name_with_icon_13 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_13 } }}trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_1 value=13 } set_country_flag = live_member_flag_13} }
 	
-	option={ name=page.alstroemeria allow={always=no} }
-	option={ name=idol_name_with_icon_14 trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_1 value=14 } set_country_flag = live_member_flag_14} }
-	option={ name=idol_name_with_icon_15 trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_1 value=15 } set_country_flag = live_member_flag_15} }
-	option={ name=idol_name_with_icon_16 trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_1 value=16 } set_country_flag = live_member_flag_16} }
+	option={ name=page.alstroemeria allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_14 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_14 } }}trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_1 value=14 } set_country_flag = live_member_flag_14} }
+	option={ name=idol_name_with_icon_15 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_15 } }}trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_1 value=15 } set_country_flag = live_member_flag_15} }
+	option={ name=idol_name_with_icon_16 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_16 } }}trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_1 value=16 } set_country_flag = live_member_flag_16} }
 
-	option={ name=page.straylight allow={always=no} }
-	option={ name=idol_name_with_icon_17 trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_1 value=17 } set_country_flag = live_member_flag_17} }
-	option={ name=idol_name_with_icon_18 trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_1 value=18 } set_country_flag = live_member_flag_18} }
-	option={ name=idol_name_with_icon_19 trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_1 value=19 } set_country_flag = live_member_flag_19} }
+	option={ name=page.straylight allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_17 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_17 } }}trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_1 value=17 } set_country_flag = live_member_flag_17} }
+	option={ name=idol_name_with_icon_18 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_18 } }}trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_1 value=18 } set_country_flag = live_member_flag_18} }
+	option={ name=idol_name_with_icon_19 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_19 } }}trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_1 value=19 } set_country_flag = live_member_flag_19} }
 	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1103 } } }
 
 
@@ -281,7 +298,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -291,17 +308,17 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1102 } } }
-	option={ name=page.notchil allow={always=no} }
+	option={ name=page.notchil allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_20 trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_1 value=20 } set_country_flag = live_member_flag_20} }
-	option={ name=idol_name_with_icon_21 trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_1 value=21 } set_country_flag = live_member_flag_21} }
-	option={ name=idol_name_with_icon_22 trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_1 value=22 } set_country_flag = live_member_flag_22} }
-	option={ name=idol_name_with_icon_23 trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_1 value=23 } set_country_flag = live_member_flag_23} }
-	option={ name=page.shiis allow={always=no} }
+	option={ name=idol_name_with_icon_20 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_20 } }}trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_1 value=20 } set_country_flag = live_member_flag_20} }
+	option={ name=idol_name_with_icon_21 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_21 } }}trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_1 value=21 } set_country_flag = live_member_flag_21} }
+	option={ name=idol_name_with_icon_22 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_22 } }}trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_1 value=22 } set_country_flag = live_member_flag_22} }
+	option={ name=idol_name_with_icon_23 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_23 } }}trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_1 value=23 } set_country_flag = live_member_flag_23} }
+	option={ name=page.shiis allow={ hidden_trigger={always=no } } }
 	
-	option={ name=idol_name_with_icon_24 trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_1 value=24 } set_country_flag = live_member_flag_24} }
-	option={ name=idol_name_with_icon_25 trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_1 value=25 } set_country_flag = live_member_flag_25} }
+	option={ name=idol_name_with_icon_24 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_24 } }}trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_1 value=24 } set_country_flag = live_member_flag_24} }
+	option={ name=idol_name_with_icon_25 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_25 } }}trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_1 value=25 } set_country_flag = live_member_flag_25} }
 	
 
 
@@ -318,7 +335,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -351,16 +368,16 @@ country_event={
 	
 
 	title= Idols_selection_screen
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_2 value=1 } set_country_flag = live_member_flag_01} }
-	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_2 value=2 } set_country_flag = live_member_flag_02} }
-	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_2 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.lantica allow={always=no} }
-	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_2 value=4 } set_country_flag = live_member_flag_04} }
-	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_2 value=5 } set_country_flag = live_member_flag_05} }
-	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_2 value=6 } set_country_flag = live_member_flag_06} }
-	option={ name=idol_name_with_icon_07 trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_2 value=7 } set_country_flag = live_member_flag_07} }
-	option={ name=idol_name_with_icon_08 trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_2 value=8 } set_country_flag = live_member_flag_08} }
+	option={ name=page.illumination_stars allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_01 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_01 }}}trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_2 value=1 } set_country_flag = live_member_flag_01} }
+	option={ name=idol_name_with_icon_02 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_02 }}}trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_2 value=2 } set_country_flag = live_member_flag_02} }
+	option={ name=idol_name_with_icon_03 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_03 }}}trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_2 value=3 } set_country_flag = live_member_flag_03} }
+		option={ name=page.lantica allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_04 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_04 }}}trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_2 value=4 } set_country_flag = live_member_flag_04} }
+	option={ name=idol_name_with_icon_05 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_05 }}}trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_2 value=5 } set_country_flag = live_member_flag_05} }
+	option={ name=idol_name_with_icon_06 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_06 }}}trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_2 value=6 } set_country_flag = live_member_flag_06} }
+	option={ name=idol_name_with_icon_07 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_07 }}}trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_2 value=7 } set_country_flag = live_member_flag_07} }
+	option={ name=idol_name_with_icon_08 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_08 }}}trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_2 value=8 } set_country_flag = live_member_flag_08} }
 	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1202 } } }
 	
 
@@ -373,7 +390,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -383,24 +400,24 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1201 } } }
-	option={ name=page.climax allow={always=no} }
+	option={ name=page.climax allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_09 trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_2 value=9 } set_country_flag = live_member_flag_09} }
-	option={ name=idol_name_with_icon_10 trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_2 value=10 } set_country_flag = live_member_flag_10} }
-	option={ name=idol_name_with_icon_11 trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_2 value=11 } set_country_flag = live_member_flag_11} }
-	option={ name=idol_name_with_icon_12 trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_2 value=12 } set_country_flag = live_member_flag_12} }
-	option={ name=idol_name_with_icon_13 trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_2 value=13 } set_country_flag = live_member_flag_13} }
+	option={ name=idol_name_with_icon_09 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_09 }}}trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_2 value=9 } set_country_flag = live_member_flag_09} }
+	option={ name=idol_name_with_icon_10 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_10 }}}trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_2 value=10 } set_country_flag = live_member_flag_10} }
+	option={ name=idol_name_with_icon_11 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_11 }}}trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_2 value=11 } set_country_flag = live_member_flag_11} }
+	option={ name=idol_name_with_icon_12 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_12 }}}trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_2 value=12 } set_country_flag = live_member_flag_12} }
+	option={ name=idol_name_with_icon_13 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_13 }}}trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_2 value=13 } set_country_flag = live_member_flag_13} }
+		
+	option={ name=page.alstroemeria allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_14 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_14 }}}trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_2 value=14 } set_country_flag = live_member_flag_14} }
+	option={ name=idol_name_with_icon_15 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_15 }}}trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_2 value=15 } set_country_flag = live_member_flag_15} }
+	option={ name=idol_name_with_icon_16 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_16 }}}trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_2 value=16 } set_country_flag = live_member_flag_16} }
 	
-	option={ name=page.alstroemeria allow={always=no} }
-	option={ name=idol_name_with_icon_14 trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_2 value=14 } set_country_flag = live_member_flag_14} }
-	option={ name=idol_name_with_icon_15 trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_2 value=15 } set_country_flag = live_member_flag_15} }
-	option={ name=idol_name_with_icon_16 trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_2 value=16 } set_country_flag = live_member_flag_16} }
-
-	option={ name=page.straylight allow={always=no} }
-	option={ name=idol_name_with_icon_17 trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_2 value=17 } set_country_flag = live_member_flag_17} }
-	option={ name=idol_name_with_icon_18 trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_2 value=18 } set_country_flag = live_member_flag_18} }
-	option={ name=idol_name_with_icon_19 trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_2 value=19 } set_country_flag = live_member_flag_19} }
+	option={ name=page.straylight allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_17 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_17 }}}trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_2 value=17 } set_country_flag = live_member_flag_17} }
+	option={ name=idol_name_with_icon_18 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_18 }}}trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_2 value=18 } set_country_flag = live_member_flag_18} }
+	option={ name=idol_name_with_icon_19 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_19 }}}trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_2 value=19 } set_country_flag = live_member_flag_19} }
 	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1203 } } }
 
 
@@ -416,7 +433,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -426,18 +443,18 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1202 } } }
-	option={ name=page.notchil allow={always=no} }
+	option={ name=page.notchil allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_20 trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_2 value=20 } set_country_flag = live_member_flag_20} }
-	option={ name=idol_name_with_icon_21 trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_2 value=21 } set_country_flag = live_member_flag_21} }
-	option={ name=idol_name_with_icon_22 trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_2 value=22 } set_country_flag = live_member_flag_22} }
-	option={ name=idol_name_with_icon_23 trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_2 value=23 } set_country_flag = live_member_flag_23} }
-	option={ name=page.shiis allow={always=no} }
+	option={ name=idol_name_with_icon_20 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_20 }}}trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_2 value=20 } set_country_flag = live_member_flag_20} }
+	option={ name=idol_name_with_icon_21 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_21 }}}trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_2 value=21 } set_country_flag = live_member_flag_21} }
+	option={ name=idol_name_with_icon_22 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_22 }}}trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_2 value=22 } set_country_flag = live_member_flag_22} }
+	option={ name=idol_name_with_icon_23 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_23 }}}trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_2 value=23 } set_country_flag = live_member_flag_23} }
+	option={ name=page.shiis allow={ hidden_trigger={always=no } } }
 	
-	option={ name=idol_name_with_icon_24 trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_2 value=24 } set_country_flag = live_member_flag_24} }
-	option={ name=idol_name_with_icon_25 trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_2 value=25 } set_country_flag = live_member_flag_25} }
-	
+	option={ name=idol_name_with_icon_24 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_24 }}}trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_2 value=24 } set_country_flag = live_member_flag_24} }
+	option={ name=idol_name_with_icon_25 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_25 }}}trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_2 value=25 } set_country_flag = live_member_flag_25} }
+			
 }
 
 
@@ -447,7 +464,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -480,17 +497,17 @@ country_event={
 	
 
 	title= Idols_selection_screen
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_3 value=1 } set_country_flag = live_member_flag_01} }
-	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_3 value=2 } set_country_flag = live_member_flag_02} }
-	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_3 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.lantica allow={always=no} }
-	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_3 value=4 } set_country_flag = live_member_flag_04} }
-	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_3 value=5 } set_country_flag = live_member_flag_05} }
-	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_3 value=6 } set_country_flag = live_member_flag_06} }
-	option={ name=idol_name_with_icon_07 trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_3 value=7 } set_country_flag = live_member_flag_07} }
-	option={ name=idol_name_with_icon_08 trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_3 value=8 } set_country_flag = live_member_flag_08} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1302 } } }
+	option={ name=page.illumination_stars allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_01 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_01 }}}trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_3 value=1 } set_country_flag = live_member_flag_01} }
+	option={ name=idol_name_with_icon_02 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_02 }}}trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_3 value=2 } set_country_flag = live_member_flag_02} }
+	option={ name=idol_name_with_icon_03 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_03 }}}trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_3 value=3 } set_country_flag = live_member_flag_03} }
+		option={ name=page.lantica allow={ hidden_trigger={always=no } } }
+		option={ name=idol_name_with_icon_04 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_04 }}}trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_3 value=4 } set_country_flag = live_member_flag_04} }
+		option={ name=idol_name_with_icon_05 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_05 }}}trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_3 value=5 } set_country_flag = live_member_flag_05} }
+		option={ name=idol_name_with_icon_06 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_06 }}}trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_3 value=6 } set_country_flag = live_member_flag_06} }
+		option={ name=idol_name_with_icon_07 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_07 }}}trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_3 value=7 } set_country_flag = live_member_flag_07} }
+		option={ name=idol_name_with_icon_08 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_08 }}}trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_3 value=8 } set_country_flag = live_member_flag_08} }
+			option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1302 } } }
 	
 
 
@@ -502,7 +519,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -512,25 +529,25 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1301 } } }
-	option={ name=page.climax allow={always=no} }
+	option={ name=page.climax allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_09 trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_3 value=9 } set_country_flag = live_member_flag_09} }
-	option={ name=idol_name_with_icon_10 trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_3 value=10 } set_country_flag = live_member_flag_10} }
-	option={ name=idol_name_with_icon_11 trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_3 value=11 } set_country_flag = live_member_flag_11} }
-	option={ name=idol_name_with_icon_12 trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_3 value=12 } set_country_flag = live_member_flag_12} }
-	option={ name=idol_name_with_icon_13 trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_3 value=13 } set_country_flag = live_member_flag_13} }
+	option={ name=idol_name_with_icon_09 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_09 }}}trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_3 value=9 } set_country_flag = live_member_flag_09} }
+	option={ name=idol_name_with_icon_10 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_10 }}}trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_3 value=10 } set_country_flag = live_member_flag_10} }
+	option={ name=idol_name_with_icon_11 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_11 }}}trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_3 value=11 } set_country_flag = live_member_flag_11} }
+	option={ name=idol_name_with_icon_12 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_12 }}}trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_3 value=12 } set_country_flag = live_member_flag_12} }
+	option={ name=idol_name_with_icon_13 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_13 }}}trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_3 value=13 } set_country_flag = live_member_flag_13} }
 	
-	option={ name=page.alstroemeria allow={always=no} }
-	option={ name=idol_name_with_icon_14 trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_3 value=14 } set_country_flag = live_member_flag_14} }
-	option={ name=idol_name_with_icon_15 trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_3 value=15 } set_country_flag = live_member_flag_15} }
-	option={ name=idol_name_with_icon_16 trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_3 value=16 } set_country_flag = live_member_flag_16} }
-
-	option={ name=page.straylight allow={always=no} }
-	option={ name=idol_name_with_icon_17 trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_3 value=17 } set_country_flag = live_member_flag_17} }
-	option={ name=idol_name_with_icon_18 trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_3 value=18 } set_country_flag = live_member_flag_18} }
-	option={ name=idol_name_with_icon_19 trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_3 value=19 } set_country_flag = live_member_flag_19} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1303 } } }
+	option={ name=page.alstroemeria allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_14 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_14 }}}trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_3 value=14 } set_country_flag = live_member_flag_14} }
+	option={ name=idol_name_with_icon_15 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_15 }}}trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_3 value=15 } set_country_flag = live_member_flag_15} }
+	option={ name=idol_name_with_icon_16 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_16 }}}trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_3 value=16 } set_country_flag = live_member_flag_16} }
+	
+	option={ name=page.straylight allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_17 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_17 }}}trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_3 value=17 } set_country_flag = live_member_flag_17} }
+	option={ name=idol_name_with_icon_18 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_18 }}}trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_3 value=18 } set_country_flag = live_member_flag_18} }
+	option={ name=idol_name_with_icon_19 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_19 }}}trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_3 value=19 } set_country_flag = live_member_flag_19} }
+		option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1303 } } }
 
 
 
@@ -545,7 +562,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -555,148 +572,20 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1302 } } }
-	option={ name=page.notchil allow={always=no} }
+	option={ name=page.notchil allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_20 trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_3 value=20 } set_country_flag = live_member_flag_20} }
-	option={ name=idol_name_with_icon_21 trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_3 value=21 } set_country_flag = live_member_flag_21} }
-	option={ name=idol_name_with_icon_22 trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_3 value=22 } set_country_flag = live_member_flag_22} }
-	option={ name=idol_name_with_icon_23 trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_3 value=23 } set_country_flag = live_member_flag_23} }
-	option={ name=page.shiis allow={always=no} }
+	option={ name=idol_name_with_icon_20 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_20 }}}trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_3 value=20 } set_country_flag = live_member_flag_20} }
+	option={ name=idol_name_with_icon_21 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_21 }}}trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_3 value=21 } set_country_flag = live_member_flag_21} }
+	option={ name=idol_name_with_icon_22 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_22 }}}trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_3 value=22 } set_country_flag = live_member_flag_22} }
+	option={ name=idol_name_with_icon_23 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_23 }}}trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_3 value=23 } set_country_flag = live_member_flag_23} }
+		option={ name=page.shiis allow={ hidden_trigger={always=no } } }
 	
-	option={ name=idol_name_with_icon_24 trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_3 value=24 } set_country_flag = live_member_flag_24} }
-	option={ name=idol_name_with_icon_25 trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_3 value=25 } set_country_flag = live_member_flag_25} }
-	
+	option={ name=idol_name_with_icon_24 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_24 }}}trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_3 value=24 } set_country_flag = live_member_flag_24} }
+	option={ name=idol_name_with_icon_25 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_25 }}}trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_3 value=25 } set_country_flag = live_member_flag_25} }
+			
 }
 
-
-country_event={
-	id=imas_idols_menu.1301
-	hide_window=no
-	diplomatic = yes
-	is_triggered_only = yes
-	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
-	custom_gui = imas_gui_selector
-	desc= ""
-	immediate = {
-		if = { limit={ check_variable = {  which = live_member_3 value = 01 } }  remove_country_flag  = live_member_flag_01  } 
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 02 } }  remove_country_flag = live_member_flag_02  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 03 } }  remove_country_flag = live_member_flag_03  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 04 } }  remove_country_flag = live_member_flag_04  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 05 } }  remove_country_flag = live_member_flag_05  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 06 } }  remove_country_flag = live_member_flag_06  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 07 } }  remove_country_flag = live_member_flag_07  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 08 } }  remove_country_flag = live_member_flag_08  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 09 } }  remove_country_flag = live_member_flag_09  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 10 } }  remove_country_flag = live_member_flag_10  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 11 } }  remove_country_flag = live_member_flag_11  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 12 } }  remove_country_flag = live_member_flag_12  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 13 } }  remove_country_flag = live_member_flag_13  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 14 } }  remove_country_flag = live_member_flag_14  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 15 } }  remove_country_flag = live_member_flag_15  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 16 } }  remove_country_flag = live_member_flag_16  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 17 } }  remove_country_flag = live_member_flag_17  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 18 } }  remove_country_flag = live_member_flag_18  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 19 } }  remove_country_flag = live_member_flag_19  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 20 } }  remove_country_flag = live_member_flag_20  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 21 } }  remove_country_flag = live_member_flag_21  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 22 } }  remove_country_flag = live_member_flag_22  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 23 } }  remove_country_flag = live_member_flag_23  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 24 } }  remove_country_flag = live_member_flag_24  }
-		else_if = { limit={ check_variable = {  which = live_member_3 value = 25 } }  remove_country_flag = live_member_flag_25  }
-	}
-	
-
-	title= Idols_selection_screen
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_3 value=1 } set_country_flag = live_member_flag_01} }
-	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_3 value=2 } set_country_flag = live_member_flag_02} }
-	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_3 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.lantica allow={always=no} }
-	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_3 value=4 } set_country_flag = live_member_flag_04} }
-	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_3 value=5 } set_country_flag = live_member_flag_05} }
-	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_3 value=6 } set_country_flag = live_member_flag_06} }
-	option={ name=idol_name_with_icon_07 trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_3 value=7 } set_country_flag = live_member_flag_07} }
-	option={ name=idol_name_with_icon_08 trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_3 value=8 } set_country_flag = live_member_flag_08} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1302 } } }
-	
-
-
-}
-
-country_event={
-	id=imas_idols_menu.1302
-	hide_window=no
-	diplomatic = yes
-	is_triggered_only = yes
-	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
-	custom_gui = imas_gui_selector
-	desc= ""
-	immediate = {
-		
-	}
-	
-
-	title= Idols_selection_screen
-	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1301 } } }
-	option={ name=page.climax allow={always=no} }
-	
-	
-	option={ name=idol_name_with_icon_09 trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_3 value=9 } set_country_flag = live_member_flag_09} }
-	option={ name=idol_name_with_icon_10 trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_3 value=10 } set_country_flag = live_member_flag_10} }
-	option={ name=idol_name_with_icon_11 trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_3 value=11 } set_country_flag = live_member_flag_11} }
-	option={ name=idol_name_with_icon_12 trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_3 value=12 } set_country_flag = live_member_flag_12} }
-	option={ name=idol_name_with_icon_13 trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_3 value=13 } set_country_flag = live_member_flag_13} }
-	
-	option={ name=page.alstroemeria allow={always=no} }
-	option={ name=idol_name_with_icon_14 trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_3 value=14 } set_country_flag = live_member_flag_14} }
-	option={ name=idol_name_with_icon_15 trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_3 value=15 } set_country_flag = live_member_flag_15} }
-	option={ name=idol_name_with_icon_16 trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_3 value=16 } set_country_flag = live_member_flag_16} }
-
-	option={ name=page.straylight allow={always=no} }
-	option={ name=idol_name_with_icon_17 trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_3 value=17 } set_country_flag = live_member_flag_17} }
-	option={ name=idol_name_with_icon_18 trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_3 value=18 } set_country_flag = live_member_flag_18} }
-	option={ name=idol_name_with_icon_19 trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_3 value=19 } set_country_flag = live_member_flag_19} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1303 } } }
-
-
-
-}
-
-
-
-
-country_event={
-	id=imas_idols_menu.1303
-	hide_window=no
-	diplomatic = yes
-	is_triggered_only = yes
-	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
-	custom_gui = imas_gui_selector
-	desc= ""
-	immediate = {
-		
-	}
-	
-
-	title= Idols_selection_screen
-	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1302 } } }
-	option={ name=page.notchil allow={always=no} }
-	
-	
-	option={ name=idol_name_with_icon_20 trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_3 value=20 } set_country_flag = live_member_flag_20} }
-	option={ name=idol_name_with_icon_21 trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_3 value=21 } set_country_flag = live_member_flag_21} }
-	option={ name=idol_name_with_icon_22 trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_3 value=22 } set_country_flag = live_member_flag_22} }
-	option={ name=idol_name_with_icon_23 trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_3 value=23 } set_country_flag = live_member_flag_23} }
-	option={ name=page.shiis allow={always=no} }
-	
-	option={ name=idol_name_with_icon_24 trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_3 value=24 } set_country_flag = live_member_flag_24} }
-	option={ name=idol_name_with_icon_25 trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_3 value=25 } set_country_flag = live_member_flag_25} }
-	
-}
 
 
 
@@ -706,7 +595,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -739,16 +628,16 @@ country_event={
 	
 
 	title= Idols_selection_screen
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_4 value=1 } set_country_flag = live_member_flag_01} }
-	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_4 value=2 } set_country_flag = live_member_flag_02} }
-	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_4 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.lantica allow={always=no} }
-	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_4 value=4 } set_country_flag = live_member_flag_04} }
-	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_4 value=5 } set_country_flag = live_member_flag_05} }
-	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_4 value=6 } set_country_flag = live_member_flag_06} }
-	option={ name=idol_name_with_icon_07 trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_4 value=7 } set_country_flag = live_member_flag_07} }
-	option={ name=idol_name_with_icon_08 trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_4 value=8 } set_country_flag = live_member_flag_08} }
+	option={ name=page.illumination_stars allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_01 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_01 }}}trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_4 value=1 } set_country_flag = live_member_flag_01} }
+	option={ name=idol_name_with_icon_02 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_02 }}}trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_4 value=2 } set_country_flag = live_member_flag_02} }
+	option={ name=idol_name_with_icon_03 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_03 }}}trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_4 value=3 } set_country_flag = live_member_flag_03} }
+	option={ name=page.lantica allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_04 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_04 }}}trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_4 value=4 } set_country_flag = live_member_flag_04} }
+	option={ name=idol_name_with_icon_05 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_05 }}}trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_4 value=5 } set_country_flag = live_member_flag_05} }
+	option={ name=idol_name_with_icon_06 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_06 }}}trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_4 value=6 } set_country_flag = live_member_flag_06} }
+	option={ name=idol_name_with_icon_07 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_07 }}}trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_4 value=7 } set_country_flag = live_member_flag_07} }
+	option={ name=idol_name_with_icon_08 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_08 }}}trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_4 value=8 } set_country_flag = live_member_flag_08} }
 	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1402 } } }
 	
 
@@ -761,7 +650,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -771,25 +660,25 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1401 } } }
-	option={ name=page.climax allow={always=no} }
+	option={ name=page.climax allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_09 trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_4 value=9 } set_country_flag = live_member_flag_09} }
-	option={ name=idol_name_with_icon_10 trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_4 value=10 } set_country_flag = live_member_flag_10} }
-	option={ name=idol_name_with_icon_11 trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_4 value=11 } set_country_flag = live_member_flag_11} }
-	option={ name=idol_name_with_icon_12 trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_4 value=12 } set_country_flag = live_member_flag_12} }
-	option={ name=idol_name_with_icon_13 trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_4 value=13 } set_country_flag = live_member_flag_13} }
+	option={ name=idol_name_with_icon_09 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_09 }}}trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_4 value=9 } set_country_flag = live_member_flag_09} }
+	option={ name=idol_name_with_icon_10 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_10 }}}trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_4 value=10 } set_country_flag = live_member_flag_10} }
+	option={ name=idol_name_with_icon_11 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_11 }}}trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_4 value=11 } set_country_flag = live_member_flag_11} }
+	option={ name=idol_name_with_icon_12 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_12 }}}trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_4 value=12 } set_country_flag = live_member_flag_12} }
+	option={ name=idol_name_with_icon_13 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_13 }}}trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_4 value=13 } set_country_flag = live_member_flag_13} }
 	
-	option={ name=page.alstroemeria allow={always=no} }
-	option={ name=idol_name_with_icon_14 trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_4 value=14 } set_country_flag = live_member_flag_14} }
-	option={ name=idol_name_with_icon_15 trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_4 value=15 } set_country_flag = live_member_flag_15} }
-	option={ name=idol_name_with_icon_16 trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_4 value=16 } set_country_flag = live_member_flag_16} }
-
-	option={ name=page.straylight allow={always=no} }
-	option={ name=idol_name_with_icon_17 trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_4 value=17 } set_country_flag = live_member_flag_17} }
-	option={ name=idol_name_with_icon_18 trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_4 value=18 } set_country_flag = live_member_flag_18} }
-	option={ name=idol_name_with_icon_19 trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_4 value=19 } set_country_flag = live_member_flag_19} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1403 } } }
+	option={ name=page.alstroemeria allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_14 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_14 }}}trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_4 value=14 } set_country_flag = live_member_flag_14} }
+	option={ name=idol_name_with_icon_15 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_15 }}}trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_4 value=15 } set_country_flag = live_member_flag_15} }
+	option={ name=idol_name_with_icon_16 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_16 }}}trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_4 value=16 } set_country_flag = live_member_flag_16} }
+	
+	option={ name=page.straylight allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_17 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_17 }}}trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_4 value=17 } set_country_flag = live_member_flag_17} }
+	option={ name=idol_name_with_icon_18 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_18 }}}trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_4 value=18 } set_country_flag = live_member_flag_18} }
+	option={ name=idol_name_with_icon_19 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_19 }}}trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_4 value=19 } set_country_flag = live_member_flag_19} }
+		option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1403 } } }
 
 
 
@@ -804,7 +693,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -814,20 +703,20 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1402 } } }
-	option={ name=page.notchil allow={always=no} }
+	option={ name=page.notchil allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_20 trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_4 value=20 } set_country_flag = live_member_flag_20} }
-	option={ name=idol_name_with_icon_21 trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_4 value=21 } set_country_flag = live_member_flag_21} }
-	option={ name=idol_name_with_icon_22 trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_4 value=22 } set_country_flag = live_member_flag_22} }
-	option={ name=idol_name_with_icon_23 trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_4 value=23 } set_country_flag = live_member_flag_23} }
-	option={ name=page.shiis allow={always=no} }
+	option={ name=idol_name_with_icon_20 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_20 }}}trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_4 value=20 } set_country_flag = live_member_flag_20} }
+	option={ name=idol_name_with_icon_21 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_21 }}}trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_4 value=21 } set_country_flag = live_member_flag_21} }
+	option={ name=idol_name_with_icon_22 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_22 }}}trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_4 value=22 } set_country_flag = live_member_flag_22} }
+	option={ name=idol_name_with_icon_23 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_23 }}}trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_4 value=23 } set_country_flag = live_member_flag_23} }
+	option={ name=page.shiis allow={ hidden_trigger={always=no } } }
 	
-	option={ name=idol_name_with_icon_24 trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_4 value=24 } set_country_flag = live_member_flag_24} }
-	option={ name=idol_name_with_icon_25 trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_4 value=25 } set_country_flag = live_member_flag_25} }
+	option={ name=idol_name_with_icon_24 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_24 }}}trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_4 value=24 } set_country_flag = live_member_flag_24} }
+	option={ name=idol_name_with_icon_25 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_25 }}}trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_4 value=25 } set_country_flag = live_member_flag_25} }
 	
 }
-
+ # disable when selected
 
 country_event={
 	id=imas_idols_menu.1501
@@ -835,7 +724,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -868,17 +757,17 @@ country_event={
 	
 
 	title= Idols_selection_screen
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_01 trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_5 value=1 } set_country_flag = live_member_flag_01} }
-	option={ name=idol_name_with_icon_02 trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_5 value=2 } set_country_flag = live_member_flag_02} }
-	option={ name=idol_name_with_icon_03 trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_5 value=3 } set_country_flag = live_member_flag_03} }
-	option={ name=page.illumination_stars allow={always=no} }
-	option={ name=idol_name_with_icon_04 trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_5 value=4 } set_country_flag = live_member_flag_04} }
-	option={ name=idol_name_with_icon_05 trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_5 value=5 } set_country_flag = live_member_flag_05} }
-	option={ name=idol_name_with_icon_06 trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_5 value=6 } set_country_flag = live_member_flag_06} }
-	option={ name=idol_name_with_icon_07 trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_5 value=7 } set_country_flag = live_member_flag_07} }
-	option={ name=idol_name_with_icon_08 trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_5 value=8 } set_country_flag = live_member_flag_08} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1502 } } }
+	option={ name=page.illumination_stars allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_01 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_01 }}}trigger={has_global_flag=idol_debut_01} hidden_effect={ set_variable={which=live_member_5 value=1 } set_country_flag = live_member_flag_01} }
+	option={ name=idol_name_with_icon_02 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_02 }}}trigger={has_global_flag=idol_debut_02} hidden_effect={ set_variable={which=live_member_5 value=2 } set_country_flag = live_member_flag_02} }
+	option={ name=idol_name_with_icon_03 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_03 }}}trigger={has_global_flag=idol_debut_03} hidden_effect={ set_variable={which=live_member_5 value=3 } set_country_flag = live_member_flag_03} }
+		option={ name=page.lantica allow={ hidden_trigger={always=no } } }
+		option={ name=idol_name_with_icon_04 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_04 }}}trigger={has_global_flag=idol_debut_04} hidden_effect={ set_variable={which=live_member_5 value=4 } set_country_flag = live_member_flag_04} }
+		option={ name=idol_name_with_icon_05 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_05 }}}trigger={has_global_flag=idol_debut_05} hidden_effect={ set_variable={which=live_member_5 value=5 } set_country_flag = live_member_flag_05} }
+		option={ name=idol_name_with_icon_06 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_06 }}}trigger={has_global_flag=idol_debut_06} hidden_effect={ set_variable={which=live_member_5 value=6 } set_country_flag = live_member_flag_06} }
+		option={ name=idol_name_with_icon_07 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_07 }}}trigger={has_global_flag=idol_debut_07} hidden_effect={ set_variable={which=live_member_5 value=7 } set_country_flag = live_member_flag_07} }
+		option={ name=idol_name_with_icon_08 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_08 }}}trigger={has_global_flag=idol_debut_08} hidden_effect={ set_variable={which=live_member_5 value=8 } set_country_flag = live_member_flag_08} }
+			option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1502 } } }
 	
 
 
@@ -890,7 +779,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -900,25 +789,25 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1501 } } }
-	option={ name=page.climax allow={always=no} }
+	option={ name=page.climax allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_09 trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_5 value=9 } set_country_flag = live_member_flag_09} }
-	option={ name=idol_name_with_icon_10 trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_5 value=10 } set_country_flag = live_member_flag_10} }
-	option={ name=idol_name_with_icon_11 trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_5 value=11 } set_country_flag = live_member_flag_11} }
-	option={ name=idol_name_with_icon_12 trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_5 value=12 } set_country_flag = live_member_flag_12} }
-	option={ name=idol_name_with_icon_13 trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_5 value=13 } set_country_flag = live_member_flag_13} }
+	option={ name=idol_name_with_icon_09 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_09 }}}trigger={has_global_flag=idol_debut_09} hidden_effect={ set_variable={which=live_member_5 value=9 } set_country_flag = live_member_flag_09} }
+	option={ name=idol_name_with_icon_10 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_10 }}}trigger={has_global_flag=idol_debut_10} hidden_effect={ set_variable={which=live_member_5 value=10 } set_country_flag = live_member_flag_10} }
+	option={ name=idol_name_with_icon_11 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_11 }}}trigger={has_global_flag=idol_debut_11} hidden_effect={ set_variable={which=live_member_5 value=11 } set_country_flag = live_member_flag_11} }
+	option={ name=idol_name_with_icon_12 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_12 }}}trigger={has_global_flag=idol_debut_12} hidden_effect={ set_variable={which=live_member_5 value=12 } set_country_flag = live_member_flag_12} }
+	option={ name=idol_name_with_icon_13 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_13 }}}trigger={has_global_flag=idol_debut_13} hidden_effect={ set_variable={which=live_member_5 value=13 } set_country_flag = live_member_flag_13} }
 	
-	option={ name=page.alstroemeria allow={always=no} }
-	option={ name=idol_name_with_icon_14 trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_5 value=14 } set_country_flag = live_member_flag_14} }
-	option={ name=idol_name_with_icon_15 trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_5 value=15 } set_country_flag = live_member_flag_15} }
-	option={ name=idol_name_with_icon_16 trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_5 value=16 } set_country_flag = live_member_flag_16} }
-
-	option={ name=page.straylight allow={always=no} }
-	option={ name=idol_name_with_icon_17 trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_5 value=17 } set_country_flag = live_member_flag_17} }
-	option={ name=idol_name_with_icon_18 trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_5 value=18 } set_country_flag = live_member_flag_18} }
-	option={ name=idol_name_with_icon_19 trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_5 value=19 } set_country_flag = live_member_flag_19} }
-	option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1503 } } }
+	option={ name=page.alstroemeria allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_14 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_14 }}}trigger={has_global_flag=idol_debut_14} hidden_effect={ set_variable={which=live_member_5 value=14 } set_country_flag = live_member_flag_14} }
+	option={ name=idol_name_with_icon_15 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_15 }}}trigger={has_global_flag=idol_debut_15} hidden_effect={ set_variable={which=live_member_5 value=15 } set_country_flag = live_member_flag_15} }
+	option={ name=idol_name_with_icon_16 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_16 }}}trigger={has_global_flag=idol_debut_16} hidden_effect={ set_variable={which=live_member_5 value=16 } set_country_flag = live_member_flag_16} }
+	
+	option={ name=page.straylight allow={ hidden_trigger={always=no } } }
+	option={ name=idol_name_with_icon_17 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_17 }}}trigger={has_global_flag=idol_debut_17} hidden_effect={ set_variable={which=live_member_5 value=17 } set_country_flag = live_member_flag_17} }
+	option={ name=idol_name_with_icon_18 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_18 }}}trigger={has_global_flag=idol_debut_18} hidden_effect={ set_variable={which=live_member_5 value=18 } set_country_flag = live_member_flag_18} }
+	option={ name=idol_name_with_icon_19 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_19 }}}trigger={has_global_flag=idol_debut_19} hidden_effect={ set_variable={which=live_member_5 value=19 } set_country_flag = live_member_flag_19} }
+		option={ name=next_page hidden_effect={ country_event={ id=imas_idols_menu.1503 } } }
 
 
 
@@ -933,7 +822,7 @@ country_event={
 	diplomatic = yes
 	is_triggered_only = yes
 	fire_only_once = no
-	custom_gui_option = "imas_gui_live_list_button"
+	custom_gui_option = imas_gui_live_list_button
 	custom_gui = imas_gui_selector
 	desc= ""
 	immediate = {
@@ -943,18 +832,18 @@ country_event={
 
 	title= Idols_selection_screen
 	option={ name=prev_page hidden_effect={ country_event={ id=imas_idols_menu.1502 } } }
-	option={ name=page.notchil allow={always=no} }
+	option={ name=page.notchil allow={ hidden_trigger={always=no } } }
 	
 	
-	option={ name=idol_name_with_icon_20 trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_5 value=20 } set_country_flag = live_member_flag_20} }
-	option={ name=idol_name_with_icon_21 trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_5 value=21 } set_country_flag = live_member_flag_21} }
-	option={ name=idol_name_with_icon_22 trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_5 value=22 } set_country_flag = live_member_flag_22} }
-	option={ name=idol_name_with_icon_23 trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_5 value=23 } set_country_flag = live_member_flag_23} }
-	option={ name=page.shiis allow={always=no} }
+	option={ name=idol_name_with_icon_20 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_20 }}}trigger={has_global_flag=idol_debut_20} hidden_effect={ set_variable={which=live_member_5 value=20 } set_country_flag = live_member_flag_20} }
+	option={ name=idol_name_with_icon_21 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_21 }}}trigger={has_global_flag=idol_debut_21} hidden_effect={ set_variable={which=live_member_5 value=21 } set_country_flag = live_member_flag_21} }
+	option={ name=idol_name_with_icon_22 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_22 }}}trigger={has_global_flag=idol_debut_22} hidden_effect={ set_variable={which=live_member_5 value=22 } set_country_flag = live_member_flag_22} }
+	option={ name=idol_name_with_icon_23 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_23 }}}trigger={has_global_flag=idol_debut_23} hidden_effect={ set_variable={which=live_member_5 value=23 } set_country_flag = live_member_flag_23} }
+		option={ name=page.shiis allow={ hidden_trigger={always=no } } }
 	
-	option={ name=idol_name_with_icon_24 trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_5 value=24 } set_country_flag = live_member_flag_24} }
-	option={ name=idol_name_with_icon_25 trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_5 value=25 } set_country_flag = live_member_flag_25} }
-	
+	option={ name=idol_name_with_icon_24 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_24 }}}trigger={has_global_flag=idol_debut_24} hidden_effect={ set_variable={which=live_member_5 value=24 } set_country_flag = live_member_flag_24} }
+	option={ name=idol_name_with_icon_25 allow={ hidden_trigger={ NOT={ has_country_flag=live_member_flag_25 }}}trigger={has_global_flag=idol_debut_25} hidden_effect={ set_variable={which=live_member_5 value=25 } set_country_flag = live_member_flag_25} }
+			
 }
 
 
