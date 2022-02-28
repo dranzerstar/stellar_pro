@@ -25,6 +25,13 @@
  more_details:0 "点击更多"
  close:0 "关闭"
  Idols_live_menu:0 "FES巡回演唱准备"
+ mod_planet_pops_food_upkeep_mult:0 "人口食物£food£消费："
+ mod_planet_researchers_consumer_goods_upkeep_mult:0 "科学家£energy£:消费"
+ mod_planet_researchers_energy_upkeep_mult:0 "科学家£consumer_goods£:消费:"
+ mod_country_sr_dark_matter_produces_add:0 "每月获得£sr_dark_matter£"
+ mod_country_sr_living_metal_produces_add:0 "每月获得£living_metal£"
+ mod_country_sr_zro_matter_produces_add:0 "每月获得£zro_matter£"
+ mod_country_minor_artifacts_produces_add:0 "每月获得£minor_artifacts£"
 
 #idol names
  text_idol_label_01:0 "樱木真乃"
@@ -113,7 +120,7 @@
  confirm_group_1:0 "确认并准备FES"
  live_luanch_tooltip_loc:0 "[Root.live_luanch_tooltip_loc]"
  live_luanch_tooltip_loc1:0 "£trigger_yes£再按一次确认组合配置"
- live_luanch_tooltip_loc2:0 "£trigger_no£需是完整组合h或任意五人"
+ live_luanch_tooltip_loc2:0 "£trigger_no£需是完整组合或任意五人"
  prepare_live:0 "确认！"
 
 #effects strings
@@ -164,7 +171,7 @@
 
  Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"  
 
- live_luanch_button_loc:0 "[Root.live_luanch_button_text]"
+ #live_luanch_button_loc:0 "[Root.live_luanch_button_text]"
  live_prepared:0 "Preparing for Planned Live"
  confirm_live_grp:0 "Confirm Group"
  invalid_live_grp:0 "Invalid Group "
@@ -178,7 +185,7 @@
  is_shhis_formed:0 "组成$page.shiis$"
  is_full_team:0 "组成五人组合"
 
- imas_idols_menu_desc:0 "欢迎来到$Idols_live_menu$平台,你可以在这里定制下一次星海巡回演唱会的出演名单,星海巡回演唱会演出期间将会激励星海中§B所有§!国家并提供修正!\n点击置换按钮可以选择出演的偶像。选择后可以点击偶像立绘查看该偶像的出演效果,另外当组成特定偶像出演将会提供额外加成。\n提示:你需要组成任意五人组合或是完整偶像组合才可以开演!"
+ imas_idols_menu_desc:0 "欢迎来到$Idols_live_menu$平台,你可以在这里定制下一次星海巡回演唱会的出演名单,星海巡回演唱会演出期间将会激励星海中§P所有§!国家并提供修正!\n\n点击置换按钮可以选择出演的偶像。选择后可以点击偶像立绘查看该偶像的出演效果,另外当组成特定偶像出演将会提供额外加成。\n\n提示:你需要组成任意五人组合或是完整偶像组合才可以开演!"
 
 #idol details
 
@@ -212,3 +219,7 @@
 
  Click_group_icon:0 "点击图标组合图标查看偶像组合在FES巡回的出演效果"
  Click_idol_icon:0 "点击图标该偶像在加入FES巡回演唱演出效果"
+ clear:0 "取消"
+
+ imas_diplo_screen.o.live.ongoing.ct:0 "FES LIVE进行中"
+ imas_diplo_screen.o.live.cooldown.ct:0 "283P正在筹备下一期的表演"

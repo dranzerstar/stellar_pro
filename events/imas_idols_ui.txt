@@ -176,7 +176,7 @@ country_event={
 		#set_country_flag
 			country_event = {
 				id = imas_world_events.3000
-				years=1
+				days=360
 			}
 	}
 

@@ -140,13 +140,29 @@ country_event = {
 			}
 			custom_tooltip = {
 				fail_text= imas_diplo_screen.o.live.ongoing.ct
-				OR={
+				NOR={
 					has_country_flag = preparing_live 
 					event_target:283p_home_country = {
 						has_country_flag = ongoing_live 
 					}
 				}
+
 			}
+			custom_tooltip = {
+				fail_text= imas_diplo_screen.o.live.cooldown.ct
+				NOR={
+					has_country_flag = preparing_live 
+					event_target:283p_home_country = {
+						has_country_flag = cooldown_live 
+					}
+				}
+				NOT={event_target:283p_home_country = {
+					has_country_flag = ongoing_live 
+				}}
+			}
+
+			
+
 		}
 		hidden_effect={
 			country_event={

@@ -38,6 +38,19 @@
 
 
 
+ Live_start:0 "星海巡回演唱会正式开始！"
+ live_event_3000_desc.1:0 "REPLACE_ME"
+ live_event_3000_desc.2:0 "REPLACE_ME"
+ live_event_3000_desc.3:0 "REPLACE_ME"
+ live_event_3000_desc.4:0 "REPLACE_ME"
+ live_event_3000_desc.5:0 "REPLACE_ME"
+ live_event_3000_desc.6:0 "REPLACE_ME"
+ live_event_3000_desc.7:0 "REPLACE_ME"
+ live_event_3000_desc.8:0 "REPLACE_ME"
+ imas_happy:0 "好耶！"
+ idol_spawned_desc:0 "一个新的偶像出道！，快去283P查看吧"
+
+
 
 
 

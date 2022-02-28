@@ -1,72 +1,72 @@
 sound  = {
 	name = "imas_song_01"
 	file = "event/imas_song_01.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_song_02"
 	file = "event/imas_song_02.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_song_03"
 	file = "event/imas_song_03.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_song_04"
 	file = "event/imas_song_04.wav"
-	volume = 0.5
+	volume = 0.25
 }
 sound  = {
 	name = "imas_song_05"
 	file = "event/imas_song_05.wav"
-	volume = 0.5
+	volume = 0.25
 }
 sound  = {
 	name = "imas_song_06"
 	file = "event/imas_song_06.wav"
-	volume = 0.5
+	volume = 0.25
 }
 sound  = {
 	name = "imas_song_07"
 	file = "event/imas_song_07.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_song_m_01"
 	file = "event/imas_song_m_01.wav"
-	volume = 0.5
+	volume = 0.25
 }
 sound  = {
 	name = "imas_song_m_02"
 	file = "event/imas_song_m_02.wav"
-	volume = 0.5
+	volume = 0.25
 }
 sound  = {
 	name = "imas_song_m_03"
 	file = "event/imas_song_m_03.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_song_BGM_n"
 	file = "event/BGM_n.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_song_BGM_live"
 	file = "event/BGM_live.wav"
-	volume = 0.5
+	volume = 0.25
 }
 
 sound  = {
 	name = "imas_buttons_sounds"
 	file = "event/button.wav"
-	volume = 0.5
+	volume = 0.25
 }

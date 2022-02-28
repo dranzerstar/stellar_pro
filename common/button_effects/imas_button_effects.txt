@@ -89,55 +89,55 @@ imas_gui_idols_grp_7 = {
 	potential = { has_global_flag = idol_debut_01 check_variable={which= idols_page value = 1 } } 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 01 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 1 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_02 = {
 	potential = { has_global_flag = idol_debut_02 check_variable={which= idols_page value = 1 }} 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 02 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 2 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_03 = {
 	potential = { has_global_flag = idol_debut_03 check_variable={which= idols_page value = 1 }} 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 03 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 3 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_04 = {
 	potential = { has_global_flag = idol_debut_04 check_variable={which= idols_page value = 2 }} 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 04 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 4 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_05 = {
 	potential = { has_global_flag = idol_debut_05 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 05 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 5 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_06 = {
 	potential = { has_global_flag = idol_debut_06 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 06 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 6 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_07 = {
 	potential = { has_global_flag = idol_debut_07 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 07 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 7 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_08 = {
 	potential = { has_global_flag = idol_debut_08 check_variable={which= idols_page value = 2 } } 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 08 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 8 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_09 = {
 	potential = { has_global_flag = idol_debut_09 check_variable={which= idols_page value = 3 } } 
 	allow = { always = yes }
 	effect = {
-		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 09 } }
+		hidden_effect = {  country_event = { id = imas_idols_menu.0100 }  set_variable={ which= idols_select value = 9 } }
 		custom_tooltip = "more_details" }}
 	imas_gui_idols_icon_10 = {
 	potential = { has_global_flag = idol_debut_10 check_variable={which= idols_page value = 3 } } 
@@ -238,39 +238,39 @@ imas_gui_idols_grp_7 = {
 	
 
 	imas_idol_card_01={
-	potential = { check_variable={which= idols_select value = 01 } }
+	potential = { check_variable={which= idols_select value = 1 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_02={
-	potential = { check_variable={which= idols_select value = 02 } }
+	potential = { check_variable={which= idols_select value = 2 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_03={
-	potential = { check_variable={which= idols_select value = 03 } }
+	potential = { check_variable={which= idols_select value = 3 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_04={
-	potential = { check_variable={which= idols_select value = 04 } }
+	potential = { check_variable={which= idols_select value = 4 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_05={
-	potential = { check_variable={which= idols_select value = 05 } }
+	potential = { check_variable={which= idols_select value = 5 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_06={
-	potential = { check_variable={which= idols_select value = 06 } }
+	potential = { check_variable={which= idols_select value = 6 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_07={
-	potential = { check_variable={which= idols_select value = 07 } }
+	potential = { check_variable={which= idols_select value = 7 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_08={
-	potential = { check_variable={which= idols_select value = 08 } }
+	potential = { check_variable={which= idols_select value = 8 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_09={
-	potential = { check_variable={which= idols_select value = 09 } }
+	potential = { check_variable={which= idols_select value = 9 } }
 	allow = { always = yes }
 	effect = {} }
 	imas_idol_card_10={

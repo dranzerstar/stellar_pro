@@ -555,7 +555,7 @@ containerWindowType = {
 #  group formed icons  +tooltip
 
 @grp_icon_x = 1350
-@grp_icon_y = 500
+@grp_icon_y = 650
 		effectButtonType = {
 			name = "grp_icon_01"
 			quadTextureSprite = "GFX_grp_icon_01"

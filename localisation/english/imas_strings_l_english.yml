@@ -27,8 +27,9 @@
 
  close:0 "close"
  Idols_live_menu:0 "FES Tours Planner"
-
-
+ mod_planet_pops_food_upkeep_mult:0 "Population Food consume:"
+ mod_planet_researchers_consumer_goods_upkeep_mult:0 "researchers upkeep:"
+ mod_planet_researchers_energy_upkeep_mult:0 "researchers upkeep:"
 #UI STRINGS
 #idol names
  text_idol_label_01:0 "Mano Sakuragi"
@@ -110,7 +111,7 @@
 
  grp-live-effects:0 "§YGroup Live Effects:§!"
  indv-live-effects:0 "§YSolo Live Effects:§!"
- live_luanch_button_loc:0 "[Root.live_luanch_button_text]"
+ #live_luanch_button_loc:0 "[Root.live_luanch_button_text]"
  live_prepared:0 "Preparing for Planned Live"
  confirm_live_grp:0 "Confirm Group"
  invalid_live_grp:0 "Invalid Group "
@@ -171,6 +172,7 @@
 
  Live_effects_fromatted:0 "$effect_slot_1$ $effect_slot_2$ $effect_slot_3$ $effect_slot_4$ $effect_slot_5$ $effect_slot_group_1$"  
 
+ imas_idols_menu_desc:0 "Welcome to the $Idols_live_menu$ Menu,You cancel select the Idol Group to perform in the next Interstellar Live Tour, The Tour will inspire §PALL§! Countries with various of Modifiers within its performance duration.\n\nClick the change icon on each frame to select an Idol. Hover over each idol to check the performance it provides, Additional effects will be added when a complete group performs togeather.\n\nNote：I complete group or any 5 idols must be appointed to start a LIVE. "
 
 #idol details
 
@@ -203,3 +205,8 @@
 
  Click_group_icon:0 "Hover over Idol Group Icon to check effects provided when the complete group is added to FES live."
  Click_idol_icon:0 "Hover over Idol Icon to check individual effects provided when added to FES live."
+
+ clear:0 "Cancel"
+
+ imas_diplo_screen.o.live.ongoing.ct:0 "FES LIVE tour is in progress!"
+ imas_diplo_screen.o.live.cooldown.ct:0 "283Poduction is preparing for next live"
