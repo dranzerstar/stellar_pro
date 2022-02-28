@@ -34,8 +34,8 @@ country_event = {
 # 1010 descriptions 1010
 # 1011 Sign idol agency contract (ava. when not signed)               1011
 # 1012 Sign Galaxy Live Tour contract (ava when >1 idol grp formed)  1012
-# Idol Catalogue  (need agency contract )
-# Tour screen  (need Galaxy Live Tour contract )
+# 2000 Idol Catalogue  (need agency contract )
+# 3000 Tour screen  (need Galaxy Live Tour contract )
 # other.
 # other.
 # Goodbye
@@ -137,6 +137,15 @@ country_event = {
 			custom_tooltip = {
 				fail_text= imas_diplo_screen.o.live.ct
 				has_country_flag = 283p_contract_signed_live 
+			}
+			custom_tooltip = {
+				fail_text= imas_diplo_screen.o.live.ongoing.ct
+				OR={
+					has_country_flag = preparing_live 
+					event_target:283p_home_country = {
+						has_country_flag = ongoing_live 
+					}
+				}
 			}
 		}
 		hidden_effect={
@@ -398,6 +407,10 @@ country_event = {
 	id = imas_diplo_screen.3000
 	hide_window = yes
 	is_triggered_only = yes
-
+	immediate = {
+		country_event = {
+			id = imas_idols_menu.1000
+		}
+	}
 
 }

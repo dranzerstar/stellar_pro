@@ -291,6 +291,165 @@ country_event = {
 
 }
 
+
+
+# 3000 start live apply live effects
+# NOT MULTIPLAYER
+
+country_event = {
+	id = imas_world_events.3000
+	hide_window = no
+	is_triggered_only = yes
+	title = Live_start
+	
+#do pictures do text do y
+	is_triggered_only = yes
+
+	desc={
+		hidden_trigger={	is_illuminationstars_formed =yes  }
+		text = live_event_3000_desc.1
+	}
+	picture={
+		hidden_trigger={ is_illuminationstars_formed =yes  }
+		picture=GFX_evt_debut
+	}
+
+	desc={
+		hidden_trigger={ is_lantica_formed =yes  }
+		text = live_event_3000_desc.2
+	}
+	picture={
+		hidden_trigger={ is_lantica_formed =yes  }
+		picture=GFX_evt_debut
+	}	
+
+	desc={
+		hidden_trigger={ is_hokago_formed =yes  }
+		text = live_event_3000_desc.3
+	}
+	picture={
+		hidden_trigger={ is_hokago_formed =yes  }
+		picture=GFX_evt_debut
+	}	
+
+	desc={
+		hidden_trigger={ is_alstroemeria_formed =yes  }
+		text = live_event_3000_desc.4
+	}
+	picture={
+		hidden_trigger={ is_alstroemeria_formed =yes  }
+		picture=GFX_evt_debut
+	}	
+
+	desc={
+		hidden_trigger={ is_straylight_formed =yes  }
+		text = live_event_3000_desc.5
+	}
+	picture={
+		hidden_trigger={ is_straylight_formed =yes  }
+		picture=GFX_evt_debut
+	}	
+
+	desc={
+		hidden_trigger={ is_noctchill_formed =yes  }
+		text = live_event_3000_desc.6
+	}
+	picture={
+		hidden_trigger={ is_noctchill_formed =yes  }
+		picture=GFX_evt_debut
+	}	
+
+	desc={
+		hidden_trigger={ is_shhis_formed =yes  }
+		text = live_event_3000_desc.7
+	}
+	picture={
+		hidden_trigger={ is_shhis_formed =yes  }
+		picture=GFX_evt_debut
+	}	
+
+	desc={
+		hidden_trigger={ is_5_person_group =yes  }
+		text = live_event_3000_desc.8
+	}
+	picture={
+		hidden_trigger={ is_5_person_group =yes  }
+		picture=GFX_evt_debut
+	}	
+
+
+
+
+
+	trigger={
+			has_country_flag = preparing_live
+
+	}
+
+
+	immediate={
+		remove_country_flag = preparing_live
+		event_target:283p_home_country = {  set_country_flag = ongoing_live }
+		
+		every_country={
+			limit={ is_country_type = default }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_01 }  add_modifier={ years=5 modifier = idol_live_effect_01 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_02 }  add_modifier={ years=5 modifier = idol_live_effect_02 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_03 }  add_modifier={ years=5 modifier = idol_live_effect_03 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_04 }  add_modifier={ years=5 modifier = idol_live_effect_04 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_05 }  add_modifier={ years=5 modifier = idol_live_effect_05 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_06 }  add_modifier={ years=5 modifier = idol_live_effect_06 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_07 }  add_modifier={ years=5 modifier = idol_live_effect_07 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_08 }  add_modifier={ years=5 modifier = idol_live_effect_08 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_09 }  add_modifier={ years=5 modifier = idol_live_effect_09 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_10 }  add_modifier={ years=5 modifier = idol_live_effect_10 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_11 }  add_modifier={ years=5 modifier = idol_live_effect_11 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_12 }  add_modifier={ years=5 modifier = idol_live_effect_12 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_13 }  add_modifier={ years=5 modifier = idol_live_effect_13 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_14 }  add_modifier={ years=5 modifier = idol_live_effect_14 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_15 }  add_modifier={ years=5 modifier = idol_live_effect_15 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_16 }  add_modifier={ years=5 modifier = idol_live_effect_16 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_17 }  add_modifier={ years=5 modifier = idol_live_effect_17 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_18 }  add_modifier={ years=5 modifier = idol_live_effect_18 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_19 }  add_modifier={ years=5 modifier = idol_live_effect_19 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_20 }  add_modifier={ years=5 modifier = idol_live_effect_20 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_21 }  add_modifier={ years=5 modifier = idol_live_effect_21 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_22 }  add_modifier={ years=5 modifier = idol_live_effect_22 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_23 }  add_modifier={ years=5 modifier = idol_live_effect_23 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_24 }  add_modifier={ years=5 modifier = idol_live_effect_24 } }
+			if={  event_target:country_hosting_live ={ has_country_flag=live_member_flag_25 }  add_modifier={ years=5 modifier = idol_live_effect_25 } }
+		
+
+			if={  event_target:country_hosting_live ={ is_illuminationstars_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_01 } }
+			if={  event_target:country_hosting_live ={ is_lantica_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_02 } }
+			if={  event_target:country_hosting_live ={ is_hokago_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_03 } }
+			if={  event_target:country_hosting_live ={ is_alstroemeria_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_04 } }
+			if={  event_target:country_hosting_live ={ is_straylight_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_05 } }
+			if={  event_target:country_hosting_live ={ is_noctchill_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_06 } }
+			if={  event_target:country_hosting_live ={ is_shhis_formed=yes }  add_modifier={ years=5 modifier = idol_group_live_effect_07 } }
+
+
+		}	
+
+
+
+
+
+
+	}
+	option={
+			name = imas_happy 
+
+
+
+
+	}
+}
+
+
+
+
+
 #edit this
 country_event = {
 	id = imas_world_events.9022
@@ -410,6 +569,12 @@ country_event = {
 	}
 
 }
+
+
+
+
+
+
 
 
 
